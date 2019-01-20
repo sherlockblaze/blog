@@ -684,7 +684,7 @@ pace: true
 #pace-theme-big-counter
 #pace-theme-bounce
 #pace-theme-barber-shop
-pace-theme-center-atom
+#pace-theme-center-atom
 #pace-theme-center-circle
 #pace-theme-center-radar
 #pace-theme-center-simple
@@ -696,7 +696,7 @@ pace-theme-center-atom
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-# pace_theme: pace-theme-minimal
+pace_theme: pace-theme-center-atom
 
 # Canvas-nest
 canvas_nest: true
