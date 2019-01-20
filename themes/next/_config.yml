@@ -379,7 +379,7 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: __VALINE_APPID__# your leancloud application appid
+  appid: __VALINE_APPID__ # your leancloud application appid
   appkey: __VALINE_APPKEY__ # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
