@@ -3,7 +3,7 @@ node_js:
 - 10.15.0
 branches:
   only:
-  - source
+  - master
 
 install: npm install
 
