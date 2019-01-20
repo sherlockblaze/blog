@@ -7,6 +7,13 @@ branches:
 
 install: npm install
 
+notifications:
+  email:
+    recipients:
+      - sherlockblaze@gmail.com
+    on_success: change
+    on_failure: always
+
 before_script:
 - git config --global user.name "sherlockblaze"
 - git config --global user.email "sherlockblaze@github.com"
