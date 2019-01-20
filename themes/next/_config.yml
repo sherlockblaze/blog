@@ -145,11 +145,11 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
+links_title: Github
 links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  Github: https://github.com/sherlockblaze
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -360,8 +360,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
-  shortname: rbnke
+  enable: false
+  shortname:
   count: true
 
 # Hypercomments
@@ -378,15 +378,16 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  enable: true
+  appid: __VALINE_APPID__# your leancloud application appid
+  appkey: __VALINE_APPKEY__ # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: Let's talk # comment box placeholder
   avatar: # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
+  visitor: true
 
 
 # Support for youyan comments system.
@@ -531,9 +532,12 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: __VISITORS_APPID__
+  app_key: __VISITORS_APPKEY__
+  Dependencies:  https://github.com/theme-next/hexo-leancloud-counter-security
+  security: true 
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -675,12 +679,12 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
 #pace-theme-barber-shop
-#pace-theme-center-atom
+pace-theme-center-atom
 #pace-theme-center-circle
 #pace-theme-center-radar
 #pace-theme-center-simple
@@ -692,7 +696,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+# pace_theme: pace-theme-minimal
 
 # Canvas-nest
 canvas_nest: true
