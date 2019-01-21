@@ -1,5 +1,6 @@
 ---
 title: ArrayList
+tags: Data Structures
 ---
 ### ArrayList
 

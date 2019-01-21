@@ -1,5 +1,6 @@
 ---
 title: Queue
+tags: Data Structures
 ---
 ### Queue
 

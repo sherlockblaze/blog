@@ -1,5 +1,6 @@
 ---
 title: Doubly LinkedList
+tags: Data Structures
 ---
 ### Doubly LinkedList
 

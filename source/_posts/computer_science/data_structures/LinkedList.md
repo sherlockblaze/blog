@@ -1,5 +1,6 @@
 ---
 title: LinkedList
+tags: Data Structures
 ---
 ### LinkedList
 

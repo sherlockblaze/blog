@@ -1,5 +1,6 @@
 ---
 title: Stack
+tags: Data Structures
 ---
 ### Stack
 
