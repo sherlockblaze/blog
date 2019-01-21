@@ -383,7 +383,7 @@ valine:
   appkey: __VALINE_APPKEY__ # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
-  placeholder: Let's talk # comment box placeholder
+  placeholder: Let\'s talk # comment box placeholder
   avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
