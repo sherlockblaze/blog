@@ -29,7 +29,7 @@ Now let's review the basic operations of arraylist.
 
 <h5 id="arraylist_insert">Insert</h5>
 
-If we wanna insert a value into a arraylist at the tail, that'll be easy, just ```arr[L->Size] = Value```, but if we want to do more about insertion, we should do like this.
+If we wanna insert a value into a arraylist at the tail, that'll be easy, just ```arr[L->Size] = Value``` , but if we want to do more about insertion, we should do like this.
 
 In this example, we want to insert value 9 at index 2 of the array.
 First step, we should move all the values between index 2 and the end of array one step backward.
