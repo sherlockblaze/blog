@@ -306,33 +306,33 @@ font:
   # Global font settings used on <body> element.
   global:
     external: true
-    family: Courier Blod
+    family: Monda
     size: 18
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Courier New Blod
+    family: PingFang SC
     size:
 
   # Font settings for posts.
   # Fallback to `global` font settings.
   posts:
     external: true
-    family: Courier New Blod
+    family: Microsoft YaHei
 
   # Font settings for Logo.
   # Fallback to `global` font settings.
   logo:
     external: true
-    family: Courier New Blod
+    family: Lobster Two
     size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Courier New Blod
+    family: Menlo
     size:
 
 
