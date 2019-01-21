@@ -379,8 +379,8 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: __VALINE_APPID__ # your leancloud application appid
-  appkey: __VALINE_APPKEY__ # your leancloud application appkey
+  appid: __VISITORS_APPID__ # your leancloud application appid
+  appkey: __VISITORS_APPKEY__ # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
   placeholder: Let's talk # comment box placeholder
@@ -525,7 +525,7 @@ vkontakte_api:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id:     #<app_id>
+  id:     16178
   color:  fc6423
 # ---------------------------------------------------------------
 
