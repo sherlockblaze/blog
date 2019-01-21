@@ -25,6 +25,6 @@
     "hexo-wordcount": "^6.0.1"
   },
   "scripts": {
-    "build": "hexo clean && hexo generate && hexo deploy"
+    "build": "hexo clean && hexo generate"
   }
 }

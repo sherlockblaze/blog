@@ -24,3 +24,9 @@ before_script:
 - sed -i "s/__VALINE_APPKEY__/${__VALINE_APPKEY__}/" ./themes/next/_config.yml
 
 script: npm run build
+
+after_script:
+- mv all/index.html ./index2.html
+- mv index.html all/
+- mv index2.html index.html
+- hexo deploy
