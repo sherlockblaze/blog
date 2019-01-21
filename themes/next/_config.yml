@@ -230,10 +230,10 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: true
+  wordcount: false
   min2read: true
-  totalcount: true
-  separated_meta: true
+  totalcount: false
+  separated_meta: false
 
 # Wechat Subscriber
 #wechat_subscriber:
