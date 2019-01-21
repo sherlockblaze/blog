@@ -26,6 +26,6 @@ before_script:
 script: npm run build
 
 after_script:
-- mv public/index.html
-- mv public/all/index.html public/index2.html
+- rm public/index.html
+- mv public/all/index.html public/index.html
 - hexo deploy
