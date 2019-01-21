@@ -379,12 +379,12 @@ changyan:
 # more info please open https://valine.js.org
 valine:
   enable: true
-  appid: __VISITORS_APPID__ # your leancloud application appid
-  appkey: __VISITORS_APPKEY__ # your leancloud application appkey
+  appid: __VALINE_APPID__ # your leancloud application appid
+  appkey: __VALINE_APPKEY__ # your leancloud application appkey
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
   placeholder: Let's talk # comment box placeholder
-  avatar: # gravatar style
+  avatar: wavatar # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
   visitor: true
