@@ -313,7 +313,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family: Courier Blod
+    family: Courier New Blod
     size:
 
   # Font settings for posts.
@@ -326,7 +326,7 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family: Courier Blod
+    family: Courier New Blod
     size: 24
 
   # Font settings for <code> and code blocks.
