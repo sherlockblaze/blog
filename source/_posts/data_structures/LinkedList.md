@@ -12,6 +12,9 @@ Here is the linked list. It looks like this.
 
 > In order to avoid the linear cost of insertion and deletion, we need to ensure that the list is not stored contiguously. By using this kind of list, we can make the cost of insertion and deletion be O(1).
 The linked list consists of a series of structures, which are not necessarily adjacent in memory.
+
+<!-- more -->
+
 Each node contains the element and a pointer points to the next node, we call it Next pointer, And the last node's Next pointer points to NULL. And ANSI C specifies that NULL is zero.
 
 In my version, I put a head node to save the length of the linked list.

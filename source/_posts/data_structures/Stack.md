@@ -10,6 +10,8 @@ A stack is a list with the restriction that insertions and deletions can be perf
 
 Those Pictures shows a stack can be.
 
+<!-- more -->
+
 It can be ...
 
 ![ArrayList Stack](https://i.loli.net/2019/01/21/5c450f7098931.png)

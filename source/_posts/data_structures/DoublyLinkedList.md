@@ -10,6 +10,8 @@ Sometimes it's convenient to traverse lists backwards. We just add an extra fiel
 
 Here is what Doubly LinkedList looks like.
 
+<!-- more -->
+
 ![Doubly LinkedList](https://i.loli.net/2019/01/21/5c450d4b7b059.png)
 
 In my version, there's still has a head node of the list, and it's value equals the total number of valid nodes.
