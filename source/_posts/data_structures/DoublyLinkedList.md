@@ -10,11 +10,11 @@ Sometimes it's convenient to traverse lists backwards. We just add an extra fiel
 
 Here is what Doubly LinkedList looks like.
 
-![Doubly LinkedList](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/doublylinkedlist.png)
+![Doubly LinkedList](https://i.loli.net/2019/01/21/5c450d4b7b059.png)
 
 In my version, there's still has a head node of the list, and it's value equals the total number of valid nodes.
 
-![Doubly LinkedList With Head Node](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/doublylinkedlist_with_head.png)
+![Doubly LinkedList With Head Node](https://i.loli.net/2019/01/21/5c450d4b75a87.png)
 
 Now we can see the basic operations of doubly linkedlist.
 
@@ -25,41 +25,41 @@ Now we can see the basic operations of doubly linkedlist.
 
 <h5 id="doublylinkedlist_insert">Insert</h5>
 
-![Insert Step1](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/insert_step1.png)
+![Insert Step1](https://i.loli.net/2019/01/21/5c450d4b8f1ec.png)
 
 First Step, we get a new node called NewNode, and get it ready for insertion. Then we let the Next Pointer of NewNode equals the Next pointer of previous node.
 
-![Insert Step2](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/insert_step2.png)
+![Insert Step2](https://i.loli.net/2019/01/21/5c450d4b89e0e.png)
 
 Then we need to let the Previous pointer of the node that the Next pointer of previous node points to points to the NewNode.
 
-![Insert Step3](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/insert_step3.png)
+![Insert Step3](https://i.loli.net/2019/01/21/5c450d4b8745a.png)
 
 Let the Next pointer of Previous node points to NewNode
 
-![Insert Step4](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/insert_step4.png)
+![Insert Step4](https://i.loli.net/2019/01/21/5c450d4b8c789.png)
 
 Now we can let the Previous pointer of NewNode points to the Previous node.
 
 **And then we finished the insertion. Insert at the end of the list is similar to this.**
 
-![Insert Successed](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/insert_successed.png)
+![Insert Successed](https://i.loli.net/2019/01/21/5c450d4b84b7b.png)
 
 <h5 id="doublylinkedlist_delete">Delete</h5>
 
 First, we call the node we want to delete TargetNode.
 
-![Delete Step1](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/delete_step1.png)
+![Delete Step1](https://i.loli.net/2019/01/21/5c450d4b7fb36.png)
 
 As the picture shows, we should let the previous pointer of the next node of the TargetNode points to the previous node of the TargetNode.
 
-![Delete Step2](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/delete_step2.png)
+![Delete Step2](https://i.loli.net/2019/01/21/5c450d4b91a2b.png)
 
 Then we let the Next pointer of previous node points to the next node of the TargetNode.
 
 **Finished!! Just don't forget to free the space of TargetNode.**
 
-![Delete Successed](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/doublylinkedlist/delete_successed.png)
+![Delete Successed](https://i.loli.net/2019/01/21/5c450d4b82486.png)
 
 <h5 id="doublylinkedlist_conclusion">Conclusion</h5>
 

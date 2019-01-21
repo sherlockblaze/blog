@@ -12,7 +12,7 @@ Still from books. **The basic operations on a queue are _Enqueue_, which inserts
 
 It's look like this:
 
-![Queue](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/queue/queue.png)
+![Queue](https://i.loli.net/2019/01/21/5c450f4ee4e82.png)
 
 #### Operations
 

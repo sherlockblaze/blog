@@ -8,11 +8,11 @@ title: ArrayList
 
 Now let's talk about arraylist, we know it costs O(n) when you want access a value at the index you give by using a linkedlist, if you want make it faster to finish, you should use arraylist, it cost O(1) when you wanna access the index you want. Because the underlying is an array. So you can access any value at the index you give in one step, just arr[index]. It's pretty cool. Now let me show you what the arraylist look like.
 
-![ArrayList](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/arraylist.png)
+![ArrayList](https://i.loli.net/2019/01/21/5c450c2d54ec5.png)
 
 And in my version, there's still head node here which save the total number of values in the arraylist, the pointer points to the arraylist and the capacity of the arraylist.Let's meet it first.
 
-![Arraylist With HeadNode](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/arraylist_with_head_node.png)
+![Arraylist With HeadNode](https://i.loli.net/2019/01/21/5c450c2d7ffc3.png)
 
 ***Let's be clear:***
 
@@ -34,14 +34,14 @@ If we wanna insert a value into a arraylist at the tail, that'll be easy, just `
 In this example, we want to insert value 9 at index 2 of the array.
 First step, we should move all the values between index 2 and the end of array one step backward.
 
-![Insert Step1](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_step1.png)
+![Insert Step1](https://i.loli.net/2019/01/21/5c450c2daabf7.png)
 
 Second step, we just need to do like this. ```array[2] = 9```
-![Insert Step2](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_step2.png)
+![Insert Step2](https://i.loli.net/2019/01/21/5c450c2da7c8d.png)
 
 It's finished. Pretty Easy. And it costs O(n). Don't forget to change the value of **Size**, it's supposed to plus one after doing this.
 
-![Insert Successed](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_successed.png)
+![Insert Successed](https://i.loli.net/2019/01/21/5c450c2d7bdd4.png)
 
 **But what happens when you insert an element when you have insufficient capacity?**
 
@@ -49,17 +49,17 @@ Here is the answer.
 
 First step, we get a new capacity called NewCapacity, and ```NewCapacity = OldCapacity / 2 * 3 + OldCapacity``` in my version, you can modify it to your perferred value. Then we get a new array with capacity **NewCapacity**.
 
-![Insert Without Enough Room Step1](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_without_enough_room_step1.png)
+![Insert Without Enough Room Step1](https://i.loli.net/2019/01/21/5c450c2d9d61d.png)
 
 Second step we copy the elements of the old array to the new array in order.
 
-![Insert Without Enough Room Step2](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_without_enough_room_step2.png)
+![Insert Without Enough Room Step2](https://i.loli.net/2019/01/21/5c450c2d9ffca.png)
 
 Then we can do like inserting with enough room.
 
-![Insert Without Enough Room Step3](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_without_enough_room_step3.png)
+![Insert Without Enough Room Step3](https://i.loli.net/2019/01/21/5c450c6660c01.png)
 
-![Insert Without Enough Room Success](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/insert_without_enough_room_successed.png)
+![Insert Without Enough Room Success](https://i.loli.net/2019/01/21/5c450c665e56e.png)
 
 <h5 id="arraylist_delete">Delete</h5>
 
@@ -67,14 +67,14 @@ Then let's talk about deletion of arraylist. Same with insert at the tail, if yo
 
 First Step. Move all the values between index 2 and the end of array one step forward, like this.
 
-![Delete Step1](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/delete_step1.png)
+![Delete Step1](https://i.loli.net/2019/01/21/5c450c2da4bb0.png)
 
 Then we just do like this. ```L->Size -= 1```. Finished. Easy too, but it's cost O(n) too;
 
-![Delete Step2](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/delete_step2.png)
+![Delete Step2](https://i.loli.net/2019/01/21/5c450c2dadbf1.png)
 
 **Delete Successed!!!**
-![Delete Successed](https://github.com/sherlockblaze/sherlockblaze.github.io/tree/master/images/data_structures/arraylist/delete_successed.png)
+![Delete Successed](https://i.loli.net/2019/01/21/5c450c2d7ddc4.png)
 
 <h5 id="arraylist_conclusion">Conclusion</h5>
 
