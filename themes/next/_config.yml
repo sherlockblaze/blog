@@ -381,7 +381,7 @@ valine:
   enable: true
   appid: __VISITORS_APPID__ # your leancloud application appid
   appkey: __VISITORS_APPKEY__ # your leancloud application appkey
-  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: true # Verification code
   placeholder: Let's talk # comment box placeholder
   avatar: # gravatar style
@@ -524,7 +524,7 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
+  enable: true
   id:     16178
   color:  fc6423
 # ---------------------------------------------------------------
