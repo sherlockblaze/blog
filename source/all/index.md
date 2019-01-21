@@ -22,7 +22,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 - [Environment](#Environment)
 - [Knowledge](#Knowledge)
     - [Math](#Math)
-    - [English](#English)
+    - [English Words](#English-Words)
     - [Data Structures](#data-structures)
     - [Classic Algorithms](#Classic-Algorithms)
     - [Algorithms Combat](#Algorithms-Combat)
@@ -49,16 +49,16 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 > ***The following content is not the whole content, continues to supplement***
 
 - [ ] List
-    - [x] [LinkedList](./knowledge/data_structures/doc/lists/LinkedList.md#LinkedList)
-    - [x] [Doubly LinkedList](./knowledge/data_structures/doc/lists/DoublyLinkedList.md#Doubly-LinkedList)
-    - [x] [ArrayList](./knowledge/data_structures/doc/lists/ArrayList.md#ArrayList)
-    - [x] [Stack](./knowledge/data_structures/doc/lists/Stack.md#Stack)
-    - [x] [Queue](./knowledge/data_structures/doc/lists/Queue.md#Queue)
-- [ ] [Trees](./knowledge/data_structures/doc/trees/Trees.md#Trees)
-    - [ ] [Binary Trees](./knowledge/data_structures/doc/trees/BinaryTrees.md#Binary-Trees)
-    - [ ] [Search Tree - Binary Search Tree](./knowledge/data_structures/doc/trees/BinarySearchTree.md#Binary-Search-Tree)
-    - [ ] [AVL Trees](./knowledge/data_structures/doc/trees/AvlTree.md#AVL-Trees)
-    - [ ] [Red-Black Trees](./knowledge/data_structures/doc/trees/Red-BlackTrees.md#Red-Black-Trees)(Unfinished)
+    - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/LinkedList/)
+    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/DoublyLinkedList/)
+    - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/ArrayList/)
+    - [x] [Stack](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/Stack/)
+    - [x] [Queue](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/Queue/)
+- [ ] Trees
+    - [ ] Binary Trees
+    - [ ] Search Tree - Binary Search Tree
+    - [ ] AVL Trees
+    - [ ] Red-Black Trees
     - [ ] Splay Trees
     - [ ] B-Trees
     - [ ] AA-Trees
@@ -75,22 +75,22 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 
 ## Classic Algorithms
 
-- [x] [Insertion-Sort](./knowledge/algorithms/classic/doc/InsertionSort.md#Insertion-Sort)
+- [ ] Insertion-Sort
 
 ## Algorithms Combat
 
-- [x] [Two Sum](./knowledge/algorithms/combat/doc/TwoSum.md#Two-Sum)
-- [x] [Add Two Numbers](./knowledge/algorithms/combat/doc/AddTwoNumbers.md#Add-Two-Numbers)
-- [x] [Search In Two Dimensional Array](./knowledge/algorithms/combat/doc/SearchInTwoDimensionalArray.md#Search-In-Two-Dimensional-Array)
-- [x] [Replace All Spaces](./knowledge/algorithms/combat/doc/ReplaceAllSpaces.md#Replace-All-Spaces)
-- [ ] [Reverse Print List](./knowledge/algorithms/combat/doc/ReversePrintList.md#Reverse-Print-List)
+- [ ] Two Sum
+- [ ] Add Two Numbers
+- [ ] Search In Two Dimensional Array
+- [ ] Replace All Spaces
+- [ ] Reverse Print List
 
 ## Algorithms Rules
 
 > **Here is some rules about Algorithms.**
 
-- [ ] [Growth Of Function](./knowledge/algorithms/rules/GrowthOfFunction.md#Growth-Of-Function)
-- [x] [Loop Invariants](./knowledge/algorithms/rules/LoopInvariants.md#Loop-Invariants)
+- [ ] Growth Of Function
+- [ ] Loop Invariants
 
 ## Machine Learning
 
