@@ -2,5 +2,5 @@
 title: {{ title }}
 date: {{ date }}
 description: 
-header-img: "img/home-bg.jpg"
+header-img: https://source.unsplash.com/random/1920x1080
 ---

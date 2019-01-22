@@ -19,6 +19,9 @@ before_script:
 - git config --global user.email "sherlockblaze@github.com"
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 - sed -i "s/__DISQUS_ID__/${__DISQUS_ID__}/" _config.yml
+- wget https://source.unsplash.com/random/1920x1080
+- mv 1920x1080 1920x1080.jpg
+- mv 1920x1080.jpg ./source/img/header_img/1920x1080.jpg
 # - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" ./themes/next/_config.yml
 # - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" ./themes/next/_config.yml
 # - sed -i "s/__VALINE_APPID__/${__VALINE_APPID__}/" ./themes/next/_config.yml

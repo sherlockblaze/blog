@@ -3,6 +3,6 @@ title: {{ title }}
 subtitle:
 date: {{ date }}
 catalog: true
-header-img: url("https://source.unsplash.com/random/3840x2160")
+header-img: "img/header_img/1920x1080.jpg"
 tags: 
 ---
