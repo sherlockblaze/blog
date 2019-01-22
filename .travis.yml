@@ -26,5 +26,5 @@ before_script:
 
 script: npm run build
 
-after_script:
+after_success:
 - hexo deploy
