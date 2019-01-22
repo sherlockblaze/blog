@@ -1,6 +1,6 @@
 ---
-title: tags
-date: 2019-01-21 11:29:26
-type: "tags"
-comments: false
+layout: "tags"
+title: "Tags"
+description: "Hey, this is Tags."
+header-img: "img/header_img/tag-bg.png"
 ---
