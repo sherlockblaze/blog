@@ -10,12 +10,12 @@
 
 $whitesmoke   = #f5f5f5
 $gainsboro    = #eee
-$gray-deeper = #ddd
-$grey-deep   = #ccc
+$gray-lighter = #ddd
+$grey-light   = #ccc
 $grey         = #bbb
 $grey-dark    = #999
 $grey-dim     = #666
-$black-deep  = #555
+$black-light  = #555
 $black-dim    = #333
 $black-deep   = #222
 $red          = #ff2a2a
@@ -31,23 +31,23 @@ $orange       = #fc6423
 // --------------------------------------------------
 
 // Global text color on <body>
-$text-color                   = $black-deep
+$text-color                   = $black-light
 
 // Global link color.
-$link-color                   = $black-deep
+$link-color                   = $black-light
 $link-hover-color             = $black-deep
-$link-decoration-color        = $grey-deep
+$link-decoration-color        = $grey-light
 $link-decoration-hover-color  = $black-deep
 
 // Global border color.
-$border-color                 = $grey-dark
+$border-color                 = $grey-light
 
 // Background color for <body>
 $body-bg-color                = white
 
 // Selection
 $selection-bg                 = $blue-deep
-$selection-color              = black
+$selection-color              = white
 
 
 
@@ -83,15 +83,15 @@ $font-family-icons        = 'FontAwesome'
 
 
 // Font Weight
-$font-weight-deeper      = 300
-$font-weight-deep        = 400
-$font-weight-normal       = 500
+$font-weight-lighter      = 200
+$font-weight-light        = 300
+$font-weight-normal       = 400
 $font-weight-bold         = 600
 $font-weight-bolder       = 700
 
 
 // Font size
-$font-size-base           = 15px
+$font-size-base           = 14px
 $font-size-base           = unit(hexo-config('font.global.size'), px) if hexo-config('font.global.size') is a 'unit'
 $font-size-small          = $font-size-base - 2px
 $font-size-smaller        = $font-size-base - 4px
@@ -128,14 +128,14 @@ $zindex-5       = 1050
 // Table
 // --------------------------------------------------
 $table-width                    = 100%
-$table-border-color             = $gray-deeper
+$table-border-color             = $gray-lighter
 $table-font-size                = 14px
 $table-content-alignment        = left
 $table-content-vertical         = middle
 $table-th-font-weight           = 700
 $table-cell-padding             = 8px
 $table-cell-border-right-color  = $gainsboro
-$table-cell-border-bottom-color = $gray-deeper
+$table-cell-border-bottom-color = $gray-lighter
 $table-row-odd-bg-color         = #f9f9f9
 $table-row-hover-bg-color       = $whitesmoke
 
@@ -147,7 +147,7 @@ $code-font-family               = $font-family-monospace
 $code-font-size                 = 13px
 $code-font-size                 = unit(hexo-config('font.codes.size'), px) if hexo-config('font.codes.size') is a 'unit'
 $code-border-radius             = 3px
-$code-foreground                = $black-deep
+$code-foreground                = $black-light
 $code-background                = $gainsboro
 
 
@@ -182,9 +182,9 @@ $pagination-link-hover-bg       = transparent
 $pagination-link-hover-color    = $link-color
 $pagination-link-hover-border   = $black-deep
 
-$pagination-active-bg           = $grey-deep
+$pagination-active-bg           = $grey-light
 $pagination-active-color        = white
-$pagination-active-border       = $grey-deep
+$pagination-active-border       = $grey-light
 
 
 
@@ -265,7 +265,7 @@ $posts-collapse-left-mobile     = 5px
 // Sidebar
 // Variables for sidebar section elements.
 // --------------------------------------------------
-$sidebar-nav-color                    = $black-deep
+$sidebar-nav-color                    = $black-light
 $sidebar-nav-hover-color              = $whitesmoke
 $sidebar-highlight                    = $blue-bright
 
@@ -293,9 +293,9 @@ $site-state-item-name-color           = inherit
 $site-state-item-border-color         = $black-dim
 
 $toc-link-color                       = $grey-dark
-$toc-link-border-color                = $black-deep
-$toc-link-hover-color                 = $grey-deep
-$toc-link-hover-border-color          = $grey-deep
+$toc-link-border-color                = $black-light
+$toc-link-hover-color                 = $grey-light
+$toc-link-hover-border-color          = $grey-light
 $toc-link-active-color                = $sidebar-highlight
 $toc-link-active-border-color         = $sidebar-highlight
 $toc-link-active-current-color        = $sidebar-highlight
