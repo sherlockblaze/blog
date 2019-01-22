@@ -23,7 +23,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 - [Knowledge](#Knowledge)
     - [Math](#Math)
     - [English Words](#English-Words)
-    - [Data Structures](#data-structures)
+    - [Data Structures](#Data-Structures)
     - [Classic Algorithms](#Classic-Algorithms)
     - [Algorithms Combat](#Algorithms-Combat)
     - [Algorithms Rules](#Algorithms-Rules)
@@ -38,7 +38,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 4. work with cuda10 (My Version: Nvidia Geforce 2080 Ti x 1)
 5. work with go1.11.4 (export GOPATH=yourpath/all_knowledge_review/knowledge/engineering/programming/go/code)
 
-## [Math](./knowledge/math/README.md)
+## Math
 
 ## English Words
 
