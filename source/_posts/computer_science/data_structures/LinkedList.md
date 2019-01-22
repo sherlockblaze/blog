@@ -1,6 +1,7 @@
 ---
 title: LinkedList
 tags: Data Structures
+date: 2019-01-21
 ---
 ### LinkedList
 

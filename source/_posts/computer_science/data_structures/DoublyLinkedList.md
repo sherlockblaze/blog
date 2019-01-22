@@ -1,6 +1,7 @@
 ---
 title: Doubly LinkedList
 tags: Data Structures
+date: 2019-01-21
 ---
 ### Doubly LinkedList
 
