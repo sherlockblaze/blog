@@ -2,7 +2,6 @@
 title: ArrayList
 tags: Data Structures
 date: 2019-01-21
-header-img: https://source.unsplash.com/random/1920x1080
 ---
 ### ArrayList
 
