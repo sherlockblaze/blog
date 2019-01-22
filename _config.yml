@@ -138,6 +138,12 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: archives
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 17
+
 archive_generator:
   per_page: 10
   yearly: true
