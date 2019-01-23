@@ -158,27 +158,27 @@ layout: layout
 <% } %>
 
 <% if(config['valine']) {%>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
+<script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = '{{ config['valineGuestInfo'] }}';
+    var guest = config['valineGuestInfo'];
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: {{ config['valineVerify'] }},
-        notify: {{ config['valineNotify'] }},
-        appId: '{{ config['valineAppId'] }}',
-        appKey: '{{ config['valineAppKey'] }}',
-        placeholder: '{{config['valinePlaceHolder'] }}',
-        avatar: '{{ config['valineAvatar'] }}',
+        verify: config['valineVerify'],
+        notify: config['valineNotify'],
+        appId: config['valineAppId']',
+        appKey: config['valineAppKey']',
+        placeholder: config['valinePlaceHolder'],
+        avatar: config['valineAvatar'],
         guest_info: guest,
-        pageSize: '{{config['valinePageSize'] }}' || 10,
+        pageSize: config['valinePageSize'] || 10,
     });
-  </script>
+</script>
 <% } %>
 
 <% if(config['anchorjs']) { %>
