@@ -59,7 +59,7 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Hi, I'm Sherlock Blaze"
+sidebar-about-description: "Keep Clean, Keep Simple"
 sidebar-avatar: img/header_img/DogFace.jpg
 widgets:
 - featured-tags
