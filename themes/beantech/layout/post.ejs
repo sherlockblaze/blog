@@ -163,20 +163,20 @@ layout: layout
   
 <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = config['valineGuestInfo'];
+    var guest = "<%= config['valineGuestInfo'] %>";
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: config['valineVerify'],
-        notify: config['valineNotify'],
-        appId: config['valineAppId'],
-        appKey: config['valineAppKey'],
-        placeholder: config['valinePlaceHolder'],
-        avatar: config['valineAvatar'],
+        verify: <%= config['valineVerify'] %>,
+        notify: <%= config['valineNotify'] %>,
+        appId: '<%= config['valineAppId'] %>',
+        appKey: '<%= config['valineAppKey'] %>',
+        placeholder: '<%=config['valinePlaceHolder'] %>',
+        avatar: '<%= config['valineAvatar'] %>',
         guest_info: guest,
-        pageSize: config['valinePageSize'] || 10,
+        pageSize: '<%= config['valinePageSize'] %>'' || 10,
     });
 </script>
 <% } %>
