@@ -908,7 +908,7 @@ body {
 /* Hux customize Style for Duoshuo */
 .comments {
   margin: 60px 20px 0;
-  font: italic bold 12px/30px Georgia, serif;
+  font-size: 14px
 }
 .comment {
   margin-top: 20px;
