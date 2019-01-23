@@ -28,4 +28,9 @@ before_script:
 script: npm run build
 
 after_success:
-- echo "yes" | sudo -S hexo deploy
+- hexo deploy
+- except -re "Username for 'https://git.dev.tencent.com':"
+- send "${USER_NAME}\r"
+- except -re "Password for 'https://rbnke@git.dev.tencent.com':"
+- send "${USER_PASSWORD}\r"
+- except eof
