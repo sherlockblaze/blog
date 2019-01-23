@@ -17,7 +17,7 @@ notifications:
 before_script:
 - git config --global user.name "sherlockblaze"
 - git config --global user.email "sherlockblaze@github.com"
-- sed -i "s/__CODING_REPO__/${__CODING_REPO__}/" _config.yml
+- sed -i "s|__CODING_REPO__|${__CODING_REPO__}|" _config.yml
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 - sed -i "s/__DISQUS_ID__/${__DISQUS_ID__}/" _config.yml
 - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
