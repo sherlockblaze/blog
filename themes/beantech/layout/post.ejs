@@ -158,10 +158,16 @@ layout: layout
 <% } %>
 
 <% if(config['valine']) {%>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
+<!--<script src="//unpkg.com/valine/dist/Valine.min.js"></script>-->
   
 <script type="text/javascript">
+    window.AV = require('leancloud-storage');
+
+    // Use import
+    import Valine from 'valine';
+    // or Use require
+    const Valine = require('valine');
     var GUEST = ['nick','mail','link'];
     var guest = "<%= config['valineGuestInfo'] %>";
     guest = guest.split(',').filter(item=>{
