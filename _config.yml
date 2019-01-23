@@ -175,7 +175,7 @@ deploy:
   type: git
   repository:
     github: https://__GITHUB_TOKEN__@github.com/sherlockblaze/sherlockblaze.github.io.git
-    coding: https://Rbnke:__CODING_TOKEN__@git.coding.net/Rbnke/rbnke.coding.me.git
+    coding: https://__CODING_TOKEN__@git.coding.net/Rbnke/rbnke.coding.me.git
   branch: master
 
 valine: true
