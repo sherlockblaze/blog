@@ -175,3 +175,14 @@ deploy:
   type: git
   repo: https://__GITHUB_TOKEN__@github.com/sherlockblaze/sherlockblaze.github.io.git
   branch: master
+
+valine: true
+valineAppId: __VISITORS_APPID__ # your leancloud application appid
+valineAppKey: __VISITORS_APPKEY__ # your leancloud application appkey
+valineNotify: false # mail notifier , https://github.com/xCss/Valine/wiki
+valineVerify: true # Verification code
+valinePlaceHolder: Let us talk more!! # comment box placeholder
+valineAvatar: wavatar # gravatar style
+valineGuestInfo: nick,mail,link # custom comment header
+valinePageSize: 10 # pagination size
+visitor: true

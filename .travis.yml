@@ -19,10 +19,10 @@ before_script:
 - git config --global user.email "sherlockblaze@github.com"
 - sed -i "s/__GITHUB_TOKEN__/${__GITHUB_TOKEN__}/" _config.yml
 - sed -i "s/__DISQUS_ID__/${__DISQUS_ID__}/" _config.yml
+- sed -i "s/__VALINE_APPID__/${__VALINE_APPID__}/" _config.yml
+- sed -i "s/__VALINE_APPKEY__/${__VALINE_APPKEY__}/" _config.yml
 # - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" ./themes/next/_config.yml
 # - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" ./themes/next/_config.yml
-# - sed -i "s/__VALINE_APPID__/${__VALINE_APPID__}/" ./themes/next/_config.yml
-# - sed -i "s/__VALINE_APPKEY__/${__VALINE_APPKEY__}/" ./themes/next/_config.yml
 
 script: npm run build
 

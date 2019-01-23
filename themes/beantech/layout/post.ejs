@@ -75,6 +75,11 @@ layout: layout
                     </div>
                 <% } %>
                 <!-- disqus comment end -->
+
+                <% if(config['valineAppid'] and config['valineAppkey'])} { %>
+                    <div class="comment" id="comments">
+                    </div>
+                <% } %>
             </div>
             
             <!-- Tabe of Content -->
@@ -152,6 +157,29 @@ layout: layout
 <!-- disqus embedded js code start end -->
 <% } %>
 
+<% if(config['valine']) {%>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = '{{ config['valineGuestInfo'] }}';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: {{ config['valineVerify'] }},
+        notify: {{ config['valineNotify'] }},
+        appId: '{{ config['valineAppId'] }}',
+        appKey: '{{ config['valineAppKey'] }}',
+        placeholder: '{{config['valinePlaceHolder'] }}',
+        avatar: '{{ config['valineAvatar'] }}',
+        guest_info: guest,
+        pageSize: '{{config['valinePageSize'] }}' || 10,
+    });
+  </script>
+<% } %>
 
 <% if(config['anchorjs']) { %>
 <!-- async load function -->
