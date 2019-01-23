@@ -76,21 +76,9 @@ layout: layout
                 <% } %>
                 <!-- disqus comment end -->
 
-                <% if(config['valineAppId'] && config['valineAppKey']) { %>
+                <% if(config['valine']) { %>
                     <div class="comments" id="comments">
                     </div>
-                <% } %>
-
-                < % if(config['valine']) { %> 
-                    <span class="post-comments-count">
-                        <span class="post-meta-divider">|</span>
-                        <span class="post-meta-item-icon">
-                            <i class="fa fa-comment-o"></i>
-                        </span>
-                        <a href="{{ url_for(<%= page.path%>) }}#comments" itemprop="discussionUrl">
-                        <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(<%=page.path%>) }}" itemprop="commentCount"></span>
-                        </a>
-                    </span>
                 <% } %>
 
             </div>
