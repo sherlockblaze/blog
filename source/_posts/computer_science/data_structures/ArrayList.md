@@ -13,7 +13,7 @@ Now let's talk about arraylist, we know it costs O(n) when you want access a val
 <!-- more -->
 
 ![ArrayList](https://i.loli.net/2019/01/21/5c450c2d54ec5.png)
-![ArrayList](resources/img/arraylist/arraylist.png)
+![ArrayList](https://sherlockblaze.com/resources/img/cs/arraylist/arraylist.png)
 
 And in my version, there's still head node here which save the total number of values in the arraylist, the pointer points to the arraylist and the capacity of the arraylist.Let's meet it first.
 
