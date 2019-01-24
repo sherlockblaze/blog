@@ -27,6 +27,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
     - [Algorithms Rules](#Algorithms-Rules)
     - [Machine Learning](#Machine-Learning)
     - [Deep Learning](#Deep-Learning)
+- [More](#More)
 
 ## Environment
 

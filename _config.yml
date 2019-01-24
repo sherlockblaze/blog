@@ -59,7 +59,7 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Keep Clean, Keep Simple"
+sidebar-about-description: "Keep Clean, Keep Simple\nIf you feel it's slow here, try:\nRbnke.coding.me"
 sidebar-avatar: resources/img/header_img/DogFace.jpg
 widgets:
 - featured-tags
