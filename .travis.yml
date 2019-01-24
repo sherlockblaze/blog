@@ -34,7 +34,8 @@ after_success:
 - hexo deploy
 - rm _config.yml
 - mv _config.yml.bak _config.yml
-- sed -i "s/sherlockblaze.com/sherlockblaze.cn/" ./source/CNAME
+- sed -i "s/com/cn/" ./source/CNAME
+- cat ./source/CNAME
 - sed -i "s|__GIT_KIND__|coding|" _config.yml
 - sed -i "s|__GIT_REPO__|${__CODING_REPO__}|" _config.yml
 - hexo deploy
