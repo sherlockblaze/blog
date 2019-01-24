@@ -76,7 +76,7 @@ And findlly we achieve our goal.
 
 We use our own [ArrayList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/ArrayList/) to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
 
-See more by reading the code(View All Code About Notes [Here](https://github.com/sherlockblaze/all_knowledge_review):
+See more by reading the code(View All Code About Notes [Here](https://github.com/sherlockblaze/all_knowledge_review)):
 
 ```c
 #ifndef _REPLACE_ALL_SPACES_H_

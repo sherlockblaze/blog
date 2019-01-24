@@ -1,7 +1,7 @@
 ---
-title: "All"
+title: "About"
 date: 2019-01-21 23:44:06
-comments: false
+comments: true
 ---
 
 Here I'll review all my knowledge that i have got before and haven't got yet. It includes not only **Computer Science** but also **Mathematics**, **English**, **Physics** and so on.
@@ -35,6 +35,10 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 3. work with python3.6
 4. work with cuda10 (My Version: Nvidia Geforce 2080 Ti x 1)
 5. work with go1.11.4
+
+## Code
+
+You can view all code about my notes [here](https://github.com/sherlockblaze/all_knowledge_review).
 
 ## Math
 
@@ -99,3 +103,9 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 ***Waiting... focus on data structures now***
 
 ***And so on...***
+
+## More
+
+If you have something interesting to learn, let me know at the comments, let's fight together.
+
+THANKS.
