@@ -10,18 +10,16 @@ date: 2019-01-21
 
 Here is the linked list. It looks like this.
 
-![LinkedList](https://i.loli.net/2019/01/21/5c450dedcdec0.png)
+![LinkedList](https://sherlockblaze.com/resources/img/cs/linkedlist/linkedlist.png)
 
 > In order to avoid the linear cost of insertion and deletion, we need to ensure that the list is not stored contiguously. By using this kind of list, we can make the cost of insertion and deletion be O(1).
 The linked list consists of a series of structures, which are not necessarily adjacent in memory.
-
-<!-- more -->
 
 Each node contains the element and a pointer points to the next node, we call it Next pointer, And the last node's Next pointer points to NULL. And ANSI C specifies that NULL is zero.
 
 In my version, I put a head node to save the length of the linked list.
 
-![With Head Node](https://i.loli.net/2019/01/21/5c450dedd519d.png)
+![With Head Node](https://sherlockblaze.com/resources/img/cs/linkedlist/linkedlist_with_head_node.png)
 
 Now we can see the operations of LinkedList.
 
@@ -32,7 +30,7 @@ Now we can see the operations of LinkedList.
 
 <h5 id="linkedlist_insert">Insert</h5>
 
-![Insert Step1](https://i.loli.net/2019/01/21/5c450dedc904d.png)
+![Insert Step1](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_step1.png)
 
 It's the first step of the insert operation.
 
@@ -40,13 +38,13 @@ As we can see, we got Node A, B, C, and the C is the newest node we wanna insert
 
 second step, we let the A's Next pointer points to our new node C.
 
-![Insert Step2](https://i.loli.net/2019/01/21/5c450dedd05af.png)
+![Insert Step2](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_step2.png)
 
 Finally, we finished it.
 
 ***Insert Successed!!***
 
-![Insert Successed](https://i.loli.net/2019/01/21/5c450dedd2ab6.png)
+![Insert Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_successed.png)
 
 <h5 id="linkedlist_delete">Delete</h5>
 
@@ -54,15 +52,15 @@ We'll show two steps of delete operation.
 
 First step, we let the node A's Next pointer equals the Next pointer of node C.
 
-![Delete Step1](https://i.loli.net/2019/01/21/5c450dedc4676.png)
+![Delete Step1](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_step1.png)
 
 Second step, because we just get one Next pointer for each node, so, it just make no pointer points to node C.
 
-![Delete Step2](https://i.loli.net/2019/01/21/5c450dedc6b16.png)
+![Delete Step2](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_step2.png)
 
 **So delete Successed!!**
 
-![Delete Successed](https://i.loli.net/2019/01/21/5c450dedcb471.png)
+![Delete Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_successed.png)
 
 <h5 id="linkedlist_conclusion">Conclusion</h5>
 
