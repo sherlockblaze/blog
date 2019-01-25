@@ -43,38 +43,38 @@ The above string is too long, let us replace it with "a b c". So it's "a b c" no
 
 First we calculate new length of the string. we got "a b c", its length is 6, we all know string in C saved like "a b c\0". The '\0' represents the end of the string. It looks like this.
 
-![Origin String](https://sherlockblaze.cn/resources/img/cs/replace_all_space/origin_string.png)
+![Origin String](https://sherlockblaze.com/resources/img/cs/replace_all_space/origin_string.png)
 
 Now We need to replace space with "%20", so the new length of the string is 10.
 
-![New String](https://sherlockblaze.cn/resources/img/cs/replace_all_space/new_string.png)
+![New String](https://sherlockblaze.com/resources/img/cs/replace_all_space/new_string.png)
 
 Then we copy the value be pointed by I to the index pointed by J one by one.
 
-![Step 1](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step1.png)
+![Step 1](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step1.png)
 
-![Step 2](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step2.png)
+![Step 2](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step2.png)
 
 Here is a little different when our pointer I encounters a space.
 
-![Step 3](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step3.png)
-![Step 4](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step4.png)
+![Step 3](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step3.png)
+![Step 4](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step4.png)
 
 We Insert "%20" one by one in reverse order.
 
-![Step 5](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step5.png)
+![Step 5](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step5.png)
 
 When it finished, pointer I move forward for next value.
 
-![Step 6](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step6.png)
+![Step 6](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step6.png)
 
-![Step 7](https://sherlockblaze.cn/resources/img/cs/replace_all_space/replace_step7.png)
+![Step 7](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step7.png)
 
 And findlly we achieve our goal.
 
 ##### Code
 
-We use our own [ArrayList](https://sherlockblaze.cn/2019/01/21/computer_science/data_structures/ArrayList/) to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
+We use our own [ArrayList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/ArrayList/) to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
 
 See more by reading the code(View All Code About Notes [Here](https://github.com/sherlockblaze/all_knowledge_review)):
 

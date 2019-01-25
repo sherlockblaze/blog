@@ -26,7 +26,7 @@ Explanation: 342 + 465 = 807
 
 ##### Code
 
-> Now we can use our data structures to solve some algorithms problems, view [LinkedList](https://sherlockblaze.cn/2019/01/21/computer_science/data_structures/LinkedList/). This one is the first. Here's code(View All Code About Notes [Here](https://github.com/sherlockblaze/all_knowledge_review)):
+> Now we can use our data structures to solve some algorithms problems, view [LinkedList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/LinkedList/). This one is the first. Here's code(View All Code About Notes [Here](https://github.com/sherlockblaze/all_knowledge_review)):
 
 ```c
 #include "../../data_structures/lists/linkedlist.h"

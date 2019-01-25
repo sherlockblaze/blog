@@ -14,7 +14,7 @@ Still from books. **The basic operations on a queue are _Enqueue_, which inserts
 
 It's look like this:
 
-![Queue](https://sherlockblaze.cn/resources/img/cs/queue/queue.png)
+![Queue](https://sherlockblaze.com/resources/img/cs/queue/queue.png)
 
 #### Operations
 
