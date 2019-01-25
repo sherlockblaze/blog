@@ -24,23 +24,23 @@ We do like this:
 
 We got a list and a stack.
 
-![Step1](https://sherlockblaze.com/resources/img/cs/reverse_print_list/step1.png)
+![Step1](https://sherlockblaze.cn/resources/img/cs/reverse_print_list/step1.png)
 
 We push the values of list into the stack one by one.
 
-![Step2](https://sherlockblaze.com/resources/img/cs/reverse_print_list/step2.png)
+![Step2](https://sherlockblaze.cn/resources/img/cs/reverse_print_list/step2.png)
 
 And we already know about how stack works. If you don't know about it clearly, go [here](../../../data_structures/doc/lists/Stack.md#Stack) to read more.
 
-![Step3](https://sherlockblaze.com/resources/img/cs/reverse_print_list/step3.png)
+![Step3](https://sherlockblaze.cn/resources/img/cs/reverse_print_list/step3.png)
 
 At the last, we can get result by popping the elements from the stack.
 
-![Step4](https://sherlockblaze.com/resources/img/cs/reverse_print_list/step4.png)
+![Step4](https://sherlockblaze.cn/resources/img/cs/reverse_print_list/step4.png)
 
 #### Code
 
-We use the [linkedlist](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/LinkedList/) and [stack](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/Stack/) implemented before to implement it. Just read the code:
+We use the [linkedlist](https://sherlockblaze.cn/2019/01/21/computer_science/data_structures/LinkedList/) and [stack](https://sherlockblaze.cn/2019/01/21/computer_science/data_structures/Stack/) implemented before to implement it. Just read the code:
 
 ```c
 Waiting...
