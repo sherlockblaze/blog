@@ -168,4 +168,4 @@ def main():
 main()
 ```
 
-> 比如我输入网址 http://www.game2.cn/，在输入目的文件：game2.txt。即可进行下载并把对应html输入到当前工作目录的game2.txt文件中。
+> 比如我输入网址 `http://www.game2.cn/`，在输入目的文件：game2.txt。即可进行下载并把对应html输入到当前工作目录的game2.txt文件中。
