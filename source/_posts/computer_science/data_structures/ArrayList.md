@@ -2,6 +2,7 @@
 title: ArrayList
 tags: Data Structures
 date: 2019-01-21
+catalog: true
 ---
 
 ### ArrayList
