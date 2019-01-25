@@ -59,7 +59,7 @@ ga_domain: yoursite
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
-sidebar-about-description: "Keep Clean, Keep Simple. e-mail: sherlockblaze@gmail.com"
+sidebar-about-description: "Keep Clean, Keep Simple.        e-mail: sherlockblaze@gmail.com"
 sidebar-avatar: resources/img/header_img/DogFace.jpg
 widgets:
 - featured-tags
