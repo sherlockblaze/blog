@@ -177,8 +177,9 @@ sitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository:
-    __GIT_KIND__: __GIT_REPO__
+  repositoryo:
+    github: https://__GITHUB_TOKEN__@github.com/sherlockblaze/sherlockblaze.github.io.git
+    coding: https://Rbnke:__CODING_TOKEN__@git.dev.tencent.com/Rbnke/rbnke.coding.me.git
   branch: master
 
 valine: true
