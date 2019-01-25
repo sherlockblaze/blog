@@ -78,7 +78,7 @@ Then we just do like this. ```L->Size -= 1```. Finished. Easy too, but it's cost
 ![Delete Step2](https://sherlockblaze.com/resources/img/cs/arraylist/delete_step2.png)
 
 **Delete Successed!!!**
-![Delete Successed](https://sherlockblaze.com/resources/img/cs/arraylist/delete_successed/png)
+![Delete Successed](https://sherlockblaze.com/resources/img/cs/arraylist/delete_successed.png)
 
 <h5 id="arraylist_conclusion">Conclusion</h5>
 
