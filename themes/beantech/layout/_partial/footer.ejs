@@ -155,7 +155,17 @@
 
 <!-- Google Analytics -->
 
-<% if (config.ga_track_id) { %>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133187385-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133187385-1');
+</script>
+
+<!--<% if (config.ga_track_id) { %>
 <script>
     // dynamic User by Hux
     var _gaId = '<%= config.ga_track_id %>';
@@ -171,7 +181,7 @@
     ga('send', 'pageview');
 </script>
 
-<% } %>
+<% } %> -->
 
 
 <!-- Baidu Tongji -->
