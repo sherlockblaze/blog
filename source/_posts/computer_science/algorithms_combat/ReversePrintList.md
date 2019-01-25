@@ -10,14 +10,14 @@ date: 2019-01-24
 ### Reverse Print List
 
 - [Question](#Question)
-- [Though](#Though)
+- [Though](#Thought)
 - [Code](#Code)
 
 #### Question
 
 There is a single linkedlist that prints out the values of each node from end to head.
 
-#### Though
+#### Thought
 
 I don't think it's a difficult problem, we just need use a stack, store the values and print them.
 We do like this:

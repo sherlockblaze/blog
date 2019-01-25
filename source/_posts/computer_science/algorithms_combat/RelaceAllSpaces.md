@@ -10,7 +10,7 @@ date: 2019-01-24
 ### Replace All Spaces
 
 - [Question](#Question)
-- [Though](#Though)
+- [Though](#Thought)
 - [Code](#Code)
 
 ##### Question
@@ -21,7 +21,7 @@ For example:
 **Input**: "Sherlock Blaze is the most handsome boy in this world"
 **Output**: "Sherlock%20Blaze%20is%20the%20most%20handsome%20boy%20in%20this%20world"
 
-##### Though
+##### Thought
 
 Directly, the problem is very simple, if we encounter a space, delete it, and insert "%20" in its place. Like this:
 
