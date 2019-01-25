@@ -108,5 +108,6 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 ## More
 
 If you have something interesting to learn, let me know at the comments, let's fight together.
+And if you like the theme. Look out at [here](https://github.com/sherlockblaze/hexo-theme-new_BeanTech_theme).
 
 THANKS.
