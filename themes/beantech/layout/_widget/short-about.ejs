@@ -7,8 +7,11 @@
             <img id = "avatar_pic" src="<%= config['root'] %><%= config['sidebar-avatar'] %>" />
         <% } %>
 
-        <% if(config['sidebar-about-description']) { %>
-            <p><%= config['sidebar-about-description'] %></p>
+        <% if(config['sidebar-about-description-line1']) { %>
+            <p><%= config['sidebar-about-description-line1'] %></p>
+        <% }%>
+        <% if(config['sidebar-about-description-line2']) { %>
+            <p><%= config['sidebar-about-description-line2'] %></p>
         <% }%>
 
         <!-- SNS Link -->
