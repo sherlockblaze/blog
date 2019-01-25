@@ -30,11 +30,11 @@ signature-img:
 # SNS settings
 # RSS: false
 # weibo_username:     Demonbaneen
-# zhihu_username:     Demonbane
+zhihu_username: Anakin Skywalker
 github_username:    sherlockblaze
 # twitter_username:   Demonbane_x
 # facebook_username:  YenYuHsuan
-# linkedin_username:  yu-hsuan-yen
+linkedin_username: Jam Blaze
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
