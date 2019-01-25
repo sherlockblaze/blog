@@ -22,6 +22,7 @@ before_script:
 - sed -i "s/__DISQUS_ID__/${__DISQUS_ID__}/" _config.yml
 - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
 - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
+- sed -i "s/__UA_TRACK_ID__/${__UA_TRACK_ID__}/" _config.yml
 
 script: npm run build
 
