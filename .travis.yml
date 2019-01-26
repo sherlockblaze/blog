@@ -23,11 +23,13 @@ before_script:
 - sed -i "s/__UA_TRACK_ID__/${__UA_TRACK_ID__}/" _config.yml
 
 script:
-- mv _post_en ./source/_post
+  npm run build
+
+after_script:
 - cp _config.yml _config.yml.bak
 - sed -i "s|__GIT_KIND__|github|" _config.yml
 - sed -i "s|__GIT_REPO__|${__GITHUB_REPO__}|" _config.yml
-- hexo clean && hexo generate && hexo deploy
+- ls -l
 - hexo deploy
 - rm -rf ./source/_post
 - rm _config.yml
@@ -35,4 +37,5 @@ script:
 - mv _post_cn ./source/_post
 - sed -i "s|__GIT_KIND__|coding" _config.yml
 - sed -i "s|__GIT_REPO__|${__CODING_REPO__}|" _config.yml
+- hexo -l
 - hexo clean && hexo generate && hexo deploy
