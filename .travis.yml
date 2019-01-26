@@ -31,7 +31,7 @@ after_script:
 - sed -i "s|__GIT_REPO__|${__GITHUB_REPO__}|" _config.yml
 - ls -l
 - hexo deploy
-- rm -rf ./source/_post
+- rm -rf ./source/_posts
 - rm _config.yml
 - mv _config.yml.bak _config.yml
 - mv _posts_cn ./source/_posts
