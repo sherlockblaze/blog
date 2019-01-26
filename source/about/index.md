@@ -18,6 +18,7 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 
 ## Contents
 - [Environment](#Environment)
+- [Code](#Code)
 - [Knowledge](#Knowledge)
     - [Math](#Math)
     - [English Words](#English-Words)

@@ -33,6 +33,8 @@ after_script:
 - hexo deploy
 - rm -rf ./source/_posts
 - rm _config.yml
+- rm source/about/index.md
+- mv _posts_cn ./source/about
 - mv _config.yml.bak _config.yml
 - mv _posts_cn ./source/_posts
 - sed -i "s|__GIT_KIND__|coding" _config.yml
