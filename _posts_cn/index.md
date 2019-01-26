@@ -25,7 +25,7 @@ comments: true
     - [深度学习](#深度学习)
 - [更多](#更多)
 
-## Environment
+## 环境
 
 1. C11
 2. C++11
