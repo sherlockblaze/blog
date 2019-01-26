@@ -27,35 +27,12 @@ signature: false #show signature
 signature-img:
 
 
-# SNS settings
-# RSS: false
-# weibo_username:     Demonbaneen
 github_username: sherlockblaze
-# twitter_username:   Demonbane_x
-# facebook_username:  YenYuHsuan
 linkedin_username: jam-blaze-606ab3163
 zhihu_username: sherlockblaze_007
 
 # Build settings
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
-# Disqus settings
-#disqus_username: false
-
-# Duoshuo settings
-# duoshuo_username: kaijun
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
-
-
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-# ga_track_id: __UA_TRACK_ID__
-# ga_domain: https://sherlockblaze.com
-
 
 # Sidebar settings
 sidebar: true                       # whether or not using Sidebar.
@@ -90,11 +67,6 @@ friends: [
         href: "https://beautycatty.com/"
     }
 ]
-
-
-#Custom Setting End
-
-
 
 # Directory
 source_dir: source
@@ -152,20 +124,6 @@ archive_generator:
   monthly: true
   daily: false
   
-# Markdown-it config
-## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
-# markdown:
-#   render:
-#     html: true
-#     xhtmlOut: false
-#     breaks: true
-#     linkify: true
-#     typographer: true
-#     quotes: '“”‘’'
-  
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: beantech
 
 #sitemap
