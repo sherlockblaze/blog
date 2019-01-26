@@ -179,8 +179,7 @@ sitemap:
 deploy:
   type: git
   repository:
-    github: https://__GITHUB_TOKEN__@github.com/sherlockblaze/sherlockblaze.github.io.git
-    coding: https://Rbnke:__CODING_TOKEN__@git.dev.tencent.com/Rbnke/rbnke.coding.me.git
+    __GIT_KIND__: __GIT_REPO__
   branch: master
 
 valine: true
