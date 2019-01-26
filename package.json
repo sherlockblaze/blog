@@ -21,7 +21,7 @@
     "hexo-server": "^0.2.0",
     "ejs": "2.5.5"
   },
-  "scripts": {
-    "build": "hexo clean && hexo generate"
-  }
+  // "scripts": {
+  //   "build": "hexo clean && hexo generate"
+  // }
 }
