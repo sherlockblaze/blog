@@ -23,6 +23,9 @@ before_script:
 - sed -i "s/__UA_TRACK_ID__/${__UA_TRACK_ID__}/" _config.yml
 
 script: 
+  # do nothing
+
+after_script:
 - mv _post_en ./source/_post
 - cp _config.yml _config.yml.bak
 - sed -i "s|__GIT_KIND__|github|" _config.yml
