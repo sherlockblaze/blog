@@ -1,6 +1,3 @@
----
-layout: page
----
 <style type="text/css">
     header.intro-header{
         background-position: right; 
@@ -10,3 +7,15 @@ layout: page
 <div class="zh post-container">
     <%- page.content %>
 </div>
+
+<!-- Table of Contents -->
+<aside id="sidebar">
+  <div id="toc" class="toc-article">
+    <strong class="toc-title"><%= __('Contents') %></strong>
+    <% if (toc(page.content) != ""){ %>
+      <%- toc(page.content, { "class": "toc-nav" }) %>
+    <% } else { %>
+      <ol class="nav"><%= __('none') %></ol>
+    <% } %>
+  </div>
+</aside>
