@@ -40,7 +40,8 @@ First step, we should move all the values between index 2 and the end of array o
 
 ![Insert Step1](https://sherlockblaze.com/resources/img/cs/arraylist/insert_step1.png)
 
-Second step, we just need to do like this. ```array[2] = 9```
+Second step, we just need to do like this. `array[2] = 9`
+
 ![Insert Step2](https://sherlockblaze.com/resources/img/cs/arraylist/insert_step2.png)
 
 It's finished. Pretty Easy. And it costs O(n). Don't forget to change the value of **Size**, it's supposed to plus one after doing this.
@@ -51,7 +52,7 @@ It's finished. Pretty Easy. And it costs O(n). Don't forget to change the value 
 
 Here is the answer.
 
-First step, we get a new capacity called NewCapacity, and ```NewCapacity = OldCapacity / 2 * 3 + OldCapacity``` in my version, you can modify it to your perferred value. Then we get a new array with capacity **NewCapacity**.
+First step, we get a new capacity called NewCapacity, and `NewCapacity = OldCapacity / 2 * 3 + OldCapacity` in my version, you can modify it to your perferred value. Then we get a new array with capacity **NewCapacity**.
 
 ![Insert Without Enough Room Step1](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_room_step1.png)
 
@@ -128,17 +129,18 @@ IncreaseCapacity(List L)
 
 ##### Delete
 
-Then let's talk about deletion of arraylist. Same with insert at the tail, if you wanna delete the value at the tail, it's will be easy too, we just let the **Size** be smaller like this. ```L->Size -= 1```. But if you wanna do more?? We should be like this.
+Then let's talk about deletion of arraylist. Same with insert at the tail, if you wanna delete the value at the tail, it's will be easy too, we just let the **Size** be smaller like this. `L->Size -= 1`. But if you wanna do more?? We should be like this.
 
 First Step. Move all the values between index 2 and the end of array one step forward, like this.
 
 ![Delete Step1](https://sherlockblaze.com/resources/img/cs/arraylist/delete_step1.png)
 
-Then we just do like this. ```L->Size -= 1```. Finished. Easy too, but it's cost O(n) too;
+Then we just do like this. `L->Size -= 1`. Finished. Easy too, but it's cost O(n) too;
 
 ![Delete Step2](https://sherlockblaze.com/resources/img/cs/arraylist/delete_step2.png)
 
 **Delete Successed!!!**
+
 ![Delete Successed](https://sherlockblaze.com/resources/img/cs/arraylist/delete_successed.png)
 
 We also take a look at the deletion code too.
