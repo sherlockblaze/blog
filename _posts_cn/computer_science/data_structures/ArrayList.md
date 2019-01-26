@@ -1,8 +1,7 @@
 ---
 title: ArrayList
-tags: Data Structures
+tags: 数据结构
 date: 2019-01-21
-catalog: true
 ---
 
 ### ArrayList
@@ -62,7 +61,7 @@ catalog: true
 
 然后我们就可以向往有足够容量的 ArrayList 里插入元素一样进行插入操作了
 
-![Insert Without Enough Room Step3](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_root_step3.png)
+![Insert Without Enough Room Step3](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_room_step3.png)
 
 ![Insert Without Enough Room Success](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_room_successed.png)
 

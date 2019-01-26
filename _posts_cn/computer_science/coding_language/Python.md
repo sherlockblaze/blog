@@ -2,8 +2,8 @@
 title: Python3文件的简单操作！
 tags:
   - Python
-  - Programming Language
-  - Programming
+  - 编程语言
+  - 编程
 date: 2017-06-17 11:40:49
 ---
 

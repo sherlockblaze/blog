@@ -62,7 +62,7 @@ Second step we copy the elements of the old array to the new array in order.
 
 Then we can do like inserting with enough room.
 
-![Insert Without Enough Room Step3](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_root_step3.png)
+![Insert Without Enough Room Step3](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_room_step3.png)
 
 ![Insert Without Enough Room Success](https://sherlockblaze.com/resources/img/cs/arraylist/insert_without_enough_room_successed.png)
 
