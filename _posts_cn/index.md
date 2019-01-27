@@ -101,6 +101,7 @@ comments: true
 如果你有什么有意思的东西推荐，辛苦在这个页面里留评论让我知道，让我们一起战斗！！
 另外，如果你喜欢本博客的主题。 点击[这里](https://github.com/sherlockblaze/hexo-theme-new_BeanTech_theme)查看。
 为了我们中文用户的方便，特地让国内访客们仅看到中文内容，如好奇英文页面可使用科学上网方式浏览。通常，英文内容会更新的更快一些，因为英文是消耗时间比较多的部分，并且为了锻炼业务能力，选择优先提供，特别的是，英文版本会有**更加丰富**的内容。
+如果你想讨论一些不在博客内容里的有趣事，请到[交流社区](https://sherlockblaze.com/community/)。
 
 **WARNING: My English is Really POOR!!!**
 

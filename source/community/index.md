@@ -5,4 +5,4 @@ layout: "community"
 description:
 ---
 
-**Let's take more about something interesting you want to talk.**
+**Let's take more about something interesting you want to talk that not in my blog now.**
