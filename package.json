@@ -6,6 +6,7 @@
     "version": "3.8.0"
   },
   "dependencies": {
+    "ejs": "2.5.5",
     "eslint": "^4.12.1",
     "hexo": "^3.7.0",
     "hexo-deployer-git": "^1.0.0",
@@ -15,13 +16,13 @@
     "hexo-generator-search": "^2.4.0",
     "hexo-generator-seo-friendly-sitemap": "0.0.22",
     "hexo-generator-tag": "^0.2.0",
+    "hexo-recommended-posts": "^1.0.3",
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
-    "ejs": "2.5.5"
+    "hexo-server": "^0.2.0"
   },
   "scripts": {
-    "build": "hexo clean && hexo generate"
+    "build": "hexo recommend && hexo clean && hexo generate"
   }
 }

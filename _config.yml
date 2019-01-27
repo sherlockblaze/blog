@@ -47,6 +47,14 @@ widgets:
 - archive
 #- category
 
+recommended_posts:
+  server: https://api.truelaurel.com
+  timeoutInMillis: 10000
+  internalLinks: 3
+  externalLinks: 0
+  autoDisplay: true,
+  titleHtml: <span style="font-size:1.45em; color:gray">Recommened</span>
+
 # widget behavior
 ## Archive
 archive_type: 'monthly'
