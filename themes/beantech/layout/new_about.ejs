@@ -53,10 +53,8 @@ layout: layout
 
                 <% if(page.comments) { %>
                     <hr>
-                    <% if(config['valine']) { %>
                     <div class="comments" id="comments">
                     </div>
-                    <% } %>
 
                     <%- css('css/valine.css') %>
                     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
@@ -75,6 +73,7 @@ layout: layout
                         appId: '<%= config['valineAppId'] %>',
                         appKey: '<%= config['valineAppKey'] %>',
                         placeholder: '<%=config['valinePlaceHolder'] %>',
+                        visitor: true,
                         avatar: '<%= config['valineAvatar'] %>',
                         guest_info: guest,
                         pageSize: '<%= config['valinePageSize'] %>' || 10,
