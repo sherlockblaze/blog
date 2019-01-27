@@ -24,10 +24,6 @@ layout: layout
                             <a href="<%- config.root %><%- page.prev.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.prev.title %>">&larr; Previous Post</a>
                         </li>
                     <% } %>
-                    <span id="<% page.path %>" class="leancloud-visitors" data-flag-title="<% page.title %>">
-                        <em class="post-meta-item-text">Read </em>
-                        <i class="leancloud-visitors-count"></i> times
-                    </span>
                     <% if (page.next){ %>
                         <li class="next">
                             <a href="<%- config.root %><%- page.next.path %>" data-toggle="tooltip" data-placement="top" title="<%- page.next.title %>">Next Post &rarr;</a>
