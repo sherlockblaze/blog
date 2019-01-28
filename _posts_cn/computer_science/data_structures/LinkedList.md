@@ -3,52 +3,53 @@ title: LinkedList
 tags: Data Structures
 date: 2019-01-21
 ---
+
 ### LinkedList
 
-- [Operations](#Operations)
-- [Conclusion](#Conclusion)
+- [操作](#操作)
+- [总结](#总结)
 
-Here is the linked list. It looks like this.
+LinkedList(链表) 看起来大概是这样：
 
 ![LinkedList](https://sherlockblaze.com/resources/img/cs/linkedlist/linkedlist.png)
 
-> In order to avoid the linear cost of insertion and deletion, we need to ensure that the list is not stored contiguously. By using this kind of list, we can make the cost of insertion and deletion be O(1).
-The linked list consists of a series of structures, which are not necessarily adjacent in memory.
+> 为了避免插入/删除操作造成的线性消耗，我们需要确保一个线性表中的元素不是连续存储的。通过使用这种类型的线性表 -- 链表，我们可以让插入和删除操作的时间复杂度变为 O(1)。
+链表由一系列在内存中不一定相邻的结构组成。
 
-Each node contains the element and a pointer points to the next node, we call it Next pointer, And the last node's Next pointer points to NULL. And ANSI C specifies that NULL is zero.
+这篇文章里，我们主要讨论单链表。单链表中，每个节点存放了两个值：元素值 & 一个指针(以下称为 NEXT)，元素值主要存放目标存入到链表中的值，指针则主要用于指向下一个相邻的节点。并且最后一个节点的 NEXT 值为 NULL。在 ANSI C 中，我们认为 NULL 就是 0。
 
-In my version, I put a head node to save the length of the linked list.
+在我的代码中，我放置了一个头节点，里面存放了当前链表的长度，也就是已存放的元素的个数。
 
 ![With Head Node](https://sherlockblaze.com/resources/img/cs/linkedlist/linkedlist_with_head_node.png)
 
-Now we can see the operations of LinkedList.
+现在我们看一下链表基本的操作。
 
-#### Operations
+#### 操作
 
-- [Insert](#Insert)
-- [Delete](#Delete)
+- [插入](#插入)
+- [删除](#删除)
 
-##### Insert
+##### 插入
 
 ![Insert Step1](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_step1.png)
 
-It's the first step of the insert operation.
+以下是我们插入操作的第一步。
 
-As we can see, we got Node A, B, C, and the C is the newest node we wanna insert into this list. First we make the Next pointer of C equals Next pointer of A, then the C node's Next Pointer points to node B.
+正如我们看到的，我们有A, B, C 三个节点，其中 C 节点上我们计划插入的新节点。首先我们让 C 的 Next 值等于 A 的 Next值，这样我们把 C 和 B 连接起来了。
 
-second step, we let the A's Next pointer points to our new node C.
+第二步，我们让 A 的 NEXT 指针指向我们的新节点 C。
 
 ![Insert Step2](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_step2.png)
 
-Finally, we finished it.
+最后，完成！
 
-***Insert Successed!!***
+***插入成功!!***
 
 ![Insert Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_successed.png)
 
-Let's take a look at the code.
+简单看一下代码。
 
-+ Insert at the tail
++ 在最后插入元素
 
 ```cpp
 // Insert a value after all elements
@@ -74,7 +75,7 @@ Insert(List L, ElementType value)
 }
 ```
 
-+ Insert at given index
++ 在指定位置插入
 
 ```cpp
 // Insert a Value at the index you give
@@ -112,23 +113,25 @@ InsertAt(List L, int index, ElementType value)
 }
 ```
 
-##### Delete
+##### 删除
 
-We'll show two steps of delete operation.
+接下来，我们展示删除操作的步骤。
 
-First step, we let the node A's Next pointer equals the Next pointer of node C.
+第一步，我们让 A 的 NEXT 值等于节点 C 的 NEXT 值。
 
 ![Delete Step1](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_step1.png)
 
-Because we just get one Next pointer for each node, so, it just make no pointer points to node C.
+因为我们只有一个 NEXT 值，所以就么有任何指针指向 C 节点，C 节点就成为了无法访问的节点了。
 
 ![Delete Step2](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_step2.png)
 
-**So delete Successed!!**
+**至此，删除成功！**
 
 ![Delete Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_successed.png)
 
-+ Delete at the tail
+同样简单看一下代码：
+
++ 在末尾删除
 
 ```cpp
 // Delete the last node of list L
@@ -157,7 +160,7 @@ Delete(List L)
 }
 ```
 
-+ Delete at the given index
++ 在指定位置删除
 
 ```cpp
 // Delete the node at the index you give
@@ -187,7 +190,8 @@ DeleteAt(List L, int index)
 }
 ```
 
-#### Conclusion
+#### 总结
 
-We know that if you just calculate the cost of insertion or deletion, you'll find T(n) = O(1).
-But you know if we wanna insert or delete a value with speicify index, it'll cost O(n) in whole operation. But the cost of insertion or deletion still is O(1). Here, we just talk aboult the cost of insertion or deleteion.
+我们知道如果单纯计算插入和删除操作的时间复杂度，那么 T(n) = O(1)。
+但是如果你想计算在某个位置插入或删除某个元素的整个操作过程，那么它的时间复杂度是 O(n)。
+但是单纯的插入和删除操作的时间复杂度仍然是O(1)。这里我们仅仅讨论插入和删除操作的时间复杂度。
