@@ -17,16 +17,14 @@ notifications:
 before_script:
 - git config --global user.name "sherlockblaze"
 - git config --global user.email "sherlockblaze@gmail.com"
-- sed -i "s/__DISQUS_ID__/${__DISQUS_ID__}/" _config.yml
+- cp _config.yml _config.yml.bak
 - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
 - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
-- sed -i "s/__UA_TRACK_ID__/${__UA_TRACK_ID__}/" _config.yml
 
 script:
   npm run build
 
 after_script:
-- cp _config.yml _config.yml.bak
 - sed -i "s|__GIT_KIND__|github|" _config.yml
 - sed -i "s|__GIT_REPO__|${__GITHUB_REPO__}|" _config.yml
 - hexo deploy
@@ -40,4 +38,6 @@ after_script:
 - mv _posts_cn ./source/_posts
 - sed -i "s|__GIT_KIND__|coding" _config.yml
 - sed -i "s|__GIT_REPO__|${__CODING_REPO__}|" _config.yml
+- sed -i "s/__VISTORS_APPID__/${__VALINE_APPID_EN__}/" _config.yml
+- sed -i "s/__VISTORS_APPKEY__/${__VALINE_APPKEY_EN__}/" _config.yml
 - hexo recommend && hexo clean && hexo generate && hexo deploy
