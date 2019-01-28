@@ -1,5 +1,5 @@
 ---
-title: Python3文件的简单操作！
+title: Python3 简单文件操作
 tags:
   - Python
   - 编程语言
