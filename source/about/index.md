@@ -49,11 +49,11 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 > ***The following content is not the whole content, continues to supplement***
 
 - [x] List
-    - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/LinkedList/)
-    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/DoublyLinkedList/)
-    - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/ArrayList/)
-    - [x] [Stack](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/Stack/)
-    - [x] [Queue](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/Queue/)
+    - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/cs/ds/LinkedList/)
+    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/cs/ds/DoublyLinkedList/)
+    - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/cs/ds/ArrayList/)
+    - [x] [Stack](https://sherlockblaze.com/2019/01/21/cs/ds/Stack/)
+    - [x] [Queue](https://sherlockblaze.com/2019/01/21/cs/ds/Queue/)
 - [ ] Trees
     - [ ] Binary Trees
     - [ ] Search Tree - Binary Search Tree

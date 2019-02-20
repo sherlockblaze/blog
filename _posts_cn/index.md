@@ -51,7 +51,7 @@ comments: true
 - [ ] 线性表
     - [ ] 单链表
     - [ ] 双链表
-    - [ ] [数组列表](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/)
+    - [ ] [数组列表](https://sherlockblaze.com/2019/01/21/cs/ds/ArrayList/)
     - [ ] 栈
     - [ ] 队列
 - [ ] 树
