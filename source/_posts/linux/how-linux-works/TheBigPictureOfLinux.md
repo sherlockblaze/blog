@@ -1,5 +1,5 @@
 ---
-title: How Linux Works(Capter One): The Big Picture of Linux
+title: How Linux Works(Chapter One)--The Big Picture of Linux
 tags:
   - How Linux Works
   - Linux
