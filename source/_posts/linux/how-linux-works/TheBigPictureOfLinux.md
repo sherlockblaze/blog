@@ -136,6 +136,24 @@ However, the above picture is only an approximation of the arrangement of user s
 
 In addition, it’s difficult to categorize some user-space components. Server components such as web and database servers can be considered very high-level applications because their tasks are often complicated, so you might place these at the top level in the above picture. However, user applications may depend on these servers to perform tasks that they’d rather not do themselves, so you could also make a case for placing them at the middle level.
 
+### Users
+
+The Linux kernel supports the traditional concept of a Unix user. A ***user*** is an entity that can run processes and own files. A user is associated with a ***username***. 
+
+**The kernel does not manage the usernames, instead, it identifies users by simple numeric identifiers called `userids`**
+
+**Users exist primarily to support permissions and boundaries.** Every user-space process has a user ***owner***, and processes are said to run as the owner. A user may terminate or modify the behavior of its own processes(within certain limits), but it cannot interfere with other users' processes. In addition, users may own files and choose whether they share them with other users.
+
+The most important user to know about is ***root***. The root user is an exception to the preceding rules because root may terminate and alter another user's processes and read any file on the local system. FOr this reason, root is known as the **superuser**. A person who can operate as root is said to have root access and is an administrator on a traditional Unix system.
+
+**Groups** are sets of users. The primary purpose of groups is to allow a user to share file access to other users in a group.
+
+> Operating as root can be dangerous. It can be difficult to identify and correct mistakes because the system will let you do anything, even if what you're doing is harmful to the system. For this reason, system designers constantly try to make root access as unnecessary as possible, for example, by not requiring root access to switch between wireless networks on a notebook. In addition, as powerful as the root user is, it still runs in the operating system's user mode, not kernel mode.
+
+### Conclusion
+
+User processes make up the envirnoment that you directly interact with, the kernel manages processes and hardware. Both the kernel and processes reside in memory.
+
 ### Recommended Reading
 
 - Operating System Concepts, 9th edition, by Abraham Silberschatz, Peter B. Galvin, and Greg Gagne (Wiley, 2012)
