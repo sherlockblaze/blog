@@ -40,4 +40,4 @@ after_script:
 - sed -i "s|__GIT_REPO__|${__CODING_REPO__}|" _config.yml
 - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
 - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
-- hexo clean && hexo recommend && hexo generate && hexo deploy
+- hexo recommend && hexo clean && hexo generate && hexo deploy
