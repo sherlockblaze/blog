@@ -1,5 +1,5 @@
 ---
-title: How Linux Works(Chapter Two)--Basic Commands And Directory Hierarchy(Part One)
+title: How Linux Works(Chapter Two)--Basic Commands(Part One)
 tags:
   - How Linux Works
   - Linux
@@ -7,7 +7,7 @@ tags:
 date: 2019-02-28
 ---
 
-## Basic Commands And Directory Hierarchy(Part One)
+## Basic Commands(Part One)
 
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
