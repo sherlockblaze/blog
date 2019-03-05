@@ -222,3 +222,11 @@ The `realloc` function lets us **change the size of a previously allocated area.
 The allocation routines are usually implemented with the `sbrk(2)` system call. This system call expands(or contracts) the heap of the process.
 
 Although `sbrk` can expand or contract the memory of a process, most versions of `malloc` and `free` never decrease their memory size. **The space that we free is available for a later allocation, but the freed space is not usually returned to the kernel; instead, that space is kept in the `malloc` pool.**
+
+> Most implementations allocate more space than requested and **use the additional space for record keeping** -- the size of the block, a pointer to the next allocated block, and the like. As a consequence, writing past the end or before the start of an allocated area could overwrite this record-keeping information in another block. **These types of errors are often catastrophic, but difficult to find, because the error may not show up until much later.**
+
+> Writing past the end or before the begining of a dynamically allocated buffer can corrupt more than internal record-keeping information. The memory before and after a dynamically allocated buffer can potentially be used for other dynamically allocated objects. These objects can be unrelated to the code corrupting them, making it even more difficult to find the source of the corruption.
+
+> Other possible errors that can be fatal are freeing a block that was already freed and calling `free` with a pointer that was not obtained from one of the three `alloc` functions. If a process calls `malloc` but forgets to call `free`, its memory usage will continually increase; this is called leakage. If we do not call `free` to return unused space, the size of a process's address space will slowly increase until no free space is left. During this time, performance can degrade from excess paging overhead.
+
+> Because memory allocation errors are difficult to track down, some system provide versions of these functions that do additional error checking every time one of the three `alloc` functions or `free` is called. **These version of the functions are often specified by including a special library for the link editor.**
