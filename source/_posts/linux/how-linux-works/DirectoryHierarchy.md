@@ -27,6 +27,33 @@ Here are the most important subdirectories in `root`:
 - `/proc` Provides  system statistis through a browsable directory-and-file interface. Much of the `/proc` subdirectory structure on Linux is unique, but many other Unix variants have similar features. The `/proc` directory contains information about currently running processes as well as some kernel parameters.
 - `/sys` This directory is similar to `/proc` in that it provides a device and system interface.
 - `/sbin` The place for system executables. Programs in `/sbin` directories relate to system management, so regular users usually do not have `/sbin` components in their command paths. Many of the utilities found here will not work if you're not running them as root.
+- `/tmp`f A storage area for smaller, temporary files that you don't care much about. Any user may read to and write from `/tmp`, but the user may not have permission to access another user's files there. Many programs use this directory as a workspace. If something is extremely important, don't put it in `/tmp` because most distributions clear `/tmp` when then machine boots and some even remove its old files periodically. Also don't  let `/tmp` fill up with garbage because its space is usually shared with something cirtical.
+- `/usr` Although pronounced "user", this subdirectory has no user files. Instead, it contains a large directory hierarchy, including the bulk of the Linux system. Many of the directory names in `/usr` are the same as those in the root directory(like `/usr/bin` and `/usr/lib`), and they hold the same type of files.
+- `/var` The variable subdirectory, where porgrams record runtime information. System logging, user tracking, caches, and other files that system programs create and manage are here.
+
+### Other Root Subdirectories
+
+There are a few other interesting subdirectories in the boot directory:
+
+- `/boot` Contains kernel boot loader files. These files pertain only to the very first stage of Linux startup procedure;
+- `/media` A base attachment point for removeable media such as flash drives that is found in many distributions.
+- `/opt` This may contain additional third-party software. Many systems dont't use `/opt`
+
+### The `/usr` Directory
+
+The `/usr` directory may look relatively clean at first glance, but a quick look at `/usr/bin` and `/usr/lib` reveals that there's a lot here; `/usr` is where most of the user-space programs and data reside. In addition to `/usr/bin`, `/usr/sbin`, and `/usr/lib`, `/usr` contains the following:
+
+- `/include` Holds header files used by C compiler.
+- `/info` Contains GNU info manuals.
+- `/local` Is where administrators can install their own software. Its structure should look like that of `/` and `/usr`.
+- `/man` Contains manual pages.
+- `/share` Contains files that should work on other kinds of Unix machines with no loss of functionality. In the past, networks of machines would share this directory, but a true `/share` directory is becoming rare because there are no space issues on modern disk. Maintaining a `/share` directory is often just a pain. In any case, `/man` , `/info`, and some other subdirectories are often found here.
+
+### Kernel Location
+
+On Linux system, the kernel is normally in `/vmlinuz` or `/boot/vmlinuz`. A boot loader loads this file into memory and sets it in motion when the system boots.
+
+Once the boot loader runs and sets the kernel in motion, the main kernel file is no longer used by the running system. However, you'll find many modules that the kernel can load and unload on demand during the course of normal system operation. Called loadable kernel modules, they are located under `/lib/modules`.
 
 ### Recommended Reading
 
