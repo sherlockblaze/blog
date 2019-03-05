@@ -2,8 +2,7 @@
 title: Coding Under Unix -- Daemon Processes
 tags:
   - Unix
-  - Daemon Processes
-  - Deamon
+  - Processes
   - Coding Under Unix
 date: 2019-03-05
 ---
