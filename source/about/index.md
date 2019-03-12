@@ -101,9 +101,9 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 
 - [x] [The Big Picture Of Linux](https://sherlockblaze.com/2019/02/26/linux/how-linux-works/The-Big-Picture-Of-Linux)
 - [x] [Basic Commands Part one](https://sherlockblaze.com/2019/02/28/linux/how-linux-works/Basic-Commands-Part-One)
-- [x] [Basic Commands Part two](https://sherlockblaze.com/2019/03/20/linux/how-linux-works/Basic-Commands-Part-Two)
-- [x] [Directory Hierarchy Essentials](https://sherlockblaze.com/2019/03/04/how-linux-works/Directory-Hierarchy)
-- [x] [Devices](https://sherlockblaze.com/2019/03/11/how-linux-works/Devices)
+- [x] [Basic Commands Part two](https://sherlockblaze.com/2019/03/02/linux/how-linux-works/Basic-Commands-Part-Two)
+- [x] [Directory Hierarchy Essentials](https://sherlockblaze.com/2019/03/04/linux/how-linux-works/Directory-Hierarchy)
+- [x] [Devices](https://sherlockblaze.com/2019/03/11/linux/how-linux-works/Devices)
 
 ## Machine Learning
 
