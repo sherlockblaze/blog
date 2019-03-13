@@ -139,9 +139,9 @@ Then we just do like this. `L->Size -= 1`. Finished. Easy too, but it's cost O(n
 
 ![Delete Step2](https://sherlockblaze.com/resources/img/cs/arraylist/delete_step2.png)
 
-**Delete Successed!!!**
+**Delete Succeed!!!**
 
-![Delete Successed](https://sherlockblaze.com/resources/img/cs/arraylist/delete_successed.png)
+![Delete Succeed](https://sherlockblaze.com/resources/img/cs/arraylist/delete_successed.png)
 
 We also take a look at the deletion code too.
 
@@ -173,7 +173,7 @@ And we're supposed to remember the cost of insertion and deletion by using linke
 
 **Here, we just talk about the operations.**
 
-| Implemetion | Delete At Tail | Insert At Tail | Delete At | Insert At | Access At | Access Specified Value |
+| Implementation | Delete At Tail | Insert At Tail | Delete At | Insert At | Access At | Access Specified Value |
 | --- | --- | --- | --- | --- | --- | --- |
 | LinkedList | O(1) | O(1) | O(1) | O(1) | O(n) | O(n) |
 | ArrayList | O(1) | O(1) | O(n) | O(n) | O(1) | O(n) |

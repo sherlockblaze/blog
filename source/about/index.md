@@ -51,7 +51,7 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 
 - [x] List
     - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/cs/ds/LinkedList/)
-    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/cs/ds/DoublyLinkedList/)
+    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/cs/ds/Doubly-LinkedList/)
     - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/cs/ds/ArrayList/)
     - [x] [Stack](https://sherlockblaze.com/2019/01/21/cs/ds/Stack/)
     - [x] [Queue](https://sherlockblaze.com/2019/01/21/cs/ds/Queue/)
@@ -119,6 +119,6 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 
 If you have something interesting to learn, let me know at the comments, let's fight together.
 And if you like the theme. Look out at [here](https://github.com/sherlockblaze/hexo-theme-new_BeanTech_theme).
-And we can take more about something not in my notes at [Commutiy](https://sherlockblaze.com/community/).
+And we can take more about something not in my notes at [Community](https://sherlockblaze.com/community/).
 
 THANKS.

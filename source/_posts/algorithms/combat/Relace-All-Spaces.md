@@ -70,7 +70,7 @@ When it finished, pointer I move forward for next value.
 
 ![Step 7](https://sherlockblaze.com/resources/img/cs/replace_all_space/replace_step7.png)
 
-And findlly we achieve our goal.
+And finally we achieve our goal.
 
 ##### Code
 

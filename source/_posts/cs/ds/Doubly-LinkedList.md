@@ -45,7 +45,7 @@ Now we can let the Previous pointer of NewNode points to the Previous node.
 
 **And then we finished the insertion. Insert at the end of the list is similar to this.**
 
-![Insert Successed](https://sherlockblaze.com/resources/img/cs/doublylinkedlist/insert_successed.png)
+![Insert Succeed](https://sherlockblaze.com/resources/img/cs/doublylinkedlist/insert_successed.png)
 
 <h5 id="doublylinkedlist_delete">Delete</h5>
 
@@ -61,7 +61,7 @@ Then we let the Next pointer of previous node points to the next node of the Tar
 
 **Finished!! Just don't forget to free the space of TargetNode.**
 
-![Delete Successed](https://sherlockblaze.com/resources/img/cs/doublylinkedlist/delete_successed.png)
+![Delete Succeed](https://sherlockblaze.com/resources/img/cs/doublylinkedlist/delete_successed.png)
 
 <h5 id="doublylinkedlist_conclusion">Conclusion</h5>
 

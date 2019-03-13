@@ -17,7 +17,7 @@ date: 2019-01-24
 
 In a two-dimensional array, each row is arranged in increasing order from left to right, and each column is arranged in increasing order from top to bottom. Please write a function, enter a two-dimensional array of this type and an integer to determine if the array contains the integer.
 
-For example, there're a two-dimensional array.
+For example, there's a two-dimensional array.
 
 
 | 1 | 2 | 8 | 9 |
@@ -30,7 +30,7 @@ If we search for number 7, return true, because there's a number equals 7 in thi
 
 ##### Thought
 
-Let's continue talk about this problem by using the example above. Ok, because we want to know a number whether in this array or not, we should compare with the value in this array, if we get a number in the array equals to the number, it's true, or not.
+Let's continue talk about this problem by using the example above. OK, because we want to know a number whether in this array or not, we should compare with the value in this array, if we get a number in the array equals to the number, it's true, or not.
 
 Then if we start with the first value of the array, means start with arr[0][0], if the number is bigger than the arr[0][0], we'll know the if the number is in this array, it must at the **right** of arr[0][0], or in the **below** of it. But which direction we should choose to continue to compare. Maybe we can choose both, but it will be complicate. It costs too much.
 

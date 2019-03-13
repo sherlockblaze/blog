@@ -28,7 +28,7 @@ for j = 2 to A.length
 	A[i + 1] = key
 ```
 
-> Know more by reading the compelete code:
+> Know more by reading the complete code:
 
 ```c
 #ifndef _INSERT_SORT_H_

@@ -13,9 +13,9 @@ date: 2019-02-28
 
 ### The Bourne Shell
 
-The shell is one of the most important parts of a Unix system. A `shell` is a program that runs commands, like the ones that users enter. The shell also serves as a small programming environment. **Unix programmers often break common tasks into little componenets and use the shell to manage tasks and piece things together.**
+The shell is one of the most important parts of a Unix system. A `shell` is a program that runs commands, like the ones that users enter. The shell also serves as a small programming environment. **Unix programmers often break common tasks into little components and use the shell to manage tasks and piece things together.**
 
-One of the best things about the shell is that if you make a mistake, you can easily see what you typed to find out what weng wrong, and then try again.
+One of the best things about the shell is that if you make a mistake, you can easily see what you typed to find out what went wrong, and then try again.
 
 > Linux uses an enhanced version of the Bourne shell called `bash` or the "Bourne-again" shell. The `bash` shell is the default shell on most Linux distributions, and `/bin/sh` is normally a link to `bash` on a Linux system. You should use `bash` shell when running the examples I copy from the [book](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1).
 
@@ -41,7 +41,7 @@ We'll use `cat` to briefly explore Unix input and output(I/O). **Unix processes 
 
 Standard input and output are often abbreviated as `stdin` and `stdout`. Many commands operate as `cat` does; if you don't specify an input file, the command reads from `stdin`. Output is a little different. Some commands (like `cat`) send output only to stdout, but others have the option to send output directly to files.
 
-**And there is a third stadard I/O stream called standard `error`.**
+**And there is a third standard I/O stream called standard `error`.**
 
 One of the best features of standard streams is that you can easily manipulate them read and write to places other than the terminal.
 
@@ -118,7 +118,7 @@ A path component identified by two dot (..) specifies the parent of a directory.
 
 One dot(.) refers to the current directory; for example, if you're in `/usr/lib`, the path `.` is still `/usr/lib`, and `./X11` is `/usr/lib/X11`. You won't have to use `.` very often because most commands default to the current directory if a path doesn't start with `/` (you could just use `X11` instead of `./X11` in the preceding example).
 
-A path not begining with `/` is called a `relative path`. Most of the time, you'll work with relative pathnames, because you'll already be in the directory you need to be in or somewhere close by.
+A path not beginning with `/` is called a `relative path`. Most of the time, you'll work with relative pathnames, because you'll already be in the directory you need to be in or somewhere close by.
 
 #### `cd`
 

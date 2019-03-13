@@ -90,7 +90,7 @@ As you can see, the `dd` option format differs from the option formants of most 
 - **of=file** The output file. The default is the standard output.
 - **bs=size** The block size. `dd` reads and writes this many bytes of data at a time. To abbreviate large chunks of data, you can use `b` and `k` to signify 512 and 1024 bytes, respectively. Therefore, the example above could read `bs=1k` instead of `bs=1024`.
 - **ibs=size, obs=size** The input and output block sizes. If you can use the same block size for both input and output, use the `bs` option; if not, use `ibs` and `obs` for input and output, respectively.
-- **count=num** The total number of blocks to copy. When working with a huge file -- or with a device that supplies an endless stream of data, such as `/dev/zero` -- you want `dd` to stop at a fixed point or you could waste a lot of disk space, CPU time or bouth. Use `count` with the `skip` parameter to copy a small piece from a large file or device.
+- **count=num** The total number of blocks to copy. When working with a huge file -- or with a device that supplies an endless stream of data, such as `/dev/zero` -- you want `dd` to stop at a fixed point or you could waste a lot of disk space, CPU time or both. Use `count` with the `skip` parameter to copy a small piece from a large file or device.
 - **skip=num** Skip past the first num blocks in the input file or stream and do not copy them to the output.
 
 **WARNING**
@@ -117,7 +117,7 @@ Most hard disks attached to current Linux systems correspond in device names wit
 
 These devices represent entire disks; the kernel makes separate device files, such as `/dev/sda1` and `/dev/sdb2` for the partitions on a disk.
 
-The naming convention requires a littel explanation. The **sd** portion of the name stands for SCSI disk. **Small Computer System Interface(SCSI)** was originally developed as a hardware and protocol standard for communication between devices such as disks and other peripherals.
+The naming convention requires a little explanation. The **sd** portion of the name stands for SCSI disk. **Small Computer System Interface(SCSI)** was originally developed as a hardware and protocol standard for communication between devices such as disks and other peripherals.
 
 Although traditional SCSI hardware isn't used in most modern machines, **the SCSI protocol is everywhere due to its adaptability.** The story on SATA disks is a little more complicated, but the Linux kernel still uses SCSI commands at a certain point when talking to them.
 

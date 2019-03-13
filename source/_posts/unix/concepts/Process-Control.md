@@ -17,10 +17,10 @@ date: 2019-03-05
 
 The **process ID** is the only well-known identifier of a process that is always unique, it's often used as a piece of other identifiers, to guarantee uniqueness.
 
-Although unique, **process IDs are reused**. As processes terminate, their IDs become candidates for reuse. **Most UNIX systems implement algorithms to dalay reuse**, however, so that newly created processes are assigned IDs different from those used by processes that terminated recently. ***This prevents a new process from being mistaken for the previous process to have used the same ID.***
+Although unique, **process IDs are reused**. As processes terminate, their IDs become candidates for reuse. **Most UNIX systems implement algorithms to delay reuse**, however, so that newly created processes are assigned IDs different from those used by processes that terminated recently. ***This prevents a new process from being mistaken for the previous process to have used the same ID.***
 
 **Process ID 0** is usually the scheduler process and is often known as the swapper. It is a part of the kernel and is known as a system process.
-**Process ID 1** is usually the `init` proces and is invoked by the kernel at the end of bootstrap procedure. **This process is responsible for bringing up a UNIX system after the kernel has been bootstrapped.** `init` usually reads the system-dependent initialization files -- the `/etc/rc*` files or `/etc/inittab` and the files in `/etc/init.d` -- and brings the system to a certain state, such as multiuser. The `init` process never dies. **It is a normal user process**, but it does run with superuser privileges.
+**Process ID 1** is usually the `init` process and is invoked by the kernel at the end of bootstrap procedure. **This process is responsible for bringing up a UNIX system after the kernel has been bootstrapped.** `init` usually reads the system-dependent initialization files -- the `/etc/rc*` files or `/etc/inittab` and the files in `/etc/init.d` -- and brings the system to a certain state, such as multiuser. The `init` process never dies. **It is a normal user process**, but it does run with superuser privileges.
 
 In Mac OS X, the `init` process was replaced with the `launchd` process, which performs the same set of tasks as `init`, but has expanded functionality.
 
@@ -121,4 +121,3 @@ pid = 20407, glob = 6, var = 88
 ```
 
 > When we write to standard output, we subtract 1 from the size of `buf` to avoid writing the terminating null byte. Although `strlen` will calculate the length of a string not including the terminating null byte, `sizeof` calculates the size of the buffer, which does include the terminating null byte. **Another difference is that using `strlen` requires a function call, whereas `sizeof` calculates the buffer length at compile time**, as the buffer is initialized with a known string and its size is fixed.
-

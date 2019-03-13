@@ -42,9 +42,9 @@ second step, we let the A's Next pointer points to our new node C.
 
 Finally, we finished it.
 
-***Insert Successed!!***
+***Insert Succeed!!***
 
-![Insert Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_successed.png)
+![Insert Succeed](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_successed.png)
 
 Let's take a look at the code.
 
@@ -124,9 +124,9 @@ Because we just get one Next pointer for each node, so, it just make no pointer 
 
 ![Delete Step2](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_step2.png)
 
-**So delete Successed!!**
+**So delete Succeed!!**
 
-![Delete Successed](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_successed.png)
+![Delete Succeed](https://sherlockblaze.com/resources/img/cs/linkedlist/delete_successed.png)
 
 + Delete at the tail
 
@@ -190,4 +190,4 @@ DeleteAt(List L, int index)
 #### Conclusion
 
 We know that if you just calculate the cost of insertion or deletion, you'll find T(n) = O(1).
-But you know if we wanna insert or delete a value with speicify index, it'll cost O(n) in whole operation. But the cost of insertion or deletion still is O(1). Here, we just talk aboult the cost of insertion or deleteion.
+But you know if we wanna insert or delete a value with specify index, it'll cost O(n) in whole operation. But the cost of insertion or deletion still is O(1). Here, we just talk about the cost of insertion or deletion.

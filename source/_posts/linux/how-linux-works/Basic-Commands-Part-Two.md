@@ -56,7 +56,7 @@ You can redirect the standard error if you like. For example, to send standard o
 ls /fffff > f 2> e
 ```
 
-The number 2 specifies the ***stream ID*** that the shell modifies. **Streamd ID 1 is standard output(the default), and 2 is standard error.**
+The number 2 specifies the ***stream ID*** that the shell modifies. **Stream ID 1 is standard output(the default), and 2 is standard error.**
 
 You can also send the standard error to the same place as stdout with the `>&` notation. For example, to send both standard output and standard error to the file named `f`, try this command:
 
@@ -108,7 +108,7 @@ The fields are as follows:
 - **PID.** The process ID.
 - **TTY.** The terminal device where the process is running.
 - **STAT.** The process status, that is, what the process is doing and where its memory resides. For example, `S` means sleeping and `R` means running.
-- **TIME.** The amound of CPU time in minutes and seconds that the proces has used so far. In other words, the total amount of time that the process has spent running instructions on the processor.
+- **TIME.** The amount of CPU time in minutes and seconds that the process has used so far. In other words, the total amount of time that the process has spent running instructions on the processor.
 - **COMMAND.** This one might seem obvious, but be aware that a process can change this field from its original value.
 
 #### Command Options

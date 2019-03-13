@@ -26,7 +26,7 @@ As we can see, The most recently inserted element can be examined prior to perfo
 
 - [Push](#Push)
 - [Pop](#Pop)
-- [Implemention](#Implemention)
+- [Implementation](#Implemention)
 
 ##### Push
 
@@ -40,7 +40,7 @@ It also easy to understand how to pop a value into a stack.
 
 ![Pop](https://sherlockblaze.com/resources/img/cs/stack/stack_pop.png)
 
-##### Implemention
+##### Implementation
 
 Actually, stack still is a list, whatever a linkelist or arraylist, all of them can be the data structure of a stack.
 In my version, I use the linkedlist as the data structure of it.
