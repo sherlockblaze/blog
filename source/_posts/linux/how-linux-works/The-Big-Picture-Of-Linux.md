@@ -62,7 +62,7 @@ The kernel is in charge of managing tasks in **four** general system areas:
 
 On any modern operating system, many processes run "simultaneously". For example, you might have a web browser and a spreadsheet open on a desktop computer at the same time. However, things are not as the appear: The processes behind these applications typically do not run at ***exactly*** the same time.
 
-**Context Switch**: Consider a system with a one-core CPU, many processes may be able to use the CPU, but only one process may actually use the CPU at any given time. In practice, each process uses the CPU for a small fraction of a second, the pauses; the another process uses the CPU for another small fraction of a second; then another process takes a turn, and so on. The act of one process giving up control of the CPU to another process is called a ***context switch***.
+**Context Switch**: Consider a system with a one-core CPU, many processes may be able to use the CPU, but only one process may actually use the CPU at any given time. In practice, each process uses the CPU for a small fraction of a second, then pauses; the another process uses the CPU for another small fraction of a second; then another process takes a turn, and so on. The act of one process giving up control of the CPU to another process is called a ***context switch***.
 
 **Time Slice**: Each piece of time—called a ***time slice*** — gives a process enough time for significant computation (and indeed, a process often finishes its current task during a single slice). However, because the slices are so small, humans can’t perceive them, and the system appears to be running multiple processes at the same time (a capability known as multitasking).
 
@@ -144,7 +144,7 @@ The Linux kernel supports the traditional concept of a Unix user. A ***user*** i
 
 **Users exist primarily to support permissions and boundaries.** Every user-space process has a user ***owner***, and processes are said to run as the owner. A user may terminate or modify the behavior of its own processes(within certain limits), but it cannot interfere with other users' processes. In addition, users may own files and choose whether they share them with other users.
 
-The most important user to know about is ***root***. The root user is an exception to the preceding rules because root may terminate and alter another user's processes and read any file on the local system. FOr this reason, root is known as the **superuser**. A person who can operate as root is said to have root access and is an administrator on a traditional Unix system.
+The most important user to know about is ***root***. The root user is an exception to the preceding rules because root may terminate and alter another user's processes and read any file on the local system. For this reason, root is known as the **superuser**. A person who can operate as root is said to have root access and is an administrator on a traditional Unix system.
 
 **Groups** are sets of users. The primary purpose of groups is to allow a user to share file access to other users in a group.
 

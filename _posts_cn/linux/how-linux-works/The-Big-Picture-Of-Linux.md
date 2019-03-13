@@ -9,7 +9,7 @@ date: 2019-03-12
 
 ## Linux 系统总览
 
-> 本文所总结的内容都来自于： **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
+> 本文所总结的内容都来自于： **[《How Linux Works》](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
 ### 关于如何理解学习
 
@@ -40,118 +40,117 @@ Linux系统中主要有三个层。下面的图片展示了这三个层以及各
 
 在所有的硬件设备里，***主存（内存）***可能是最重要的。在它最原始的表示下，主存只是存放了一堆0/1的区域，每个0/1我们称之为一个***bit（位）***。内存同时也是内核生存的地方，内核常驻于内存，它要负责告诉CPU去做些什么事情，需要去管理硬件。所有的从外设获取到的输入输出都需要经过内存，同样也是一堆 bits。而CPU则是一个内存操作师，它从内存中读取数据（指令等）并向内存中写入处理后的结果。
 
-You'll often hear the term ***state*** in reference to memory, processes, the kernel, and other parts of a computer system. A state is a particular arrangement of bits. For example, if you have four bits in your memory, 0110, 0001, and 1011 represent three different states.
+我们在讨论内存、进程、内核或者其他关于计算机系统的时候，经常会有这样一个名词 —— ***状态***。比如说这个状态，其实也是一个由0、1组合而成的序列。比如，如果你用四个比特表示一个状态，那么 0110,0001，还有1011表示三种不同的状态。
 
-**Note**: Because it's common to refer to the state in abstract terms rather than to the actual bits, the term image refers to a particular physical arrangement of bits.
+**注意：**一般来说我们会用抽象术语 —— 状态来描述，而不是直接用二进制序列来描述，术语代表着某些约定好的二进制序列。比如，停止状态代表***0001***（举个例子）
 
 ### 内核
 
-Nearly everything that the kernel does revolves around main memory. One of the kernel's tasks is to **split memory into many subdivisions, and it must maintain certain state information about those subdivisions at all times.** ***Each process gets its own share of memory, and the kernel must ensure that each process keeps to it share.***
+内核所做的一切几乎都围绕主内存。内核的主要工作之一就是 **把内存划分为多个区域，并且它必须要一直维护这些区域的状态信息。每个进程都可以在内存中拿到属于自己的一部分，内核需要保证这一点。**
 
-The kernel is in charge of managing tasks in **four** general system areas:
+内核有以下**四个**重点工作需要负责：
 
-- **Processes**. The kernel is responsible for determining which processes are allowed to use the CPU.
-- **Memory**. The kernel needs to keep track of all memory -- what is currently allocated to a particular process, what might be shared between processes, and what is free.
-- **Device Drivers**. The kernel acts as an interface between hardware and processes. It's usually the kernel's job to operate the hardware.
-- **System calls and support**. Processes normally use system calls to communicate with the kernel.
+- **进程管理：**进程要负责管理每个进程，判断它们是否有权限去使用CPU。
+- **内存：**内核需要监控所有的内存。—— 给指定进程分配空间、哪些部分可以被多个进程共享、哪些空间是空闲的，等等。
+- **设备驱动：**内核就像是硬件和进程之间的一个接口，一般来说，操作硬件的工作是由内核来负责的。
+- **系统调用支持：**进程通常利用**系统调用**的方式和内核进行交互。
 
 #### 进程管理
 
-***Process Management*** describes the starting, pausing, resuming, and terminating of processes.
+***进程管理*** 负责进程的启动、暂停、恢复和终止。
 
-On any modern operating system, many processes run "simultaneously". For example, you might have a web browser and a spreadsheet open on a desktop computer at the same time. However, things are not as the appear: The processes behind these applications typically do not run at ***exactly*** the same time.
+现代操作系统中，很多进程是“同时“运行的。比如说，你可能同时运行着浏览器和音乐播放器。但是，事实往往不像表面上一样：进程在背后**并不是真正地**同时运行。
 
-**Context Switch**: Consider a system with a one-core CPU, many processes may be able to use the CPU, but only one process may actually use the CPU at any given time. In practice, each process uses the CPU for a small fraction of a second, the pauses; the another process uses the CPU for another small fraction of a second; then another process takes a turn, and so on. The act of one process giving up control of the CPU to another process is called a ***context switch***.
+**上下文切换：**想象一个单核CPU，所有的进程都有权限去使用CPU，但是其实只有一个进程可以在某个时刻使用CPU，每个进程都仅仅是在某个时间段里使用CPU，然后暂停；然后另一个进程在运行一段时间，以此类推。像这种，一个进程放弃CPU使用权限，然后另一个进程获得CPU使用权限的过程，称为***上下文切换***。
 
-**Time Slice**: Each piece of time—called a ***time slice*** — gives a process enough time for significant computation (and indeed, a process often finishes its current task during a single slice). However, because the slices are so small, humans can’t perceive them, and the system appears to be running multiple processes at the same time (a capability known as multitasking).
+**时间片：**上面提到的一小段时间一般被称为***时间片**。一般来说，时间片持续的时间都很短，以至于人类不会对此有感知，所以就好像有很多进程在同时运行一样。也就是被我们所知晓的”多进程“。
 
-**How a context switch works??**
+**上下文切换是如何工作的？？**
 
-> The kernel is responsible for context switching. And here's what happens:
+> 内核负责。以下是上下文切换过程中发生的事情：
 
-1. The CPU interrupts the current process based on an internal timer, switches into kernel mode, and hands control back to the kernel.
-2. The kernel records the current state of the CPU and memory, which will be essential to resuming the process that was just interrupted.
-3. The kernel performs any tasks that might have come up during the preceding time slice.(such as collecting data from input and output, or I/O, operations)
-4. The kernel is now ready to let another process run. The kernel analyzes the list of processes that are ready to run and choose one.
-5. The kernel prepares the memory for this new process, and then prepares the CPU.
-6. The kernel tells the CPU how long the time slice for the new process will last.
-7. The kernel switches the CPU into user mode and hands control of the CPU to the process.
+1. CPU根据时间片的长度来中断正在运行的进程，然后切换到内核模式，控制权回到内核。
+2. 内核记录当前CPU和内存的状态，这个操作对于后面恢复上一步被中断的进程来说至关重要。
+3. 内核执行上个时间片里可能有的任何任务（比如从输入输出设备中收集数据，或者I/O操作等等）
+4. 到了这里，内核已经准备好让另一个进程运行了。内核在等待队列中分析挑选一个进程取运行。
+5. 内核为新的进程分配内存，准备CPU 。
+6. 内存告诉CPU这个进程准备运行多长时间。
+7. 内核切换CPU到用户模式然后把CPU的使用权交给进程。
 
-**The context switch answers the important question of when the kernel runs. The answer is that it runs between process time slices during a context swtich.**
+**上下文切换回答了内核何时运行的重要问题。答案是：在两个进程时间片中间的上下文切换的时间中。**
 
-**Attention:**
+**注意：**
 
-In the case of a multi-CPU system, things become slightly more complicated because the kernel doesn't need to relinquish control of its current CPU in order to allow a process to run on a different CPU. However, to maximize the usage of all available CPUs, the kernel typically does so anyway(and may use certain tricks to grab a little more CPU time for itself).
+在多CPU系统中，事情会有一些变化。内核不需要放弃对目前CPU的控制权为了让一个进程运行，而仅仅是让目标进程运行在某个不同的CPU上。但是，为了最大化的使用CPU，内核通常还是会放弃CPU的控制权，但是会使用一些小技巧来扩大自己使用CPU的时间。
 
 #### 内存管理
 
-Because the kernel must manage memory during a context switch, it has a complex job of memory management. The kernel's job is complicated because the following conditions must hold:
+内核上下文切换的时候管理内存，这是一个艰巨的任务。这个工作属于**内存管理器**。为什么说是个艰巨的任务呢？因为内核必须要保证以下几个点：
 
-- The kernel must have its own private area in memory that user processes can't access.
-- Each user process needs its own section of memory
-- One user process may not access the private memory of another process.
-- User processes can share memory.
-- Some memory in user processes can be read-only.
-- The system can use more memory than is physically present by using disk space as auxiliary.
+- 内核在内存中必须有一个块属于自己的私密小空间，其他任何用户进程都访问不到。
+- 每个用户进程都有自己的小空间
+- 一个进程需要被保证无法访问另一个进程的私密空间
+- 用户进程可以共享空间
+- 一些内存对于用户进程来说是只读的
+- 通过物理硬盘作为辅助，系统可以使用到比实际存在更多的内存
 
-It's difficult, but fortunately for the kernel, there is help. Modern CPUs include a ***memory management unit(MMU)*** that enables a memory access scheme called ***virtual memory***. When using virtual memory, **a process does not directly access the memory by its physical location in the hardware.** Instead, the kernel sets up each process to act as if it had an entire machine to itself.
-When the process accesses some of its memory, the MMU intercepts the access and uses a memory address map to translate the memory location from the process into an actual physical memory location on the machine.
-**The kernel must still initialize and continuously maintain and alter this memory address map. For example, during a context switch, the kernel has to change the map from the outgoing process to the incoming process.**
+想要做到以上几点很困难。但是很幸运，内核有好帮手。现在CPUs包括了一个 **内存管理单元(MMU)**，它支持一个可访问空间，被称为**虚拟存储**。当使用虚拟内存的时候，内核保证每个进程过得就好像这个电脑都是自己的一样，**一个进程不是直接访问内存在硬件上的物理地址**，当进程访问一些属于它的存储时，MMU把这些访问使用内存地址映射，映射成一个在机器上的实际地址。
+**内存需要一直初始化和持续维护内存地址映射。举个例子，在一个上下文切换过程中，内核必须要调整映射关系到下一个进程需要的。**
 
-**Note**: The implementation of a memory address map is called a page table.
+**注意：**内存地址映射的实现称为**页表（page table）**。
 
 #### 设备驱动及管理
 
-The kernel's role with devices is pretty simple. A device is typically accessible only in kernel mode because improper access could crash the machine. Another problem is that different devices rarely have the same programming interface, even if the devices do the same thing, such as two different network cards. Therefore, device drivers have traditionally been part of the kernel, and they strive to present a uniform interface to user processes in order to simplify the software developer's job.
+内核相对于设备的角色比较简单。只有在内核模式下才能访问设备，因为不恰当的访问会毁掉整个机器。另一个问题是，不同的设备很少会有相同的编程借口，哪怕两个设备是一件东西，比如两个相同的网卡。因此，设备驱动一般是内核的一部分，通过这个方式来向开发者提供统一接口。
 
 #### 系统调用和支持
 
-There are several other kinds of kernel features available to user processes. For example, ***system calls(or syscalls)*** perform specific tasks that a user process alone cannot do well or at all. For example, the acts of opening, reading, and writing files all involve system calls.
+通过**系统调用（syscalls）**，内核的一些功能是可以被用户进程使用的。有一些操作仅仅靠用户进程自己是无法完成的，比如I/O操作，读写文件等。
 
-Two system calls, `fork()` and `exec()`, are important to understanding how processes start up:
+有两个系统调用对于理解进程如何启动非常重要：`fork()` 和 `exec()`：
 
-- **fork()** When a process calls `fork()`, the kernel creates a nearly identical copy of the process.
-- **exec()** When a process calls `exec(program)`, the kernel starts program, replacing the current process.
+- **fork()** 当一个进程调用 `fork()`, 内核会创建一个跟调用进程几乎相同的进程
+- **exec()** 当一个进程调用 `exec(program)` ，进程会启动一个进程，替代掉调用的进程
 
-**Other than init, all user processes on a Linux system start as a result of `fork()`**, and most of the time, you also run `exec()` to start a new program instead of running a copy of an existing process. A very simple example is any program that you run at the command line, such as the `ls` command to show the contents of a directory. When you enter `ls` into a terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`. The process shows as follow:
+**除了`init`进程，Linux系统下所有的用户进程都是 `fork()`的产物**，大部分时间，系统会运行 `exec()` 来替换掉复制的进程。举个简单的例子，比如你在终端输入 `ls` 命令，终端会调用 `fork()` 创造一个 shell 的复制，然后执行 `exec(ls)` 来运行 `ls` 程序。过程如下图。
 
 ![start a new process](https://sherlockblaze.com/resources/img/linux/how-linux-works/starting-a-new-process.png)
 
-The kernel also supports user processes with features other than traditional system calls, the most common of which are ***pseudodevices***. Pseudo-devices look like devices to user processes, but they're implemented purely in software. As such, they don't technically need to be in the kernel, but they are usually there for practical reasons. For example, the kernel random number generator device(`/dev/random`) would be difficult to implement securely with a user process.
+内核还会向用户进程提供一些不同于传统系统调用的功能， 比较常见的，比如 ***伪设备***。伪设备对用户进程来说，就像是普通的设备，但是它是完全通过软件来实现的。从技术上来说，它们不必是内核的一部分，但是通常来说，它们的确是。比如说， `/dev/random` 需要通过内核来实现，因为通过用户进程来实现是非常困难的。
 
-Technically, a user process that accesses a pseudodevice still has to use a system call to open the device, so processes can't entirely avoid system calls.
+技术上来说，用户进程访问伪设备仍然需要通过系统调用的方式，所以用户进程无法避免使用系统调用。
 
 ### 用户空间
 
-The main memory that the kernel allocates user processes is called ***user space***. Because a process is simply a state(or image) in memory, user space also refers to the memory for the entire collection of running processes.
+内核在主存中申请给用户进程的空间被称为 **用户空间**。因为一个进程只是主存里的一个状态，用户空间也可以说是一个所有运行进程的集合。
 
-Most of the real action on a Linux system happens in user space. Although all processes are essentially equal from the kernel's point of view, they perform different tasks for user. There is a rudimentary service level (or layer) structure to the kinds of system components that user processes represent. The following picture shows how an example set of components fit together and interact on a Linux system. Basic services are at the bottom level(closest to the kernel), utility services are in the middle, and applications that users touch are at the top. What in the picture is a greatly simplified diagram because only six components are shown, but you can see that the components at the top are closest to the user; the components in the middle level has a mail server that the web browser uses; and there are several smaller components at the bottom.
+大多数实际的操作发生在用户空间。虽然从内核的角度来观察所有的进程都是一样的，但是它们为用户执行不同的任务。对于用户进程所代表的系统组件类型，存在基本的服务级别（或层）结构。下面的图片展示了一个关于组件集合相互写作以及和Linux系统进行交互的例子。最基本的服务在最底层（接近内核），公用服务在中间一层，用户接触的用户在最顶层。图片里仅仅展示了六个组件，但是很容易发现，用户能接触到的在顶层，在中层的组件，比如邮件服务是被浏览器使用的；然后底层有几个小的组件。
 
 ![Process types and interactions](https://sherlockblaze.com/resources/img/linux/how-linux-works/process-types-and-interactions.png)
 
-The bottom level tends to consist of small components that perform single, uncomplicated tasks. The middle level has larger components such as mail, print, and database services. Finally, components at the top level perform complicated tasks that the user often controls directly. Components also use other components. Generally, if one component wants to use another, the second component is either at the same service level or below.
+最底下一层往往是由最简单的组件，执行单一、不算发杂的任务。中间的层则是一些比较大的组件，比如邮件、打印和数据库服务。最后，在最顶层的组件执行一些复杂的任务，一般来说，用户直接控制这些任务的完成。组件可以使用其他的组件，通常来说，如果一个组件需要使用另一个组件，那么被使用的组件需要在相同的等级或者比当前等级低。
 
-However, the above picture is only an approximation of the arrangement of user space. In reality, there are no rules in user space. For example, most applications and services write diagnostic messages known as logs. Most programs use the standard syslog service to write log messages, but some prefer to do all of the logging themselves.
+但是，上面的图片仅仅是用户空间分布的一个大概。事实上，用户空间里是没有任何规则的。比如说，很多应用程序或者服务会用日志的形式来记录诊断信息。但部分程序用标准的syslog服务去写日志信息，但是也有一些会以自己的方式来完成日志的输出。
 
-In addition, it’s difficult to categorize some user-space components. Server components such as web and database servers can be considered very high-level applications because their tasks are often complicated, so you might place these at the top level in the above picture. However, user applications may depend on these servers to perform tasks that they’d rather not do themselves, so you could also make a case for placing them at the middle level.
+用户空间的组件是很难被归类的。服务类组件，比如网络服务、数据库服务，一般会被认为是高等级的应用，因为它们的任务通常比较复杂，从这个角度来考虑的话，在上面的图片中，你可以把它们放在最上面一层。但是，用户应用可能依赖这些服务去完成一些任务，而不是靠自己是做，所以你也可以把网络服务、数据库服务之类放到上图的中层。
 
 ### 用户
 
-The Linux kernel supports the traditional concept of a Unix user. A ***user*** is an entity that can run processes and own files. A user is associated with a ***username***. 
+Linux内核支持一个传统的概念：Unix用户。一个**用户**通常是一个可以运行自己进程和查看自己文件的实体。用户会有一个相对应的用户名。
 
-**The kernel does not manage the usernames, instead, it identifies users by simple numeric identifiers called `userids`**
+**内核不管理用户名，但是它会管理一个简单的数字序列，被称为 `userids`**。
 
-**Users exist primarily to support permissions and boundaries.** Every user-space process has a user ***owner***, and processes are said to run as the owner. A user may terminate or modify the behavior of its own processes(within certain limits), but it cannot interfere with other users' processes. In addition, users may own files and choose whether they share them with other users.
+**用户的存在主要是为了权限和操作边界的支持**。每个用户空间都有一个用户，作为**拥有者**存在，进程则被称为作为拥有者运行。一个用户可以选择终止或修改自己进程的行为（在某些限定条件下），但是不能和其他用户的进程进行交互。同时，用户可以选择是否和其他用户分享自己的文件。
 
-The most important user to know about is ***root***. The root user is an exception to the preceding rules because root may terminate and alter another user's processes and read any file on the local system. FOr this reason, root is known as the **superuser**. A person who can operate as root is said to have root access and is an administrator on a traditional Unix system.
+最厉害的用户我们称之为 **root用户（管理员）**。root用户是上述所描述规则的一个例外，因为root用户可以终止或者修改其他用户的进程，可以读写本机任何其他用户的文件。因为这些骚操作，root用户也被称之为 **超级用户**。
 
-**Groups** are sets of users. The primary purpose of groups is to allow a user to share file access to other users in a group.
-
-> Operating as root can be dangerous. It can be difficult to identify and correct mistakes because the system will let you do anything, even if what you're doing is harmful to the system. For this reason, system designers constantly try to make root access as unnecessary as possible, for example, by not requiring root access to switch between wireless networks on a notebook. In addition, as powerful as the root user is, it still runs in the operating system's user mode, not kernel mode.
+ **用户组** 是一群用户的集合。用户组存在的主要目的就是为了让一个用户可以向组里其他用户分享自己的文件。
+ 
+> 总是用超级用户的权限来访问是风骚而且极其危险的。因为系统允许超级用户做任何事情，包括对系统有害的事情。考虑到这一点，平时最好少用管理员权限。但是，有一点需要知道。哪怕超级用户这么吊，**它也是运行在用户模式的**，而不是内核模式。
 
 ### 结论
 
-User processes make up the environment that you directly interact with, the kernel manages processes and hardware. Both the kernel and processes reside in memory.
+用户进程组成了你直接交互的环境，内核管理进程和硬件。内核以及所有的进程，都持久化在内存里运行。
 
 ### 推荐阅读
 
