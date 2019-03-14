@@ -23,17 +23,17 @@ Here are the most important subdirectories in `root`:
 - `/dev` Contains device files.
 - `/etc` This core system configuration directory contains the user password, boot, device, networking, and other setup files. Many items in `/etc` are specific to the machine's hardware. For example, the `/etc/X11` directory contains graphics card and window system configurations.
 - `/home` Holds personal directories for regular users. Most Unix installations conform to this standard.
-- `/lib` An abbreviation for library, this directory holds library files containing code that that executables can use. There are ***two*** types of libraries: **static** and **shared**. **The `/lib` directory should contain only shared libraries**, but other lib directories, such as `/usr/lib`, contain both varieties as well as other auxiliary files.
+- `/lib` An abbreviation for library, this directory holds library files containing code that executables can use. There are ***two*** types of libraries: **static** and **shared**. **The `/lib` directory should contain only shared libraries**, but other lib directories, such as `/usr/lib`, contain both varieties as well as other auxiliary files.
 - `/proc` Provides system statistics through a browsable directory-and-file interface. Much of the `/proc` subdirectory structure on Linux is unique, but many other Unix variants have similar features. The `/proc` directory contains information about currently running processes as well as some kernel parameters.
 - `/sys` This directory is similar to `/proc` in that it provides a device and system interface.
 - `/sbin` The place for system executables. Programs in `/sbin` directories relate to system management, so regular users usually do not have `/sbin` components in their command paths. Many of the utilities found here will not work if you're not running them as root.
-- `/tmp`f A storage area for smaller, temporary files that you don't care much about. Any user may read to and write from `/tmp`, but the user may not have permission to access another user's files there. Many programs use this directory as a workspace. If something is extremely important, don't put it in `/tmp` because most distributions clear `/tmp` when then machine boots and some even remove its old files periodically. Also don't  let `/tmp` fill up with garbage because its space is usually shared with something critical.
+- `/tmp` A storage area for smaller, temporary files that you don't care much about. Any user may read to and write from `/tmp`, but the user may not have permission to access another user's files there. Many programs use this directory as a workspace. If something is extremely important, don't put it in `/tmp` because most distributions clear `/tmp` when then machine boots and some even remove its old files periodically. Also don't  let `/tmp` fill up with garbage because its space is usually shared with something critical.
 - `/usr` Although pronounced "user", this subdirectory has no user files. Instead, it contains a large directory hierarchy, including the bulk of the Linux system. Many of the directory names in `/usr` are the same as those in the root directory(like `/usr/bin` and `/usr/lib`), and they hold the same type of files.
 - `/var` The variable subdirectory, where programs record runtime information. System logging, user tracking, caches, and other files that system programs create and manage are here.
 
 ### Other Root Subdirectories
 
-There are a few other interesting subdirectories in the boot directory:
+There are a few other interesting subdirectories in the root directory:
 
 - `/boot` Contains kernel boot loader files. These files pertain only to the very first stage of Linux startup procedure;
 - `/media` A base attachment point for removable media such as flash drives that is found in many distributions.
