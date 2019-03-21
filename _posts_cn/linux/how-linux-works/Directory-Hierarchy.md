@@ -3,7 +3,7 @@ title: Linux是如何工作的--目录结构
 tags:
   - Linux是如何工作的
   - Linux
-  - Linux kernel
+  - Linux 内核
 date: 2019-03-04
 ---
 

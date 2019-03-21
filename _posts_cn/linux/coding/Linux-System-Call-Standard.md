@@ -2,8 +2,8 @@
 title: Linux 系统调用规范
 tags: 
   - Linux
-  - Programming on Linux
-  - Linux Kernel
+  - Linux 系统下编程
+  - Linux 内核
   - Unix
 date: 2019-02-26
 ---
