@@ -7,9 +7,7 @@ tags:
 date: 2019-03-21
 ---
 
-## Rust 编程初体验
-
-### Rust 的优势
+## Rust 的优势
 
 1. 性能超好（可以用于编写关键组件，能够提供超高性能）
 2. 存储效率高
@@ -17,7 +15,7 @@ date: 2019-03-21
 4. 可以运行在嵌入式设备
 5. 可以很方便的和其他语言携作
 
-### 使用范围
+## 使用范围
 
 技能范围很广。可以用于：
 
@@ -26,14 +24,14 @@ date: 2019-03-21
 3. 网络程序
 4. 嵌入式程序(运行在性能比较相对较低的硬件)
 
-### Rust的自身定位
+## Rust的自身定位
 
 从 《The Rust Programming Language》这本书的前言来看，要表述的大概是以下的意思：
 
 > Rust 这门语言就很屌，就不管你以前用什么语言，不管是Java、Python、Go、还是C++，用我都可以写出来比用这些语言写的代码高到不知道到哪里去的代码来。底层操作，高并发，包管理应有尽有。而且呢，我不仅用来写底层应用，还用用来写一些其他的程序，比如上面提到的命令行程序、Web组件等。而且啊，你不用为了写底层应用学一套，写Web组件学一套，你用写底层应用掌握的技能，同样可以用在Web组件上。
 总之，Rust 就很屌。
 
-### 安装 Rust
+## 安装 Rust
 
 [安装指南](https://www.rust-lang.org/learn/get-started)
 
@@ -43,9 +41,7 @@ date: 2019-03-21
 $ curl https://sh.rustup.rs -sSf | sh
 ```
 
-### 基础语法
-
-#### Hello World
+### Hello World
 
 接下来是经典的编程语言开头，`Hello World`。
 
@@ -53,7 +49,7 @@ $ curl https://sh.rustup.rs -sSf | sh
 
 程序有点出奇的简单，不需要任何引入，不用包名之类，编写以下代码即可：
 
-##### 代码编写
+#### 代码编写
 
 > main.rs
 
@@ -65,7 +61,7 @@ fn main() {
 
 > 吐槽一个点，println后面要加个!号，暂时不知道为什么要这样。
 
-##### 编译程序
+#### 编译程序
 
 使用以下命令行进行编译：
 
@@ -75,7 +71,7 @@ $ rustc main.rs
 
 执行完以上命令后会在命令执行的目录下生成一个名称为 `main` 的文件。
 
-##### 运行程序
+#### 运行程序
 
 执行以下命令运行程序：
 
@@ -83,7 +79,7 @@ $ rustc main.rs
 $ ./main
 ```
 
-##### 总结
+#### 总结
 
 经过 `Hello World` 程序的编写运行后，我们可以得出以下几个结论：
 
@@ -93,7 +89,7 @@ $ ./main
 4. 代码文件后缀名为 `.rs`
 5. 编译用的命令为 `rustc`，类似 `javac`
 
-#### Cargo
+### Cargo
 
 Cargo 是用来管理和编译 Rust 项目的。
 
@@ -105,7 +101,7 @@ Cargo 是用来管理和编译 Rust 项目的。
 $ cargo --version
 ```
 
-##### 使用 Cargo 创建 Rust 程序
+#### 使用 Cargo 创建 Rust 程序
 
 使用以下命令格式创建项目：
 
@@ -146,7 +142,7 @@ edition = "2018"
 
 我们可以观察到两部分内容，一部分是 `package` 一部分是 `dependencies`。顾名思义，其中，`package`标签下的内容，展示的是你这个项目的一些相关信息。而`dependencies` 标签下的条目则展示了该项目所以依赖的程序库。
 
-##### 使用 Cargo 构建程序
+#### 使用 Cargo 构建程序
 
 在 `hello-cargo` 目录下，执行 `cargo build` 命令，即可完成编译。
 
@@ -224,7 +220,7 @@ total 0
 
 观察一下，可以自行估计 Cargo 为我们做了哪些工作。
 
-##### 使用 Cargo 运行程序
+#### 使用 Cargo 运行程序
 
 在完成构建操作后，我们便可以在 `hello-cargo` 目录或其某个子目录下，执行以下命令运行程序：
 
@@ -238,7 +234,7 @@ Hello, world!
 
 同样，`cargo run` 命令的工作，也需要 `Cargo.toml` 文件的支持。
 
-### 学习资源
+## 学习资源
 
 [Youtube Channel](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
 [Official Document](https://www.rust-lang.org/learn)
