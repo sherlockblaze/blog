@@ -31,9 +31,7 @@ date: 2019-03-21
 > Rust 这门语言就很屌，就不管你以前用什么语言，不管是Java、Python、Go、还是C++，用我都可以写出来比用这些语言写的代码高到不知道到哪里去的代码来。底层操作，高并发，包管理应有尽有。而且呢，我不仅用来写底层应用，还用用来写一些其他的程序，比如上面提到的命令行程序、Web组件等。而且啊，你不用为了写底层应用学一套，写Web组件学一套，你用写底层应用掌握的技能，同样可以用在Web组件上。
 总之，Rust 就很屌。
 
-## 安装 Rust
-
-[安装指南](https://www.rust-lang.org/learn/get-started)
+## [安装 Rust](https://www.rust-lang.org/learn/get-started)
 
 如果你使用的是类Linux系统，或者Mac，使用以下的命令进行安装。
 
