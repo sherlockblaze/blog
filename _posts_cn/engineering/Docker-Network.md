@@ -208,3 +208,48 @@ docker run -it --network=my_net busybox
 接下来我们在 IP 为 `172.22.16.8` 的容器中去 `ping` IP 为 `172.21.0.2` 的容器：
 
 ![](https://sherlockblaze.com/resources/img/engineering/ping-172-21-0-2.png)
+
+> 不同的网络如果加上路由应该是可以通信的。
+
+在 Docker 宿主机上执行命令 `ip r`，我们可以得到如下结果：
+
+![](https://sherlockblaze.com/resources/img/engineering/host-ip-r-router.png)
+
+图中我们可以观察到两个网络的路由器， `172.22.16.0` 以及 `172.21.0.0`。
+
+继续执行命令 `sysctl net.ipv4.ip_forward`，得到如图输出：
+
+![](https://sherlockblaze.com/resources/img/engineering/check_ipv4_forward.png)
+
+由此我们可以确认 ip forwarding 已启用。
+
+到了这里我们需要查看一下问题所在，因为目前知道通过 IP 进行通信的条件是基本满足的： 1. 两个网络的路由器已经配置完毕 2. ip forwarding 已经启用。
+
+那么是什么原因导致挂载在两个不同网桥的 busybox 无法互相访问呢？
+
+执行命令 `sudo iptables-save` 得到以下结果，然后我们来一探究竟：
+
+![](https://sherlockblaze.com/resources/img/engineering/ip-table-docker-network.png)
+
+在图片的下方我们可以看到如下两行内容：
+
+```
+-A DOCKER-ISOLATION-STAGE-2 -o br-2d8877e1871b -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -o br-57b3ea2cc45d -j DROP
+```
+
+原来，iptables 把从 `br-2d8877e1871b` 和 `br-57b3ea2cc45d` 两个网桥出来的流量都给 DROP 掉了。同时，从命令规则上来看，`DOCKER-ISOLATION` 的名称，可知 docker 在设计上就是要隔离不同的 network。
+
+那么在 Docker 中我们如何将两个网络连接起来呢？答案很简单，就是向其中一个 busybox 添加一个网卡，让它和挂载在被添加的网卡上的网络联通。
+
+执行命令 `docker network connect my_net2 8b4a` 即可完成。
+
+接下来我们在 ip 为 `172.21.0.2` 的 busybox 容器中执行命令 `ifconfig`，得到如下输出：
+
+![](https://sherlockblaze.com/resources/img/engineering/ifconfig-after-connect-network.png)
+
+我们可以清楚的观察到多了一个 ip 为 `172.22.16.2` 的网卡 `eth1`。此时，网络拓扑图如下所示：
+
+![](https://sherlockblaze.com/resources/img/engineering/docker-bridge-graph-after-connect.png)
+
+致此，我们就可以用新 IP 让三个 busybox 实现互通了。
