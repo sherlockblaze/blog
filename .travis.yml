@@ -43,4 +43,5 @@ after_script:
 - hexo recommend && hexo clean && hexo generate
 - mkdir public/resources/file/resume
 - mv public/2019/04/12/resume_tmp/resume/index.html public/resources/file/resume/
+- rm -rf public/2019/04/12/
 - hexo deploy
