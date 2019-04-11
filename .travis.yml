@@ -42,6 +42,8 @@ after_script:
 - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
 - hexo recommend && hexo clean && hexo generate
 - mkdir public/resources/file/resume
-- mv public/2019/04/12/resume_tmp/resume/index.html public/resources/file/resume/
-- rm -rf public/2019/04/12/
+- mv public/2019/04/12/resume_tmp/resume/index.html ./index.html.bak
+- rm -rf ./source/_posts/resume_tmp
+- hexo recommend && hexo clean && hexo generate
+- mv ./index.html.bak ./public/resources/file/resume/index.html
 - hexo deploy
