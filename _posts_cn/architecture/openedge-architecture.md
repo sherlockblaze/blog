@@ -38,7 +38,6 @@ date: 2019-04-28
 
 ## How
 
-
 目前我们的边缘计算分为了两部分一个是我们的通用框架，也就是今天要讲的主题 OpenEdge，另一个就是 BIE。
 
 我们主要分享一下 OpenEdge Framework。
