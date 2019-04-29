@@ -57,7 +57,7 @@ date: 2019-04-12
 
 接下来我们切入正题，从我目前了解的角度来分析一下已有的架构。架构图如下：
 
-![openedge-architectures](https://sherlockblaze.com/resources/img/architectures/openedge-architectures.png)
+![openedge-architectures](https://sherlockblaze.com/resources/img/profession/architectures/openedge-architecture.png)
 
 我们知道，一个程序或者说一个软件，主要做的事情有这三件：
 
