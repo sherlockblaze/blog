@@ -5,11 +5,6 @@ date: 2019-01-21
 catalog: true
 ---
 
-### ArrayList
-
-- [Operations](#Operations)
-- [Conclusion](#Conclusion)
-
 Now let's talk about arraylist, we know it costs O(n) when you want access a value at the index you give by using a linkedlist, if you want make it faster to finish, you should use arraylist, it cost O(1) when you wanna access the index you want. Because the underlying is an array. So you can access any value at the index you give in one step, just arr[index]. It's pretty cool. Now let me show you what the arraylist look like.
 
 ![ArrayList](https://sherlockblaze.com/resources/img/cs/arraylist/arraylist.png)
@@ -26,12 +21,12 @@ And in my version, there's still head node here which save the total number of v
 
 Now let's review the basic operations of arraylist.
 
-#### Operations
+## Operations
 
 - [Insert](#Insert)
 - [Delete](#Delete)
 
-##### Insert
+### Insert
 
 If we wanna insert a value into a arraylist at the tail, that'll be easy, just ***arr[L->Size] = Value*** , but if we want to do more about insertion, we should do like this.
 
@@ -127,7 +122,7 @@ IncreaseCapacity(List L)
 }
 ```
 
-##### Delete
+### Delete
 
 Then let's talk about deletion of arraylist. Same with insert at the tail, if you wanna delete the value at the tail, it's will be easy too, we just let the **Size** be smaller like this. `L->Size -= 1`. But if you wanna do more?? We should be like this.
 
@@ -167,7 +162,7 @@ DeleteAt(List L, int index)
 }
 ```
 
-#### Conclusion
+## Conclusion
 
 And we're supposed to remember the cost of insertion and deletion by using linkedlist, it O(1), now we can see the differences between arraylist and linkedlist.
 

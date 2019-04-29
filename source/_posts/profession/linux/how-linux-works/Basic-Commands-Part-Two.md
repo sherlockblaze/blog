@@ -7,11 +7,9 @@ tags:
 date: 2019-03-02
 ---
 
-## Basic Commands(Part Two)
-
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
-### Shell Input and Output
+## Shell Input and Output
 
 To send the output of `command` to a file instead of the terminal, use the `>` redirection character:
 
@@ -36,7 +34,7 @@ head /proc/cpuinfo | tr a-z A-Z
 
 You can send output through as any piped commands as you wish; just add another pipe before each additional command.
 
-#### Standard Error
+### Standard Error
 
 Occasionally, you may redirect standard output but find that the program still prints something to the terminal. This is called ***standard error***; it's an additional output stream for diagnostics and debugging. For example, this command produces an error:
 
@@ -64,7 +62,7 @@ You can also send the standard error to the same place as stdout with the `>&` n
 ls /fffff > f 2>&1
 ```
 
-#### Standard Input Redirection
+### Standard Input Redirection
 
 To channel a file to a program's standard input, use the `<` operator:
 
@@ -72,11 +70,11 @@ To channel a file to a program's standard input, use the `<` operator:
 head < /proc/cpuinfo
 ```
 
-### Understanding Error Messages
+## Understanding Error Messages
 
 When you encounter a problem on a Unix-like system such as Linux, you must read the error message. Unlike messages from other operating systems, Unix errors usually tell you exactly what went wrong.
 
-#### Anatomy of a UNIX Error Message
+### Anatomy of a UNIX Error Message
 
 ```sh
 ls /dsafsd
@@ -89,7 +87,7 @@ ls: cannot access  /dsafsd: No such file or directory
 - The filename, /dsafsd, which is a more specific piece of information. There's a problem with this path.
 - The error `No such file or directory indicates the problem with the filename.`
 
-### Listing and Manipulating Processes
+## Listing and Manipulating Processes
 
 **A process is a running program.** Each process on the system has a numeric ***process ID***(PID). For a quick listing of running processes,just run `ps` on the command line. You should get a list like this one:
 
@@ -111,7 +109,7 @@ The fields are as follows:
 - **TIME.** The amount of CPU time in minutes and seconds that the process has used so far. In other words, the total amount of time that the process has spent running instructions on the processor.
 - **COMMAND.** This one might seem obvious, but be aware that a process can change this field from its original value.
 
-#### Command Options
+### Command Options
 
 The `ps` command has many options.
 
@@ -124,7 +122,7 @@ The `ps` command has many options.
 
 As with other programs, you can combine options, as in `ps aux` and `ps auxw`. To check on a specific process, add its PID to the argument list of the `ps` command. For example, to inspect the current shell process, you could use `ps u $$`, because `$$` is a shell variable that evaluates to the current shell’s PID.
 
-#### Killing Processes
+### Killing Processes
 
 To terminate a process, sent it a `signal` with the `kill` command. A signal is a message to a process from the kernel. When you run `kill`, you're asking the kernel to send a signal to another process.
 
@@ -146,9 +144,9 @@ kill -CONT pid
 
 **NOTE**: Using `ctrl-c` to terminal a process that is running in the current terminal is the same as using `kill` to end the process with the `INT`(interrupt) signal.
 
-#### Job Control
+### Job Control
 
-### Recommended Reading
+## Recommended Reading
 
 - The Linux Command Line (No Starch Press, 2012)
 - UNIX for the Impatient (Addison-Wesley Professional, 1995)

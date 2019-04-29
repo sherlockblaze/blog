@@ -7,11 +7,9 @@ tags:
 date: 2019-02-28
 ---
 
-## Basic Commands(Part One)
-
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
-### The Bourne Shell
+## The Bourne Shell
 
 The shell is one of the most important parts of a Unix system. A `shell` is a program that runs commands, like the ones that users enter. The shell also serves as a small programming environment. **Unix programmers often break common tasks into little components and use the shell to manage tasks and piece things together.**
 
@@ -19,11 +17,11 @@ One of the best things about the shell is that if you make a mistake, you can ea
 
 > Linux uses an enhanced version of the Bourne shell called `bash` or the "Bourne-again" shell. The `bash` shell is the default shell on most Linux distributions, and `/bin/sh` is normally a link to `bash` on a Linux system. You should use `bash` shell when running the examples I copy from the [book](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1).
 
-### Using the Shell
+## Using the Shell
 
 When you install Linux, you should create at least one regular user in addition to the root user; this will be your personal account.
 
-#### cat
+### cat
 
 The `cat` command is one of the easiest Unix commands to understand, it simply outputs the contents of one or more files. The general syntax of the `cat` command is as follows:
 
@@ -33,7 +31,7 @@ cat file1 file2
 
 When you run this command, `cat` prints the contents of `file1`, `file2`, and any other files that you specify, and then exits. The command is called `cat` because it performs concatenation when it prints the contents of more than one file.
 
-#### Standard Input and Standard Output
+## Standard Input and Standard Output
 
 We'll use `cat` to briefly explore Unix input and output(I/O). **Unix processes use I/O `stream` to read and write data. Processes read data from input streams and write data to output streams.** Streams are very flexible. For example, the source of an input stream can be a file, a device, a terminal, or even the output stream from another process.
 
@@ -45,7 +43,7 @@ Standard input and output are often abbreviated as `stdin` and `stdout`. Many co
 
 One of the best features of standard streams is that you can easily manipulate them read and write to places other than the terminal.
 
-### Basic Commands
+## Basic Commands
 
 Now let's look at some more Unix commands.
 
@@ -108,7 +106,7 @@ Hello again.
 
 The `echo` command is very useful for finding expansions of shell globs and variables.
 
-### Navigating Directories
+## Navigating Directories
 
 Unix has a directory hierarchy that starts at `/`, sometimes called the `root` directory. The directory separator is the slash (`/`), not the backslash (`\`). There are several standard subdirectories in the `root` directory, such as `/usr`.
 
@@ -148,7 +146,7 @@ rmdir dir
 
 If ***dir*** isn't empty, this command fails. However, if you're impatient, you probably don't want to laboriously delete all the files and subdirectories inside `dir` first. You can use `rm -rf dir` to delete a directory and its contents, but be careful! Double-check your command before you run it.
 
-### Recommended Reading
+## Recommended Reading
 
 - The Linux Command Line (No Starch Press, 2012)
 - UNIX for the Impatient (Addison-Wesley Professional, 1995)

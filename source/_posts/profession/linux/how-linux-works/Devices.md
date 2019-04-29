@@ -7,8 +7,6 @@ tags:
 date: 2019-03-11
 ---
 
-## Devices
-
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
 Throughout the history of Linux, there have been many changes to how the kernel presents  devices to the user. We'll begin by looking at the traditional system of device files to see how the kernel provides device configuration information through `sysfs`.
@@ -18,7 +16,7 @@ Throughout the history of Linux, there have been many changes to how the kernel 
 1. Be able to extract information about the devices on a system in order to understand a few rudimentary operations.
 2. Understand how the kernel interacts with user space when presented with new devices. The `udev` system enables user-space programs to automatically configure and use new devices.
 
-### Device Files
+## Device Files
 
 **It's easy to manipulate most devices on a Unix system because the kernel presents many of the device I/O interfaces to user processes as files.**
 
@@ -32,25 +30,25 @@ Using command `ls -l` and get result like this:
 
 Note the first character of each line(the first character of the file's mode), if this character is `b`, `c`, `p` or `s`, the file is a device. These letters stand for `block`, `pipe`, and `socket`, respectively.
 
-#### Block device
+### Block device
 
 - Program access data from a ***block device*** in fixed chunks, The `sda` in the preceding example is a ***disk device***, a type of block device. Disk can be easily split up into blocks of data. Because a block device's total size is fixed and easy to index, processes have random access to any block in the device with the help of the kernel.
 
-#### Character device
+### Character device
 
 - Character devices work with data streams. You can only read characters from or write characters to character devices, as previously demonstrated with `/dev/null`. Character devices don't have a size; **when you read from or write to one, the kernel usually performs a read or write operation on the device.** Printers directly attached to your computer are represented by character devices. **It's important to note that during character device interaction, the kernel cannot back up and reexamine the data stream after it has passed data to a device or process.**
 
-#### Pipe device
+### Pipe device
 
 - Named pipes are like character devices, with another process at the other end of the I/O stream instead of a kernel driver.
 
-#### Socket device
+### Socket device
 
 - **Sockets** are special-purpose interfaces that are **frequently used for interprocess communication.** They're often found outside of the `/dev` directory. Socket files represent Unix domain sockets.
 
 > Note all devices have device files because the block and character device I/O interfaces are not appropriate in all cases. For example, network interfaces don't have device files. It is theoretically possible to interact with a network interface using a single character device, but because it would be exceptionally difficult, the kernel uses other I/O interfaces.
 
-### The `sysfs` Device Path
+## The `sysfs` Device Path
 
 The traditional Unix `/dev` directory is a convenient way for user processes to reference and interface with devices supported by the kernel, but it's also a very simplistic scheme. The name of device in `/dev` tells you a little about device, but not a lot. **Another problem is that the kernel assigns devices in the order in which they are found, so a device may have a different name between reboots.**
 
@@ -70,7 +68,7 @@ It can be difficult to find the sysfs location of a device in `/dev`. Use the `u
 $ udevadm info --query=all --name=/dev/sda
 ```
 
-### dd and Devices
+## dd and Devices
 
 The program `dd` is extremely useful when working with block and character devices.
 
@@ -97,7 +95,7 @@ As you can see, the `dd` option format differs from the option formants of most 
 
 > dd is very powerful, so make sure you know what you're doing when you run it. It's very easy to corrupt files and data on devices by making a careless mistake. It often helps to write the output to a new file if you're not sure what it will do.
 
-### Device Name Summary
+## Device Name Summary
 
 It can sometimes be difficult to find the name of a device. Here are a few ways to find out what it is in this book:
 
@@ -111,7 +109,7 @@ It can sometimes be difficult to find the name of a device. Here are a few ways 
 
 The following sections list the most common Linux devices and their naming conventions.
 
-#### Hard Disks: `/dev/sd*`
+### Hard Disks: `/dev/sd*`
 
 Most hard disks attached to current Linux systems correspond in device names with an ***sd*** prefix, such as `/dev/sda`, `/dev/sdb`, and so on. 
 
@@ -133,7 +131,7 @@ The first column identifies the address of the device on the system, the second 
 
 > Unfortunately, this device assignment scheme has traditionally caused problems when reconfiguring hardware. Say, for example, that you have a system with three disks: `/dev/sda`, `/dev/sdb`, and `/dev/sdc`. If `/dev/sdb` explodes and you mush remove the disk so that the machine can work again, the former `/dev/sdc` moves to `/dev/sdb`, and there is no longer a `/dev/sdc`. If you were referring to the device names directly in the `fstab` file, you'd have to make some changes to that file in order to get things back to normal. To solve this problem, **most modern Linux systems use the Universally Unique Identifier(UUID)** fro persistent disk device access.
 
-#### CD and DVD Drives: `/dev/sr*`
+### CD and DVD Drives: `/dev/sr*`
 
 Linux recognizes most optical storage drives as the SCSI devices `/dev/sr0`, `/dev/sr1`, and so on. However, if the drive uses an older interface, it might show up as a PATH device , as discussed below. The `/dev/sr*` devices are read only, and they are used only for reading from discs. For the write and rewrite capabilities of optical devices, you’ll use the “generic” SCSI devices such as `/dev/sg0`.
 

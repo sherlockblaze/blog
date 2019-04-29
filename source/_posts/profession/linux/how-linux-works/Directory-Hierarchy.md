@@ -7,8 +7,6 @@ tags:
 date: 2019-03-04
 ---
 
-## Directory Hierarchy Essentials
-
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
 Let's check the directory hierarchy of linux first.
@@ -31,7 +29,7 @@ Here are the most important subdirectories in `root`:
 - `/usr` Although pronounced "user", this subdirectory has no user files. Instead, it contains a large directory hierarchy, including the bulk of the Linux system. Many of the directory names in `/usr` are the same as those in the root directory(like `/usr/bin` and `/usr/lib`), and they hold the same type of files.
 - `/var` The variable subdirectory, where programs record runtime information. System logging, user tracking, caches, and other files that system programs create and manage are here.
 
-### Other Root Subdirectories
+## Other Root Subdirectories
 
 There are a few other interesting subdirectories in the root directory:
 
@@ -39,7 +37,7 @@ There are a few other interesting subdirectories in the root directory:
 - `/media` A base attachment point for removable media such as flash drives that is found in many distributions.
 - `/opt` This may contain additional third-party software. Many systems don't use `/opt`
 
-### The `/usr` Directory
+## The `/usr` Directory
 
 The `/usr` directory may look relatively clean at first glance, but a quick look at `/usr/bin` and `/usr/lib` reveals that there's a lot here; `/usr` is where most of the user-space programs and data reside. In addition to `/usr/bin`, `/usr/sbin`, and `/usr/lib`, `/usr` contains the following:
 
@@ -49,12 +47,12 @@ The `/usr` directory may look relatively clean at first glance, but a quick look
 - `/man` Contains manual pages.
 - `/share` Contains files that should work on other kinds of Unix machines with no loss of functionality. In the past, networks of machines would share this directory, but a true `/share` directory is becoming rare because there are no space issues on modern disk. Maintaining a `/share` directory is often just a pain. In any case, `/man` , `/info`, and some other subdirectories are often found here.
 
-### Kernel Location
+## Kernel Location
 
 On Linux system, the kernel is normally in `/vmlinuz` or `/boot/vmlinuz`. A boot loader loads this file into memory and sets it in motion when the system boots.
 
 Once the boot loader runs and sets the kernel in motion, the main kernel file is no longer used by the running system. However, you'll find many modules that the kernel can load and unload on demand during the course of normal system operation. Called loadable kernel modules, they are located under `/lib/modules`.
 
-### Recommended Reading
+## Recommended Reading
 
 [Filesystem Hierarchy Standard](http://www.pathname.com/fhs/)

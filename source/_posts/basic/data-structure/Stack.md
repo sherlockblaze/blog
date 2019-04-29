@@ -3,10 +3,6 @@ title: Stack
 tags: Data Structures
 date: 2019-01-21
 ---
-### Stack
-
-- [Operations](#Operations)
-- [Conclusion](#Conclusion)
 
 A stack is a list with the restriction that insertions and deletions can be performed in only one position. We call this behavior last in first out(**LIFO**), and the position, we call it **top**, top of a stack.
 
@@ -22,25 +18,25 @@ or It can be ...
 
 As we can see, The most recently inserted element can be examined prior to performing a Pop by use of Top routine.
 
-#### Operation
+## Operation
 
 - [Push](#Push)
 - [Pop](#Pop)
 - [Implementation](#Implemention)
 
-##### Push
+### Push
 
 It easy to understand how to push a value into a stack.
 
 ![Push](https://sherlockblaze.com/resources/img/cs/stack/stack_push.png)
 
-##### Pop
+### Pop
 
 It also easy to understand how to pop a value into a stack.
 
 ![Pop](https://sherlockblaze.com/resources/img/cs/stack/stack_pop.png)
 
-##### Implementation
+## Implementation
 
 Actually, stack still is a list, whatever a linkelist or arraylist, all of them can be the data structure of a stack.
 In my version, I use the linkedlist as the data structure of it.

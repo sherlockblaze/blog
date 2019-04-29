@@ -7,14 +7,7 @@ tags:
 date: 2019-01-24
 ---
 
-# Loop Invariants
-
-## Contents
-
-- [What is Loop Invariants](#What-is-Loop-Invariants)
-- [Example](#Example)
-
-### What is Loop Invariants
+## What is Loop Invariants
 
 > At the start of each iteration of the ***for*** loop, the subarray A[i..j-1] consists of the elements originally in A[1..j-1], but in sorted order.
 > ***We use loop invariants to help us understand why an algorithms is correct.***
@@ -25,7 +18,7 @@ We must show three things about a loop invariants.
 2. ***Maintenance:*** If it is true before an iteration of the loop, it remains true before the next iteration.
 3. ***Termination:*** When the loop terminates, the invariant gives us a useful property that helps show that the algorithm is correct.
 
-### Example
+## Example
 
 Now Let's learn more about Invariants by talking about [Insertion-Sort](https://sherlockblaze.com/2019/01/24/computer_science/algorithms_classic/InsertionSort/) from three things we talk about:
 

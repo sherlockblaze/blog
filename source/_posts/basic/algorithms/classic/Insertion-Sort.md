@@ -7,15 +7,11 @@ tags:
 date: 2019-01-24
 ---
 
-### Insertion-Sort
-
-- [Pseudocode](#Pseudocode)
-- [Process](#Process)
-
 > Know about it by writing CODE.
+
 > ***Because it's really easy!!!!***
 
-#### Pseudocode
+## Pseudocode
 
 ```
 for j = 2 to A.length
@@ -75,7 +71,7 @@ insert_sort_test()
 
 ```
 
-#### Process
+## Process
 
 In order to help people who don't know about insertion-sort before. I made this. Let's check.
 

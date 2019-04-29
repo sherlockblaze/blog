@@ -7,9 +7,7 @@ tags:
 date: 2018-08-16
 ---
 
-## Python Basic Grammar
-
-### List/Tuple
+## List/Tuple
 
 > List和Tuple都是有序的列表，区别是List中的元素可以改变，而Tuple中的元素无法改变
 
@@ -42,7 +40,7 @@ tuple = (1,)
 
 > 观察到上面声明一个元素元组的时候才用的语法为 tuple = (1,)，而不是 tuple = (1) 理由是，在第二种情况下，python解释器将()当做小括号处理，所以其实声明的tuple为数字 1。即 tuple = 1 
 
-### Python条件语句
+## 条件语句
 
 ```python
 happy = True
@@ -55,7 +53,7 @@ else:
 
 > 需要注意的是，这里的条件判断语句之后，有一个: ， 并且接在下面的语句都是通过缩进来控制代码域的。
 
-### 循环 for/while
+## 循环 for/while
 
 通过代码来看：
 
@@ -91,7 +89,7 @@ while num < 10:
 7
 ```
 
-### dict/set
+## dict/set
 
 依然通过直接的代码来看
 dict = {'J': 23, 343: 'T'}
@@ -107,7 +105,7 @@ print(a)
 print(b)
 ```
 
-# 输出结果
+> 输出结果
 
 ```sh
 sherlock
@@ -131,7 +129,7 @@ print(setD)
 
 > 通过上述代码，知道了声明一个set的方式，& 是求两个set的交集， | 是求两个set的并集。
 
-### 定义函数
+## 定义函数
 
 ```python
 def sayhi():

@@ -7,11 +7,9 @@ tags:
 date: 2019-03-05
 ---
 
-## Process Environment
-
 > All the summaries are from the book named **[Advanced Programming in the Unix](https://www.amazon.com/Programming-Environment-Addison-Wesley-Professional-Computing/dp/0201563177/ref=sr_1_fkmrnull_1?crid=2YVJXTV3JD1HC&keywords=advance+programming+in+unix&qid=1551765355&s=gateway&sprefix=advance+unix%2Caps%2C467&sr=8-1-fkmrnull)**.
 
-### Questions
+## Questions
 
 - How the `main` function is called **when the program is executed,**?
 - How command-line arguments are passed to the new program?
@@ -20,7 +18,7 @@ date: 2019-03-05
 - How the Process can use environment variables?
 - How many ways the process to terminate?
 
-### How the `main` function is called?
+## How the `main` function is called?
 
 Let's see the prototype for the `main` function in C:
 
@@ -33,7 +31,7 @@ int main(int argc, char *argv[])
 
 And when C program is executed by the kernel -- by one of the `exec` functions -- a special start-up routine is called before the `main` function is called. And we mentioned in [this blog](https://sherlockblaze.com/2019/02/26/linux/how-linux-works/TheBigPictureOfLinux/#System-calls-and-Support). **The executable program file specifies this routine as the starting address for the program**; this is set up by the link editor when it is invoked by the C compiler. This start-up routine takes from the kernel -- the command-line arguments and the environment.
 
-### How many ways the process to terminate?
+## How many ways the process to terminate?
 
 There are eight ways for a process to terminate. Normal termination occurs in five ways:
 
@@ -49,7 +47,7 @@ Abnormal termination occurs in three ways:
 - Receipt of a signal
 - Response of the last thread to a cancellation request
 
-#### Exit Functions
+### Exit Functions
 
 Three functions terminate a program normally: `_exit` and `_Exit`, which return to the kernel immediately, and `exit`, which performs certain clean processing and then returns to the kernel.
 
@@ -68,7 +66,7 @@ Historically, **the `exit` function has always performed a clean shutdown of the
 
 All three exit functions expect a single integer argument, which we call the ***exit status***.
 
-### How command-line arguments are passed to the new program?
+## How command-line arguments are passed to the new program?
 
 When a program is executed, the process that does the `exec` can pass command-line arguments to the new program. This is part of the normal operation of the UNIX system shells.
 
@@ -105,7 +103,7 @@ for (i = 0; argv[i] != NULL; i++)
 
 Because the `argv[argc]` is a null pointer.
 
-### How the Process can use environment variables?
+## How the Process can use environment variables?
 
 **Each program is also passed an environment list.** Like the argument list, the environment list is an array of character pointers, with each pointer containing the address of a null-terminated C string. The address of the array of pointers is contained in the global variable `environ`:
 
@@ -125,7 +123,7 @@ Historically, most UNIX systems have provided a third argument to the `main` fun
 int main(int argc, int *argv[], char *envp[]);
 ```
 
-### What the typical memory layout look like?
+## What the typical memory layout look like?
 
 We take a look at the memory layout of a C program. Historically, a C program has been composed of the following pieces:
 
@@ -163,7 +161,7 @@ The `size(1)` command reports the sizes(in bytes) of the text, data, and bss seg
 
 The fourth and fifth columns are the total of the three sizes, displayed in decimal and hexadecimal, respectively.
 
-### Shared Libraries
+## Shared Libraries
 
 Most UNIX system today support shared libraries. **Shared libraries remove the common library routines from the executable file, instead maintaining a single copy of the library routine somewhere in memory that all processes reference.**
 
@@ -191,7 +189,7 @@ $size a.out
  1515   600	    8	   2123	    84b	a.out
 ```
 
-### How to allocate additional memory?
+## How to allocate additional memory?
 
 ISO C specifies three functions for memory allocation:
 

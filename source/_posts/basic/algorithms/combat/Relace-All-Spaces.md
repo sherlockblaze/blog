@@ -7,13 +7,7 @@ tags:
 date: 2019-01-24
 ---
 
-### Replace All Spaces
-
-- [Question](#Question)
-- [Though](#Thought)
-- [Code](#Code)
-
-##### Question
+## Question
 
 Implement a function that replaces each space in the string with "%20".
 For example:
@@ -21,7 +15,7 @@ For example:
 **Input**: "Sherlock Blaze is the most handsome boy in this world"
 **Output**: "Sherlock%20Blaze%20is%20the%20most%20handsome%20boy%20in%20this%20world"
 
-##### Thought
+## Thought
 
 Directly, the problem is very simple, if we encounter a space, delete it, and insert "%20" in its place. Like this:
 
@@ -72,7 +66,7 @@ When it finished, pointer I move forward for next value.
 
 And finally we achieve our goal.
 
-##### Code
+## Code
 
 We use our own [ArrayList](https://sherlockblaze.com/2019/01/21/computer_science/data_structures/ArrayList/) to store the data and implement the algorithm, just to experiment with whether our ArrayList is easy to use. There is a problem here, When you expand the size of the array, it will affect the value of the memory stored in the adjacent memory. You need to pay attention to it. Because I don't have a lot of connection with the algorithm itself, I ignored this problem in the code.
 

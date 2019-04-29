@@ -3,10 +3,6 @@ title: LinkedList
 tags: Data Structures
 date: 2019-01-21
 ---
-### LinkedList
-
-- [Operations](#Operations)
-- [Conclusion](#Conclusion)
 
 Here is the linked list. It looks like this.
 
@@ -23,12 +19,12 @@ In my version, I put a head node to save the length of the linked list.
 
 Now we can see the operations of LinkedList.
 
-#### Operations
+## Operations
 
 - [Insert](#Insert)
 - [Delete](#Delete)
 
-##### Insert
+### Insert
 
 ![Insert Step1](https://sherlockblaze.com/resources/img/cs/linkedlist/insert_step1.png)
 
@@ -112,7 +108,7 @@ InsertAt(List L, int index, ElementType value)
 }
 ```
 
-##### Delete
+### Delete
 
 We'll show two steps of delete operation.
 
@@ -187,7 +183,7 @@ DeleteAt(List L, int index)
 }
 ```
 
-#### Conclusion
+## Conclusion
 
 We know that if you just calculate the cost of insertion or deletion, you'll find T(n) = O(1).
 But you know if we wanna insert or delete a value with specify index, it'll cost O(n) in whole operation. But the cost of insertion or deletion still is O(1). Here, we just talk about the cost of insertion or deletion.

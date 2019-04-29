@@ -12,20 +12,6 @@ comments: true
 + **讨论一些经典或者优秀的项目，比如操作系统、网络协议、Redis、Nginx等等**
 + **从头开始写一些实战项目**
 
-## 内容
-- [环境](#环境)
-- [代码](#代码)
-- [知识](#知识)
-    - [数学](#数学)
-    - [英语单词](#英语单词)
-    - [数据结构](#数据结构)
-    - [经典算法](#经典算法)
-    - [算法实战](#算法实战)
-    - [算法规则](#算法规则)
-    - [机器学习](#机器学习)
-    - [深度学习](#深度学习)
-- [更多](#更多)
-
 ## 环境
 
 1. C11
@@ -38,13 +24,15 @@ comments: true
 
 可以在[这里](https://github.com/sherlockblaze/all_knowledge_review) 找到所以关于本博客笔记的代码。
 
-## 数学
+## 基础
 
-## 英语单词
+### 数学
+
+### 英语单词
 
 - [ ] 第一天
 
-## 数据结构
+### 数据结构
 
 > ***以下代码并不是全部内容，持续补充***
 
@@ -67,11 +55,11 @@ comments: true
     - [ ] 左式堆
 - [ ] 图
 
-## 经典算法
+### 经典算法
 
 - [ ] 插入排序
 
-## 算法实战
+### 算法实战
 
 - [ ] Two Sum
 - [ ] Add Two Numbers
@@ -79,18 +67,29 @@ comments: true
 - [ ] Replace All Spaces
 - [ ] Reverse Print List
 
-## 算法规则
+### 算法规则
 
 > **这里讲一些算法设计上的规则**
 
 - [ ] 函数增长
 - [ ] 循环不变式
 
-## 机器学习
+## 专业
+
+### Linux
+
+> **一些关于 Linux 系统的知识**
+
+#### Linux 是如何工作的
+
+- [x] [Linux系统总览](https://sherlockblaze.com/2019/02/26/profession/linux/how-linux-works/The-Big-Picture-Of-Linux)
+- [x] [目录结构](https://sherlockblaze.com/2019/03/04/profession/linux/how-linux-works/Directory-Hierarchy)
+
+### 机器学习
 
 ***坐等... 先集中注意力在数据结构和算法上***
 
-## 深度学习
+### 深度学习
 
 ***坐等... 先集中注意力在数据结构和算法上***
 

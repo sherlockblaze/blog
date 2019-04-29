@@ -7,11 +7,9 @@ tags:
 date: 2019-03-05
 ---
 
-## Process Control
-
 > All the summaries are from the book named **[Advanced Programming in the Unix](https://www.amazon.com/Programming-Environment-Addison-Wesley-Professional-Computing/dp/0201563177/ref=sr_1_fkmrnull_1?crid=2YVJXTV3JD1HC&keywords=advance+programming+in+unix&qid=1551765355&s=gateway&sprefix=advance+unix%2Caps%2C467&sr=8-1-fkmrnull)**.
 
-### Process Identifiers
+## Process Identifiers
 
 **Every process has a unique process ID, a non-negative integer.**
 
@@ -47,7 +45,7 @@ gid_t getgid(void);
 gid_t getegid(void);
 ```
 
-### Fork Function
+## Fork Function
 
 An existing process can create a new one by calling the `fork` function. The new process created by `fork` is called the ***child*** process.
 

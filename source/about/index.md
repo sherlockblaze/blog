@@ -12,21 +12,6 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 + **Discuss some classic or excellent projects, such as an Operating System, Network Protocols, Redis, Nginx and so on;**
 + **Practical drill. From the beginning.**
 
-## Contents
-- [Environment](#Environment)
-- [Code](#Code)
-- [Knowledge](#Knowledge)
-    - [Math](#Math)
-    - [English Words](#English-Words)
-    - [Data Structures](#Data-Structures)
-    - [Classic Algorithms](#Classic-Algorithms)
-    - [Algorithms Combat](#Algorithms-Combat)
-    - [Algorithms Rules](#Algorithms-Rules)
-    - [Machine Learning](#Machine-Learning)
-    - [Deep Learning](#Deep-Learning)
-    - [Linux](#Linux)
-- [More](#More)
-
 ## Environment
 
 1. work with c11
@@ -39,13 +24,15 @@ It will be a long-term battle, and the content will be updated everyday. I will:
 
 You can view all code about my notes [here](https://github.com/sherlockblaze/all_knowledge_review).
 
-## Math
+## Basic
 
-## English Words
+### Math
+
+### English Words
 
 - [ ] DayOne
 
-## Data Structures
+### Data Structures
 
 > ***The following content is not the whole content, continues to supplement***
 
@@ -74,11 +61,11 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 - [ ] Disjoint Set
 - [ ] Graph
 
-## Classic Algorithms
+### Classic Algorithms
 
 - [ ] Insertion-Sort
 
-## Algorithms Combat
+### Algorithms Combat
 
 - [ ] Two Sum
 - [ ] Add Two Numbers
@@ -86,30 +73,37 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 - [ ] Replace All Spaces
 - [ ] Reverse Print List
 
-## Algorithms Rules
+### Algorithms Rules
 
 > **Here is some rules about Algorithms.**
 
 - [ ] Growth Of Function
 - [ ] Loop Invariants
 
-## Linux
+## Profession
+
+### Linux
 
 > **Here is some knowledge about linux**
 
-### How Linux Works
+#### How Linux Works
 
-- [x] [The Big Picture Of Linux](https://sherlockblaze.com/2019/02/26/linux/how-linux-works/The-Big-Picture-Of-Linux)
-- [x] [Basic Commands Part one](https://sherlockblaze.com/2019/02/28/linux/how-linux-works/Basic-Commands-Part-One)
-- [x] [Basic Commands Part two](https://sherlockblaze.com/2019/03/02/linux/how-linux-works/Basic-Commands-Part-Two)
-- [x] [Directory Hierarchy Essentials](https://sherlockblaze.com/2019/03/04/linux/how-linux-works/Directory-Hierarchy)
-- [x] [Devices](https://sherlockblaze.com/2019/03/11/linux/how-linux-works/Devices)
+- [x] [The Big Picture Of Linux](https://sherlockblaze.com/2019/02/26/profession/linux/how-linux-works/The-Big-Picture-Of-Linux/)
+- [x] [Basic Commands Part one](https://sherlockblaze.com/2019/02/28/profession/linux/how-linux-works/Basic-Commands-Part-One)
+- [x] [Basic Commands Part two](https://sherlockblaze.com/2019/03/02/profession/linux/how-linux-works/Basic-Commands-Part-Two)
+- [x] [Directory Hierarchy Essentials](https://sherlockblaze.com/2019/03/04/profession/linux/how-linux-works/Directory-Hierarchy)
+- [x] [Devices](https://sherlockblaze.com/2019/03/11/profession/linux/how-linux-works/Devices)
 
-## Machine Learning
+#### Programming Language
+
+- Rust
+    - [x] [Rust Ownership](https://sherlockblaze.com/2019/03/25/code/rust/Ownership/)
+
+### Machine Learning
 
 ***Waiting... focus on data structures now***
 
-## Deep Learning
+### Deep Learning
 
 ***Waiting... focus on data structures now***
 

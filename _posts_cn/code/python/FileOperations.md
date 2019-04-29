@@ -19,11 +19,11 @@ date: 2017-06-17 11:40:49
 c:\pythonworkspace\firstpy.py
 在Unix平台上，文件的绝对路径可能是: /home/sherlockblaze/Documents/pythonworkspace/firstpy.py
 
-### 文件类型
+## 文件类型
 
 > 文件大概可以分为文本文件和二进制文件。在不同操作系统下，可以用文本编辑器编辑的文件，都称为文本文件，那么其他的文件就属于二进制文件。而二进制文件相比与文本文件的优势在于二进制文件的处理效率更高一些。
 
-### 读取文件的开始
+## 读取文件的开始
 
 > 读取一个文件的思路永远都是相同的，第一步自然就是打开一个文件。在python中我们通过如下代码使用open函数来打开一个文件。
 
@@ -69,7 +69,7 @@ input = open(r"d:\pythonworkspace\Test.txt","r")
 input = open("d:\\pythonworkspace\\Test.txt","r")
 ```
 
-### 向文件中写入数据
+## 向文件中写入数据
 
 > 我们首先通过写入的方式打开文件，然后通过调用write方法，向文件中写入数据。
 
@@ -101,7 +101,7 @@ else:
     print("Test.txt doesn't exists")
 ```
 
-### 简单小程序
+## 简单小程序
 
 + 输入文件路径，并且从中计算各个字母出现的次数
 
