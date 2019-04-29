@@ -7,8 +7,6 @@ tags:
 date: 2019-03-12
 ---
 
-## How the Linux Kernel Boots
-
 > All the summaries are from the book named **[How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676/ref=sr_1_1?keywords=how+linux+works&qid=1551169061&s=gateway&sr=8-1)**.
 
 Learn about how the kernel moves into memory up to the point where the first user process starts.
@@ -23,7 +21,7 @@ A simplified view of the boot process looks like this:
 6. `init` sets the rest of system processes in motion.
 7. At some point, `init` starts a process allowing you to log in, usually at the end or near the end of the boot.
 
-### Kernel Initialization and Boot Options
+## Kernel Initialization and Boot Options
 
 Linux kernel initializes in this general order:
 
@@ -35,7 +33,7 @@ Linux kernel initializes in this general order:
 6. Root filesystem mount
 7. User space start
 
-### Kernel Parameters
+## Kernel Parameters
 
 When running the Linux kernel, the boot loader passes in a set of text-based kernel parameters that tell the kernel how it should start.
 
@@ -45,6 +43,9 @@ You can review the kernel parameters from your system's boot by looking at the `
 
 ```sh
 $ cat /proc/cmdline
+```
+
+```
 BOOT_IMAGE=/boot/vmlinuz-4.18.0-16-generic root=UUID=91ffe6ed-09ff-4355-880d-fc1a4aaac6ba ro quiet splash vt.handoff=1
 ```
 
@@ -52,13 +53,13 @@ The parameters are either simple one-word flags, such as `ro` and `quiet`, or **
 
 The root filesystem can be specified as a device file, such as in this example:
 
-```sh
+```
 root=/dev/sda1
 ```
 
 However, on most modern desktop systems, a UUID is more common:
 
-```sh
+```
 root=UUID=91ffe6ed-09ff-4355-880d-fc1a4aaac6ba
 ```
 
@@ -68,7 +69,7 @@ Upon encountering a parameter that it does not understand, the Linux kernel save
 
 Now let's look at the mechanics of how **boot loaders** start the kernel.
 
-### Boot Loaders
+## Boot Loaders
 
 **At the start of the boot process, before the kernel and `init` start, a boot loader starts the kernel.**
 
@@ -83,7 +84,7 @@ Let's start with the driver concern. On PCs, **boot loaders use the Basic Input/
 
 Most modern boot loaders can read partition tables and have built-in support for read-only access to filesystems. Thus, they can find and read files. This capability makes it far easier to dynamically configure and enhance the boot loader. Linux boot loaders have not always had this capability; without it, configuring the boot loader was more difficult.
 
-#### Boot Loader Tasks
+### Boot Loader Tasks
 
 A Linux boot loader's core functionality includes the ability to do the following:
 

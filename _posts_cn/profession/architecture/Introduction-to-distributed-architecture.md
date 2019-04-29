@@ -12,7 +12,7 @@ date: 2019-04-24
 
 如图：
 
-![principle](https://sherlockblaze.com/resources/img/architectures/distributed-architecture-principle.png)
+![principle](https://sherlockblaze.com/resources/img/profession/architectures/distributed-architecture-principle.png)
 
 以上图片将分布式框架的架构抽象为三层。
 

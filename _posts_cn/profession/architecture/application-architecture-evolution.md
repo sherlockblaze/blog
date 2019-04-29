@@ -134,13 +134,13 @@ Cloud Native 可以认为是一系列架构、研发流程、团队文化的最�
 
 ### Cloud Native 的组成
 
-![cloud-native compositions](https://sherlockblaze.com/resources/img/profession/architecture/cloud-native-composition.png)
+![cloud-native compositions](https://sherlockblaze.com/resources/img/profession/architectures/cloud-native-composition.png)
 
 如上图所示，分析 Cloud Native 需要从架构、研发流程、团队文化三个角度来实现，三者需要相互配合，缺一不可。
 
 **架构角度**： Cloud Native 是以云和微服务架构作为基础构建系统的。Cloud Native 架构的组成大致如下图所示：
 
-![could-native architectural composition](https://sherlockblaze.com/resources/img/profession/architecture/cloud-native-architectural-composition.png)
+![could-native architectural composition](https://sherlockblaze.com/resources/img/profession/architectures/cloud-native-architectural-composition.png)
 
 **研发流程角度**： 自动化的研发环境是 Cloud Native 的基础。因为使用云作为基础设施，已经具备基础的自动化能力，可以达到自服务的要求，流程中应该尽量减少沟通人员的规模，尽量减少测试及运维对开发的协助，最好由全栈工程师独自、快速完成交付。**保持各环境一致，容器使这一点更容易实现。**
 
