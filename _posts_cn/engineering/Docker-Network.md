@@ -2,7 +2,7 @@
 title: Docker 网络
 tags: 
   - Docker
-  - Engineering
+  - profession
 date: 2019-03-27
 ---
 
@@ -102,7 +102,7 @@ docker0     8000.0242d2c5c523   no
 $ docker run -it busybox
 ```
 
-继续输入命令 ```brctl show``` 查看 bridge 网络情况：
+继续输入命令 `brctl show` 查看 bridge 网络情况：
 
 ```
 bridge name bridge id       STP enabled interfaces
@@ -132,13 +132,13 @@ docker0     8000.0242d2c5c523   no      veth4317eb1
 
 执行命令 `docker network inspect bridge` 查看到如下内容：
 
-![](https://sherlockblaze.com/resources/img/engineering/docker/docker-network-inspect-bridge.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-network-inspect-bridge.png)
 
 我们注意到在 `Config` 配置项下，有两个配置项，分别是 `subnet` 和 `Gateway`，看到网关的值为 `172.17.0.1`，而这个网关，就是我们的 `docker0`。
 
 此时容器的网络拓扑结构如下图所示：
 
-![](https://sherlockblaze.com/resources/img/engineering/docker/docker-bridge-config.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-bridge-config.png)
 
 ## user-defined 网络
 
@@ -164,13 +164,13 @@ docker0     8000.0242d2c5c523   no      veth4317eb1
 $ docker network inspect my_net
 ```
 
-![](https://sherlockblaze.com/resources/img/engineering/docker/docker-network-inspect-my_net.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-network-inspect-my_net.png)
 
 上图中，`172.21.0.0/16` 是 Docker 自动分配的 IP 网段。当然，我们也可以自己指定网段。只需要在创建网段时指定 `--subnet` 和 `--gateway` 参数即可。
 
 执行命令 `docker network create --driver bridge --subnet 172.22.16.0/24 --gateway 172.22.16.1 my_net2`
 
-![](https://sherlockblaze.com/resources/img/engineering/docker/docker-network-inspect-my_net2.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-network-inspect-my_net2.png)
 
 接下来我们做实验，首先使用命令 
 
@@ -185,7 +185,7 @@ docker run -it --network=my_net busybox
 1. 在前两条命令中我们指定了 `ip`，想要这样做我们需要在创建网络的时候指定 `subnet` 配置项
 2. 执行上述命令行后，我们创建出三个容器，且这个状态下的网络拓扑结构如下图所示：
 
-![](https://sherlockblaze.com/resources/img/engineering/docker-bridge-graph-new.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-bridge-graph-new.png)
 
 接下来我们讨论容器的通信问题。
 
@@ -201,25 +201,25 @@ docker run -it --network=my_net busybox
 
 理论上，身处同一个网段中是可以互通的，我们在 IP 为 `172.22.16.8` 的容器中去 `ping` IP 为 `172.22.16.9` 的容器。得到的结果如下图所示：
 
-![](https://sherlockblaze.com/resources/img/engineering/ping-172-22-16-9.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/ping-172-22-16-9.png)
 
 以上结果验证了我们的说法，同一网段中的容器的确和 ping 通。
 
 接下来我们在 IP 为 `172.22.16.8` 的容器中去 `ping` IP 为 `172.21.0.2` 的容器：
 
-![](https://sherlockblaze.com/resources/img/engineering/ping-172-21-0-2.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/ping-172-21-0-2.png)
 
 > 不同的网络如果加上路由应该是可以通信的。
 
 在 Docker 宿主机上执行命令 `ip r`，我们可以得到如下结果：
 
-![](https://sherlockblaze.com/resources/img/engineering/host-ip-r-router.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/host-ip-r-router.png)
 
 图中我们可以观察到两个网络的路由器， `172.22.16.0` 以及 `172.21.0.0`。
 
 继续执行命令 `sysctl net.ipv4.ip_forward`，得到如图输出：
 
-![](https://sherlockblaze.com/resources/img/engineering/check_ipv4_forward.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/check_ipv4_forward.png)
 
 由此我们可以确认 ip forwarding 已启用。
 
@@ -229,7 +229,7 @@ docker run -it --network=my_net busybox
 
 执行命令 `sudo iptables-save` 得到以下结果，然后我们来一探究竟：
 
-![](https://sherlockblaze.com/resources/img/engineering/ip-table-docker-network.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/ip-table-docker-network.png)
 
 在图片的下方我们可以看到如下两行内容：
 
@@ -246,10 +246,10 @@ docker run -it --network=my_net busybox
 
 接下来我们在 ip 为 `172.21.0.2` 的 busybox 容器中执行命令 `ifconfig`，得到如下输出：
 
-![](https://sherlockblaze.com/resources/img/engineering/ifconfig-after-connect-network.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/ifconfig-after-connect-network.png)
 
 我们可以清楚的观察到多了一个 ip 为 `172.22.16.2` 的网卡 `eth1`。此时，网络拓扑图如下所示：
 
-![](https://sherlockblaze.com/resources/img/engineering/docker-bridge-graph-after-connect.png)
+![](https://sherlockblaze.com/resources/img/profession/docker/docker-bridge-graph-after-connect.png)
 
 致此，我们就可以用新 IP 让三个 busybox 实现互通了。
