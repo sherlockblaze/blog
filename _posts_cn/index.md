@@ -38,8 +38,8 @@ comments: true
 
 - [ ] 线性表
     - [ ] 单链表
-    - [ ] 双链表
-    - [ ] [数组列表](https://sherlockblaze.com/2019/01/21/cs/ds/ArrayList/)
+    - [x] [双链表](https://sherlockblaze.com/2019/01/21/basic/data-structure/LinkedList/)
+    - [x] [数组列表](https://sherlockblaze.com/2019/01/21/basic/data-structure/ArrayList/)
     - [ ] 栈
     - [ ] 队列
 - [ ] 树
@@ -84,6 +84,30 @@ comments: true
 
 - [x] [Linux系统总览](https://sherlockblaze.com/2019/02/26/profession/linux/how-linux-works/The-Big-Picture-Of-Linux)
 - [x] [目录结构](https://sherlockblaze.com/2019/03/04/profession/linux/how-linux-works/Directory-Hierarchy)
+
+### 编程语言
+
+- Rust
+    - [x] [Rust编程初体验](https://sherlockblaze.com/2019/03/21/code/rust/Start-Code-in-Rust/)
+
+- Python
+    - [x] [Python基础语法](https://sherlockblaze.com/2018/08/16/code/python/BasicGrammar/)
+    - [x] [Python高级特性](https://sherlockblaze.com/2018/08/16/code/python/AdvancedFeatures/)
+    - [x] [Python面向对象](https://sherlockblaze.com/2018/08/16/code/python/Object-Oriented/)
+    - [x] [Python多线程基础](https://sherlockblaze.com/2018/08/16/code/python/MultithreadBasic/)
+    - [x] [Python多线程深入一些](https://sherlockblaze.com/2018/08/16/code/python/Multithread/)
+    - [x] [Python函数式编程(一)](https://sherlockblaze.com/2018/08/16/code/python/FunctionalProgramming/)
+    - [x] [Python简单文件操作](https://sherlockblaze.com/2017/06/17/code/python/FileOperations/)
+    - [x] [Python文件操作 -- 一年后新版](https://sherlockblaze.com/2018/08/16/code/python/FileOperationsMore/)
+
+### Docker
+
+- [x] [Docker网络](https://sherlockblaze.com/2019/03/27/profession/docker/Docker-Network/)
+
+### 架构
+
+- [x] [应用架构演进](https://sherlockblaze.com/2019/04/23/profession/architecture/application-architecture-evolution/)
+- [x] [分布式架构入门](https://sherlockblaze.com/2019/04/24/profession/architecture/Introduction-to-distributed-architecture/)
 
 ### 机器学习
 
