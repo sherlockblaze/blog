@@ -41,9 +41,13 @@ after_script:
 - sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
 - sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
 - hexo recommend && hexo clean && hexo generate
-- mv public/2019/04/12/resume_tmp/resume/index.html ./index.html.bak
+- mv public/2019/04/12/resume_tmp/resume/index.html ./resume-index.html
 - rm -rf ./source/_posts/resume_tmp
+- mv public/2019/04/12/openedge_tmp/openedge/index.html ./openedge-index.html
+- rm -rf ./source/_posts/openedge_tmp
 - hexo recommend && hexo clean && hexo generate
 - mkdir public/resources/file/resume
-- mv ./index.html.bak ./public/resources/file/resume/index.html
+- mkdir public/resources/file/openedge
+- mv ./resume-index.html ./public/resources/file/resume/index.html
+- mv ./openedge-index.html ./public/resources/file/openedge/index.html
 - hexo deploy
