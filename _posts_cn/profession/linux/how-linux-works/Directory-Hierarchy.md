@@ -13,7 +13,7 @@ date: 2019-03-04
 
 我们先简单看一下Linux系统下的目录层级。
 
-![Linux directory hierarchy](https://sherlockblaze.com/resources/img/linux/how-linux-works/linux-directory-hierarchy.png)
+![Linux directory hierarchy](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/linux-directory-hierarchy.png)
 
 上面的图片简单展示了一下Linux系统的目录层级。简单展示了 `/`，`/user`，和 `/var` 目录下的内容。注意一下，**`/usr`目录下的内容和根目录下的内容基本相同。**
 

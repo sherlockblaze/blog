@@ -28,7 +28,7 @@ There's a limit to what you can do with a file interface, so not all devices or 
 
 Using command `ls -l` and get result like this:
 
-![ls -l](https://sherlockblaze.com/resources/img/linux/how-linux-works/ls-l-command.png)
+![ls -l](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/ls-l-command.png)
 
 Note the first character of each line(the first character of the file's mode), if this character is `b`, `c`, `p` or `s`, the file is a device. These letters stand for `block`, `pipe`, and `socket`, respectively.
 
@@ -58,7 +58,7 @@ To provide a uniform view for attached devices based on their actual hardware at
 
 For example, the SATA hard disk at `/dev/sda` might have the following path in `sysfs`:
 
-![](https://sherlockblaze.com/resources/img/linux/how-linux-works/device-in-sysfs.png)
+![](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/device-in-sysfs.png)
 
 The `/dev` file is there so that user processes can use the device, whereas the `/sys/devices` path is used to view information and manage the device.
 
@@ -123,7 +123,7 @@ Although traditional SCSI hardware isn't used in most modern machines, **the SCS
 
 To list the SCSI devices on your system, use a utility that walks the device paths provided by sysfs. One of the most succinct is `lsscsi`, maybe you should install it on your machine first. For example, my system is Ubuntu 18.04, I installed by using command `sudo apt install lsscsi`. Here is what you can expect when you run it:
 
-![](https://sherlockblaze.com/resources/img/linux/how-linux-works/output-of-lsscsi.png)
+![](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/output-of-lsscsi.png)
 
 The first column identifies the address of the device on the system, the second describes what kind of device it is, and the last indicates where to find the device file. Everything else is vendor information.
 

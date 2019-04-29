@@ -13,7 +13,7 @@ date: 2019-03-04
 
 Let's check the directory hierarchy of linux first.
 
-![Linux directory hierarchy](https://sherlockblaze.com/resources/img/linux/how-linux-works/linux-directory-hierarchy.png)
+![Linux directory hierarchy](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/linux-directory-hierarchy.png)
 
 This picture offers a simplified overview of the hierarchy, showing some of the directories under `/`, `/usr`, and `/var`. Notice that the directory structure under `/usr` contains some of the same directory names as `/`.
 

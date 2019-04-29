@@ -115,7 +115,7 @@ extern char **environ;
 
 For example, if the environment consisted of five string, it could look like following picture. Here are explicitly show the null bytes at the end of each string. We'll call `environ` ***the environment pointer***, the array of pointers the environment list, and the string they point to the environment strings.
 
-![Environment consisting](https://sherlockblaze.com/resources/img/unix/environment-consisting.png)
+![Environment consisting](https://sherlockblaze.com/resources/img/profession/unix/environment-consisting.png)
 
 The environment consists of `name=value` strings. Most predefined names are entirely uppercase, but this is only a convention.
 
@@ -151,7 +151,7 @@ appearing outside any function causes this variable to be stored in the uninitia
 
 The following picture shows the typical arrangement of these segments. This is a logical picture of how a program looks.
 
-![Typical Memory Arrangement](https://sherlockblaze.com/resources/img/unix/typical-memory-arrangement.png)
+![Typical Memory Arrangement](https://sherlockblaze.com/resources/img/profession/unix/typical-memory-arrangement.png)
 
 > Several more segment types exist in an `a.out`, containing the symbol table, debugging information, linkage tables for dynamic shared libraries, and the like. These additional sections don't get loaded as part of the program's image executed by a process.
 
@@ -159,7 +159,7 @@ Note from above picture that the contents of the uninitialized data segment are 
 
 The `size(1)` command reports the sizes(in bytes) of the text, data, and bss segments. For example:
 
-![size(1) command](https://sherlockblaze.com/resources/img/unix/size-command.png)
+![size(1) command](https://sherlockblaze.com/resources/img/profession/unix/size-command.png)
 
 The fourth and fifth columns are the total of the three sizes, displayed in decimal and hexadecimal, respectively.
 

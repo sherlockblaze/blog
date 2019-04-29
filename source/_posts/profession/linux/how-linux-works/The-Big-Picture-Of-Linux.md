@@ -29,7 +29,7 @@ The next level up is the kernel, which is the core of the operation system. **Th
 
 ***Processes*** -- the running programs that the kernel manages ---- collectively make up the system's upper level, called ***user space***. (A more specific term for process is ***user process***, regardless of whether of a user directly interacts with the process. For example, all web servers run as user processes.)
 
-![General Linux System Organization](https://sherlockblaze.com/resources/img/linux/how-linux-works/general-linux-system-organization.png)
+![General Linux System Organization](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/general-linux-system-organization.png)
 
 The critical difference between the ways that the kernel and user processes run: The kernel runs in ***kernel mode***, and the user processes run in ***user mode***. Code running in kernel mode has unrestricted access to the processor and main memory. **The area that only the kernel can access is called ___kernel space___.**
 
@@ -116,7 +116,7 @@ Two system calls, `fork()` and `exec()`, are important to understanding how proc
 
 **Other than init, all user processes on a Linux system start as a result of `fork()`**, and most of the time, you also run `exec()` to start a new program instead of running a copy of an existing process. A very simple example is any program that you run at the command line, such as the `ls` command to show the contents of a directory. When you enter `ls` into a terminal window, the shell that's running inside the terminal window calls `fork()` to create a copy of the shell, and then the new copy of the shell calls `exec(ls)` to run `ls`. The process shows as follow:
 
-![start a new process](https://sherlockblaze.com/resources/img/linux/how-linux-works/starting-a-new-process.png)
+![start a new process](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/starting-a-new-process.png)
 
 The kernel also supports user processes with features other than traditional system calls, the most common of which are ***pseudodevices***. Pseudo-devices look like devices to user processes, but they're implemented purely in software. As such, they don't technically need to be in the kernel, but they are usually there for practical reasons. For example, the kernel random number generator device(`/dev/random`) would be difficult to implement securely with a user process.
 
@@ -128,7 +128,7 @@ The main memory that the kernel allocates user processes is called ***user space
 
 Most of the real action on a Linux system happens in user space. Although all processes are essentially equal from the kernel's point of view, they perform different tasks for user. There is a rudimentary service level (or layer) structure to the kinds of system components that user processes represent. The following picture shows how an example set of components fit together and interact on a Linux system. Basic services are at the bottom level(closest to the kernel), utility services are in the middle, and applications that users touch are at the top. What in the picture is a greatly simplified diagram because only six components are shown, but you can see that the components at the top are closest to the user; the components in the middle level has a mail server that the web browser uses; and there are several smaller components at the bottom.
 
-![Process types and interactions](https://sherlockblaze.com/resources/img/linux/how-linux-works/process-types-and-interactions.png)
+![Process types and interactions](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/process-types-and-interactions.png)
 
 The bottom level tends to consist of small components that perform single, uncomplicated tasks. The middle level has larger components such as mail, print, and database services. Finally, components at the top level perform complicated tasks that the user often controls directly. Components also use other components. Generally, if one component wants to use another, the second component is either at the same service level or below.
 

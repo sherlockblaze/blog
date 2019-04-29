@@ -28,7 +28,7 @@ Linux系统中主要有三个层。下面的图片展示了这三个层以及各
 
 ***进程*** —— 被内核管理的运行中的程序 —— 共同组成了操作系统的上层，被称为***用户空间***。（进程用一个更常见的术语描述是***用户进程***，不管用户是否可以直接和进程进行交互。比如说，所有的Web服务都是以用户进程的方式来运行。）
 
-![General Linux System Organization](https://sherlockblaze.com/resources/img/linux/how-linux-works/general-linux-system-organization.png)
+![General Linux System Organization](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/general-linux-system-organization.png)
 
 用户进程和内核进程最明显的不同就是：用户进程运行在**用户模式**，而内核进程运行在**内核模式**。在内核模式下运行的程序可以访问到处理器和主存。而只有内核能访问到的区域被称为**内核空间**
 
@@ -114,7 +114,7 @@ Linux系统中主要有三个层。下面的图片展示了这三个层以及各
 
 **除了`init`进程，Linux系统下所有的用户进程都是 `fork()`的产物**，大部分时间，系统会运行 `exec()` 来替换掉复制的进程。举个简单的例子，比如你在终端输入 `ls` 命令，终端会调用 `fork()` 创造一个 shell 的复制，然后执行 `exec(ls)` 来运行 `ls` 程序。过程如下图。
 
-![start a new process](https://sherlockblaze.com/resources/img/linux/how-linux-works/starting-a-new-process.png)
+![start a new process](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/starting-a-new-process.png)
 
 内核还会向用户进程提供一些不同于传统系统调用的功能， 比较常见的，比如 ***伪设备***。伪设备对用户进程来说，就像是普通的设备，但是它是完全通过软件来实现的。从技术上来说，它们不必是内核的一部分，但是通常来说，它们的确是。比如说， `/dev/random` 需要通过内核来实现，因为通过用户进程来实现是非常困难的。
 
@@ -126,7 +126,7 @@ Linux系统中主要有三个层。下面的图片展示了这三个层以及各
 
 大多数实际的操作发生在用户空间。虽然从内核的角度来观察所有的进程都是一样的，但是它们为用户执行不同的任务。对于用户进程所代表的系统组件类型，存在基本的服务级别（或层）结构。下面的图片展示了一个关于组件集合相互写作以及和Linux系统进行交互的例子。最基本的服务在最底层（接近内核），公用服务在中间一层，用户接触的用户在最顶层。图片里仅仅展示了六个组件，但是很容易发现，用户能接触到的在顶层，在中层的组件，比如邮件服务是被浏览器使用的；然后底层有几个小的组件。
 
-![Process types and interactions](https://sherlockblaze.com/resources/img/linux/how-linux-works/process-types-and-interactions.png)
+![Process types and interactions](https://sherlockblaze.com/resources/img/profession/linux/how-linux-works/process-types-and-interactions.png)
 
 最底下一层往往是由最简单的组件，执行单一、不算发杂的任务。中间的层则是一些比较大的组件，比如邮件、打印和数据库服务。最后，在最顶层的组件执行一些复杂的任务，一般来说，用户直接控制这些任务的完成。组件可以使用其他的组件，通常来说，如果一个组件需要使用另一个组件，那么被使用的组件需要在相同的等级或者比当前等级低。
 

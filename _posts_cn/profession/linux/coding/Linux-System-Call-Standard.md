@@ -66,4 +66,4 @@ glibc中的包装函数会在执行系统调用前设置寄存器状态，并仔
 
 [攻克Linux系统编程](https://gitbook.cn/gitchat/column/5bfbbe9b7d496f13396961de/topic/5c21aa444fcd483b0264eb19)
 
-![](https://sherlockblaze.com/resources/img/linux/linux_programming_share.jpg)
+![](https://sherlockblaze.com/resources/img/profession/linux/linux-programming-share.jpg)
