@@ -37,16 +37,16 @@ You can view all code about my notes [here](https://github.com/sherlockblaze/all
 > ***The following content is not the whole content, continues to supplement***
 
 - [x] List
-    - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/basic/data-structure/LinkedList/)
-    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/basic/data-structure/Doubly-LinkedList/)
-    - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/basic/data-structure/ArrayList/)
-    - [x] [Stack](https://sherlockblaze.com/2019/01/21/basic/data-structure/Stack/)
-    - [x] [Queue](https://sherlockblaze.com/2019/01/21/basic/data-structure/Queue/)
-- [ ] Trees
-    - [ ] Binary Trees
-    - [ ] Search Tree - Binary Search Tree
-    - [ ] AVL Trees
-    - [ ] Red-Black Trees
+    - [x] [LinkedList](https://sherlockblaze.com/2019/01/21/basic/data-structure/lists/LinkedList/)
+    - [x] [Doubly LinkedList](https://sherlockblaze.com/2019/01/21/basic/data-structure/lists/Doubly-LinkedList/)
+    - [x] [ArrayList](https://sherlockblaze.com/2019/01/21/basic/data-structure/lists/ArrayList/)
+    - [x] [Stack](https://sherlockblaze.com/2019/01/21/basic/data-structure/lists/Stack/)
+    - [x] [Queue](https://sherlockblaze.com/2019/01/21/basic/data-structure/lists/Queue/)
+- [ ] [Trees](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Trees/)
+    - [x] [Binary Trees](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Binary-Trees/)
+    - [x] [Search Tree - Binary Search Tree](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Binary-Search-Tree/)
+    - [x] [AVL Trees](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Avl-Tree/)
+    - [x] [Red-Black Trees](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Red-Black-Trees/)
     - [ ] Splay Trees
     - [ ] B-Trees
     - [ ] AA-Trees
