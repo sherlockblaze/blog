@@ -116,7 +116,7 @@ func RetrieveFeeds() ([]*Feed, error) {
 }
 ```
 
-##### 输出
+#### 输出
 
 我们来看看 `match.go` 文件中做了什么
 
@@ -159,7 +159,7 @@ func Display(results chan *Result) {
 }
 ```
 
-##### 处理
+#### 处理
 
 获取到我们输入数据后，我们就要开始处理他们了。
 
@@ -355,7 +355,7 @@ func (m rssMatcher) retrieve(feed *search.Feed) (*rssDocument, error) {
 }
 ```
 
-##### 主程序
+#### 主程序
 
 接下来我们需要一个主程序来作为整个程序的入口。
 
