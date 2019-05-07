@@ -7,6 +7,8 @@ tags:
 date: 2019-05-07
 ---
 
+> 本学习笔记总结自： [《Go in Action》](https://www.amazon.com/Go-Action-William-Kennedy/dp/1617291781/ref=sr_1_1?keywords=go+in+action&qid=1557230058&s=gateway&sr=8-1)
+
 ## 优势
 
 1. Golang 是一种让代码分享更加容易的编程语言
