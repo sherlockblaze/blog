@@ -67,11 +67,153 @@ array6 = array1
 ### 使用
 
 ```golang
+// 声明一个长度、容量都为5的切片
 slice1 := make([]int, 5)
+// 声明一个长度为3、容量为5的切片
 slice2 := make([]int, 3, 5)
+// 声明一个长度为3、容量为3的切片
 slice3 := []int{1, 2, 3}
+// 声明一个容量为长度为101、容量为101的切片，第101个元素值为100
 slice4 := []int{100: 100}
+// 声明 nil 切片
 slice5 := []int
+// 声明一个空切片
 slice6 := make([]int, 0)
+// 声明一个空切片
 slice7 := []int{}
 ```
+
+```golang
+slice := []int{1, 2, 3, 4, 5}
+newSlice := slice[1:3]
+```
+
+通过一张图片观察上面两行代码所做的事。
+
+![](https://sherlockblaze.com/resources/img/code/golang/assign-a-slice-to-another.png)
+
+接着我们再通过一段代码来看如何对切片进行遍历:
+
+```golang
+slice := []int{1, 2, 3, 4}
+for index, value := range slice {
+    fmt.Println("Index: %d Value: %d\n", index, value)
+}
+```
+
+需要注意的只有两点：
+
+1. 使用 `range` 函数获得的两个值，一个是索引，一个是索引对应的值。
+2. `range` 其实是对每个元素提供了一个副本。
+
+你可以通过下划线 `_` 来忽略函数返回的值。
+
+```golang
+slice := []int{1, 2, 3, 4}
+for _, value := range slice {
+    fmt.Println("Value: %d\n", value)
+}
+```
+
+那么如何在函数中传递切片呢？
+
+```golang
+slice := make([]int, 1e6)
+
+slice = foo(slice)
+
+func foo(slice []int) []int {
+    ...
+    return slice
+}
+```
+
+1. 在一个64位的机器上，一个切片需要24字节的内存：指针字段8字节、长度和容量分别需要8字节
+2. 函数中传递时仅复制切片本身，不复制底层数组
+
+## 映射
+
+### 什么是映射
+
+映射是一种数据结构，用于存储一系列无需的键值对。
+
+### 实现
+
+![](https://sherlockblaze.com/resources/img/code/golang/hashmap-impl.png)
+
+映射的散列表包含一组桶。在存储、删除或者查找键值对的时候，所有操作都要先选择一个桶。**把操作映射时制定的键传给映射的散列函数**，就能选中对应的桶。
+
+**散列函数的目的是生成一个索引，这个索引将最终将键值对分布到所有可用的桶里。**
+
+### 使用
+
+先看怎么创建、初始化
+
+```golang
+dict := make(map[string]int)
+dict := map[string]int{"Red":1, "Black":0}
+// 声明一个值为 nil 的映射，这种映射无法存放键值对，注意
+var colors map[string]int
+```
+
+只需要注意一点，作为键的类型，可以是内置的类型，也可以是结构类型，只要这个类型可以使用 `==` 来比较。
+
+```golang
+value, exists := colors["Blue"]
+if exists {
+    return true
+}
+```
+
+通过这种方式，可以判断是否存在需要的键值对。
+
+```golang
+colors := map[string]string {
+    "AliceBlue": "#f0f8ff"
+}
+
+for key, value := range colors {
+    fmt.Println("Key: %s Value: %s\n", key, value)
+}
+```
+
+通过上述代码，我们可以轻松遍历 map 中的键值对，同样，你可以使用 `_` 符号来忽略函数的某个/所有返回值。
+
+Golang 中删除映射中的键值对也是很方便的。
+
+```golang
+colors := map[string]string {
+    "AliceBlue": "#f0f8ff"
+}
+
+delete(colors, "AliceBlue")
+```
+
+那么如何在函数中传递使用映射呢？
+
+```golang
+func main() {
+    colors := map[string]string {
+        "AliceBlue":   "#f0f8ff",
+        "Coral":       "#ff7F50",
+        "DarkGray":    "#a9a9a9",
+        "ForestGreen": "#228b22",
+    }
+
+    for key, value := range colors {
+        fmt.Println("Key: %s Value: %s\n", key, value)
+    }
+
+    removeColor(colors, "Coral")
+
+    for key, value := range colors {
+        fmt.Println("Key: %s Value: %s\n", key, value)
+    }
+}
+
+func removeColor(colors map[string]string, key string) {
+    delete(colors, key)
+}
+```
+
+通过运行上述代码，我们可以发现，在调用了 `removeColor` 函数之后再遍历映射，会发现被删除的元素不存在了。这其中的道理很简单，传递映射时并没有对其进行复制，使用的底层数组仍然是同一个。
