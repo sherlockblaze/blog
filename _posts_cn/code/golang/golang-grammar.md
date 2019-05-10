@@ -217,3 +217,189 @@ func removeColor(colors map[string]string, key string) {
 ```
 
 通过运行上述代码，我们可以发现，在调用了 `removeColor` 函数之后再遍历映射，会发现被删除的元素不存在了。这其中的道理很简单，传递映射时并没有对其进行复制，使用的底层数组仍然是同一个。
+
+## 类型系统
+
+Golang 是一种静态编译的语言 -- 编译器需要在编译时知晓程序里每个值的类型，用于提供编译器对代码进行一些性能优化，提高执行效率。
+
+值的类型给编译器提供两部分信息:
+
+1. 需要分配多少内存
+2. 这段内存表示什么
+
+### 结构体
+
+#### 什么是结构体
+
+Golang 允许用户定义类型，当用户声明一个新类型时，这个声明就给编译器提供了一个框架，告知必要的内存大小和表示信息。
+
+#### 声明
+
+有两个方式声明结构体。
+
+1. 利用 `struct` 关键字
+
+```golang
+type user struct {
+    name       string
+    email      string
+    ext        int
+    privileged bool
+}
+```
+
+2. 基于一个已有的类型，将其作为新类型的类型说明
+
+```golang
+type Length int64
+```
+
+#### 初始化
+
+```golang
+yorr := user {
+    name:       "yorr",
+    email:      "beauty@love.com",
+    ext:        1,
+    privileged: true, // 别漏了最后一个逗号
+}
+
+// 用下面这种方式，需要按照结构体声明里的顺序来赋值
+yorr := user {"yorr", "beauty@love.com", 1, true}
+
+// 可以使用另一个类型来作为另一个类型中的字段
+type struct admin {
+    person user
+    level string
+}
+
+yorr := admin {
+    person: user {
+        name:      "yorr",
+        email:     "beauty@love.com",
+        ext:       1,
+        privilege: true,
+    },
+    level: "top",
+}
+
+// 将已有类型作为新类型
+type Length int64
+var length Length
+length = int64(100)
+```
+
+> 嵌入类型: Golang 允许用户扩展或者修改已有类型的行为，这个功能对代码复用很重要，在修改已有类型以符合新类型的时候也很重要。通过 `嵌入类型` 完成。
+
+```golang
+package main
+
+import (
+    "fmt"
+)
+
+type user struct {
+    name  string
+    email string
+}
+
+func (u *user) notify() {
+    fmt.Printf("Sending user email to %s<%s>\n",
+        u.name,
+        u.email)
+}
+
+type admin struct {
+    user
+    lever string
+}
+
+func main() {
+    ad := admin {
+        user: user{
+            name:  "sherlock blaze",
+            email: "sherlockblaze@love.com"
+        },
+        level: "top",
+    }
+
+    // 可以直接访问内部类型的方法
+    ad.user.notify()
+    // 内部类型的方法也可以被提升到外部类型
+    ad.notify()
+}
+```
+
+以上我们注意到一个函数 -- `notify`。可以给我们引入一个新的话题 —— **值接收者**、**指针接收者**。
+
+### 值接收者&指针接收者
+
+```golang
+func (u user) notify() {
+    mt.Printf("Sending user email to %s<%s>\n",
+        u.name,
+        u.email)
+}
+
+func (u *user) changeEmail(email string) {
+    u.email = email
+}
+```
+
+`notify` 和 `changeEmail` 称为结构体 `user` 的方法，如果一个函数有接收者，这个函数就被称为**方法**。在 `func` 关键字和方法名之间的参数，称之为 **接收者**。而接收者分为两类，**值接收者**和**指针接收者**。
+
+```golang
+package main
+
+import (
+    "fmt"
+)
+
+type user struct {
+    name  string
+    email string
+}
+
+func (u user) notify() {
+    fmt.Printf("Sending User Email To %s<%s>\n",
+        u.name,
+        u.email)
+}
+
+func changeEmail(email string) {
+    u.email = email
+}
+
+func main() {
+    bill := user{"Bill", "bill@email.com"}
+    bill.notify()
+
+    lisa := &user{"Lisa", "lisa@email.com"}
+    lisa.notify()
+
+    bill.changeEmail("bill@newdomain.com")
+    bill.notify()
+
+    lisa.changeEmail("lisa@newdomain.com")
+    lisa.notify()
+}
+```
+
+我们可以看到，`bill` 作为一个值，可以调用值接收者声明的方法，也可以调用指针接受者声明的方法，其实里面有一个语法糖。在用值对象调用指针接收者声明的方法时，golang 底层做了这样一个操作 `(&bill).changeEmail()`，同理，指针对象调用值接收者声明的方法时，做了这样的操作 `(*lisa).notify()`。
+
+使用**值接收者**方法时，实际上会创建一个对象的副本，**指针接收者**则是利用指针，如果修改，会直接修改结构体里对应的项。
+
+### 内置类型
+
+内置类型是由语言提供的一组类型。如: 数值类型、字符串类型和布尔类型。这些类型本质上是原始的类型，因此，当对这些值进行增加或者删除的时候，会创建一个新值。**基于这个理论，当把这些类型的值传递给方法或者函数时，应该传递一个对应值的副本。**
+
+```golang
+func Trim(s string, cutset string) string {
+    if s == "" || cutset == "" {
+        return s
+    }
+    return TrimFunc(s, makeCutsetFunc(cutset))
+}
+```
+
+`Trim` 函数传入一个 `string` 类型的值作操作，在传入一个 `string` 类型的值用于查找，之后
