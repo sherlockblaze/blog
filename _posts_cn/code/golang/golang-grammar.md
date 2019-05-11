@@ -7,6 +7,8 @@ tags:
 date: 2019-05-07
 ---
 
+> 本学习笔记总结自： [《Go in Action》](https://www.amazon.com/Go-Action-William-Kennedy/dp/1617291781/ref=sr_1_1?keywords=go+in+action&qid=1557230058&s=gateway&sr=8-1)
+
 先讨论一些规范问题：
 
 1. 如何将代码组织成包
@@ -391,7 +393,9 @@ func main() {
 
 ### 内置类型
 
-内置类型是由语言提供的一组类型。如: 数值类型、字符串类型和布尔类型。这些类型本质上是原始的类型，因此，当对这些值进行增加或者删除的时候，会创建一个新值。**基于这个理论，当把这些类型的值传递给方法或者函数时，应该传递一个对应值的副本。**
+**内置类型是由语言提供的一组类型。**
+
+如: 数值类型、字符串类型和布尔类型。这些类型本质上是原始的类型，因此，当对这些值进行增加或者删除的时候，会创建一个新值。**基于这个理论，当把这些类型的值传递给方法或者函数时，应该传递一个对应值的副本。**
 
 ```golang
 func Trim(s string, cutset string) string {
@@ -402,4 +406,92 @@ func Trim(s string, cutset string) string {
 }
 ```
 
-`Trim` 函数传入一个 `string` 类型的值作操作，在传入一个 `string` 类型的值用于查找，之后
+`Trim` 函数传入一个 `string` 类型的值作操作，在传入一个 `string` 类型的值用于查找，之后函数会返回一个新的 `string` 类型的值作操作。
+
+### 引用类型
+
+Golang 中，引用类型有如下几个: **切片**、**映射**、**通道**、**接口**和**函数**。
+
+当声明上述类型变量时，创建的变量被称作**标头值**，从技术细节上说，**字符串也是一种引用类型**。
+
+**每个引用类型创建的标头值是包含一个指向底层数据结构的指针**，每个引用类型还包含一组独特的字段，用于管理底层数据结构。因为**标头值**是为复制而设计的，所以永远不要共享一个引用类型的值。**标头值里包含一个指针，因此通过复制来传递一个引用类型的副本，本质上就是在共享底层数据结构。**
+
+同时，**编译器只允许为命名的用户定义的类型声明方法。**
+
+## 接口
+
+### 什么是接口
+
+接口定义了一个操作。
+
+### 实现
+
+讨论如何实现一个接口。
+
+**接口定义的类型不由接口直接实现，而是通过方法由用户定义的类型实现。**
+
+如果用户定义的类型实现了某个接口类型声明的一组方法，那么这个用户定义的类型的值就可以赋给这个接口类型的值。这个赋值会把用户定义的类型的值存入接口类型的值。
+
+![](https://sherlockblaze.com/img/code/golang/interface-impl.png)
+
+```golang
+package main
+
+import (
+    "fmt"
+)
+
+type notifier interface {
+    notify()
+}
+
+type user struct {
+    name  string
+    email string
+}
+
+// 为 struct u 实现 notify 方法
+func (u *user) notify() {
+    fmt.Printf("Sending user email to %s<%s>\n",
+        u.name,
+        u.email)
+}
+
+type ad struct {
+    title string
+    topic string
+}
+
+// 为 struct ad 实现 notify 方法
+func (ad *ad) notify() {
+    fmt.Printf("Sending ads title:%s topic:%s.",
+        ad.title,
+        ad.topic)
+}
+
+func sendNotification(n notifier) {
+    // 调用 notify 方法
+    n.notify()
+}
+
+func main() {
+    u := user{"Bill", "bill@email.com"}
+    // 对于用指针接收者来实现的接口函数，需要传入地址，否则会导致编译失败
+    sendNotification(&u)
+    ad := ad{"hah", "haha"}
+    sendNotification(&ad)
+}
+```
+
+简单介绍一下方法集规则:
+
+| Values | Methods Receivers |
+| ------ | ----------------- |
+| T | (t T) |
+| * T | (t T) and (t *T) |
+
+| Methods Receivers | Values |
+| ------ | ----------------- |
+| (t T) | T and *T |
+| (t * T) | *T |
+
