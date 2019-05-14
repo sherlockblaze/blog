@@ -495,3 +495,18 @@ func main() {
 | (t T) | T and *T |
 | (t * T) | *T |
 
+我们可以发现，在上面代码中，有这样两行代码:
+
+```golang
+sendNotification(&u)
+sendNotification(&ad)
+```
+
+按照我们之前讨论的语法糖，也可以这么写:
+
+```golang
+sendNotification(u)
+sendNotification(ad)
+```
+
+但是实际上，
