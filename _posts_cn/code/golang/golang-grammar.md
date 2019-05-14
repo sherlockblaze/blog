@@ -1,5 +1,5 @@
 ---
-title: Golang 语法
+title: Golang 基本语法
 tags:
   - Golang
   - 编程语言
@@ -509,4 +509,69 @@ sendNotification(u)
 sendNotification(ad)
 ```
 
-但是实际上，
+但是实际上，这样做是不可以的。通过方法集规则的描述，我们发现，我们不是总能自动获得一个值的地址。所以值的方法集只包括了使用值接收者实现的方法。
+
+### 多态
+
+在了解完接口后，我们来看一下如何通过使用接口来实现多态。
+
+```golang
+package main
+
+import (
+    "fmt"
+)
+
+type notifier interface {
+    notify()
+}
+
+type user struct {
+    name  string
+    email string
+}
+
+func (u *user) notify() {
+    fmt.Println("Sending user email to %s<%s>\n",
+        u.name,
+        u.email)
+}
+
+type admin struct {
+    name  string
+    email string
+}
+
+func (a *admin) notify() {
+    fmt.Println("Sending admin email to %s<%s>\n",
+        a.name,
+        a.email)
+}
+
+func main() {
+    bill := user{"Bill", "bill@email.com"}
+    sendNotification(&bill)
+    lisa := admin{"Lisa", "lisa@email.com"}
+    sendNotification(&lisa)
+}
+
+func sendNotification(n notifier) {
+    n.notify()
+}
+```
+
+通过多态函数 `sendNotification` ，我们实现了多态目标。
+
+## 公开和私有
+
+说完了基本的语法，我们要说一下方法、字段、等等一些内容的公开化和私有化问题。如果你学过 `Java` 或者 `C++` 之类的面向对象语言。你会看到过这样的关键字 `public` 和 `private` 。
+
+而对于 `golang` 是没有这些玩意的。
+
+那 `golang` 如何实现公开或者私有呢？
+
+**开头字母大小写！**
+
+如果开头字母是大小，表示对其他 `package` 是公开的标识。反之，对其他 `package` 则不是。
+
+需要注意的是，无论是大写还是小写，在文件自己待的 `package(目录)` 下，对于同级别的 `package(目录)` 都是公开的。
