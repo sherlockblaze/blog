@@ -235,3 +235,14 @@ It's important to point out that optimistic concurrency is a perfect fit for lev
 
 #### Operators
 
+The resulting piece of software has an application's operational domain knowledge programmed into it.
+
+**An Operator is an application-specific controller that extends the Kubernetes API to create, configure, and manage instances of complex stateful applications on behalf of a Kubernetes user.**  It builds upon the basic Kubernetes resources and controller concepts but includes domain or application-specific knowledge to automate common tasks.
+
+- There's some domain-specific operational knowledge you'd like to automate
+- The best practices for this operational knowledge are known and can be made explicit -- for example, in the case of a Cassandra operator, when and how to re-balance nodes, or in the case of an operator for a service mesh, how to create a route.
+- The artifacts shipped in the context of the operator are:
+  - A set of custom resource definitions(CRDs) capturing the domain-specific schema and custom resources following the CRDs that, on the instance level, represent the domain of interest.
+  - A custom controller, supervising the custom resources, potentially along with core resources. For example, the custom controller might spin up a pod.
+
+![concept-of-an-operator](https://sherlockblaze.com/resources/img/profession/k8s/concept-of-an-operator.png)
