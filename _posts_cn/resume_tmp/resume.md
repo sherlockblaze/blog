@@ -28,7 +28,7 @@ date: 2019-04-12
 > C/CPP、Rust、Golang、常见深度学习框架 (如: Tensorflow/Pytorch/Caffee/Keras) 等。
 
 - **项目角色：** 协助边缘计算项目研发、负责边缘计算 Release Engineering 的提升、技术调研
-- **项目开源地址：** [https://github.com/baidu/openedge](https://github.com/baidu/openedge)
+- **项目开源地址：** [https://github.com/baidu/baetyl](https://github.com/baidu/baetyl)
 
 #### 工作内容
 
@@ -36,33 +36,33 @@ date: 2019-04-12
     - **服务目的**：屏蔽不同深度学习模型框架的不同，通过转换模型，适配边缘计算 Runtime，在边缘计算 AI runtime 不完备的情况下，尽可能的去适配更多用户使用习惯。
     - **服务完成度**：80%，由于业务方向的调整，模型转换服务优先级极速降低，暂时性搁置，提供对应 AI runtime，比如：Tensorflow Runtime、OpenVino Runtime
     - **角色**：Owner
-- **OpenEdge 模块资源限制功能**
-    - **功能目标**：由于 OpenEdge 是通过主程序根据配置启动各功能模块进行服务，且 OpenEdge 目标平台大多为性能相对较弱的硬件平台，对模块使用资源的限制势在必行。
+- **baetyl 模块资源限制功能**
+    - **功能目标**：由于 baetyl 是通过主程序根据配置启动各功能模块进行服务，且 baetyl 目标平台大多为性能相对较弱的硬件平台，对模块使用资源的限制势在必行。
     - **功能描述**：对各模块的 CPU 使用率、内存使用率、PID 数进行限制。（主要针对容器模式）
     - **角色**：Owner
-- **OpenEdge 命令行功能**
-    - **功能目标**：赋予 OpenEdge 命令行属性。通过命令行，使用户更方便的操作 OpenEdge。
+- **baetyl 命令行功能**
+    - **功能目标**：赋予 baetyl 命令行属性。通过命令行，使用户更方便的操作 baetyl。
     - **功能描述**：目前已推出命令行功能有：
-        1. openedge start [-w wordir] 
-        2. openedge stop
-        3. openedge version
-        4. openedge help
-    - **所作所为**：帮助 OpenEdge 建立更为完善的命令行生态，对该功能架构作出设计，方便未来命令行功能的优化及添加。并成功推出用户期待已久的命令行启动与停止功能。
-    - **难点**：OpenEdge 主程序使用 Golang 实现，因为 Golang GC 等原因，导致以 Daemon 方式运行较为麻烦。且因为 `openedge stop` 与运行的 openedge 主程序从严格意义上来说属于两个进程，导致状态的同步较为困难。
+        1. baetyl start [-w wordir] 
+        2. baetyl stop
+        3. baetyl version
+        4. baetyl help
+    - **所作所为**：帮助 baetyl 建立更为完善的命令行生态，对该功能架构作出设计，方便未来命令行功能的优化及添加。并成功推出用户期待已久的命令行启动与停止功能。
+    - **难点**：baetyl 主程序使用 Golang 实现，因为 Golang GC 等原因，导致以 Daemon 方式运行较为麻烦。且因为 `baetyl stop` 与运行的 baetyl 主程序从严格意义上来说属于两个进程，导致状态的同步较为困难。
     - **角色**：Owner
-- **OpenEdge 定时器模块 & OpenEdge 清理器模块**
+- **baetyl 定时器模块 & baetyl 清理器模块**
     - **功能目标**：分别执行定时任务，配合定时模块进行文件清理等。（项目定制）
     - **难点**：使用语言为不熟悉的 Rust 编程语言
     - **完成度**：100%
     - **角色**：Owner
-- **完善 OpenEdge Release 流程**
-    - **所作所为**：采用 Makefile 的方式，帮助使用者更加方便的编译 OpenEdge，生成主程序二进制文件、各模块二进制文件及容器模式所需镜像。并且可在任意平台上生成各平台（linux-arm/amd64/arm64/）运行所需。
+- **完善 baetyl Release 流程**
+    - **所作所为**：采用 Makefile 的方式，帮助使用者更加方便的编译 baetyl，生成主程序二进制文件、各模块二进制文件及容器模式所需镜像。并且可在任意平台上生成各平台（linux-arm/amd64/arm64/）运行所需。
     - **角色**：Owner
 - **其他**
     - **所做所为**：
-        1. 成功预言 OpenEdge 发展方向 -- AI 视觉，视频流及 AI 推断成项目主要发力点
+        1. 成功预言 baetyl 发展方向 -- AI 视觉，视频流及 AI 推断成项目主要发力点
         2. 抛弃 Windows 支持，后证明该建议正确
-        3. 逐渐规范 OpenEdge 在 Linux 系统下的表现，比如 pid 文件放置到 `/var/run` 目录下等
+        3. 逐渐规范 baetyl 在 Linux 系统下的表现，比如 pid 文件放置到 `/var/run` 目录下等
 
 ### 物接入/物管理（百度 全栈）
 
