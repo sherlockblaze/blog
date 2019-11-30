@@ -41,7 +41,7 @@ date: 2019-11-30
 
 相处中我会比较在意对方的梦想，愿意在这个方面上尽可能地帮忙，给予支持，如果问题严重，愿意趟浑水去推动对方和父母的关系。
 
-似乎看起来一直对梦想的看重似乎有点超出寻常，but I’m not a dreamer, I'm a doer.
+看起来似乎一直对梦想的看重有点超出寻常，but I’m not a dreamer, I'm a doer.
 
 ## Master Of Emotion Control?
 
@@ -69,7 +69,7 @@ I’m cool, but not cold.
 3. **自主导向，能够接受多维视角，同时保有自己的视角；能够理解他人的立场和观点，也能运用他人的立场和观点，来强化自己的价值体系。**
 4. **内观自变，能够看到和理解多维视角，同时借助这些不同的视角不断革新自己的价值体系，拓展视野、变得更包容。**
 
-很久之前，我处理情绪的方式是压制。That makes me cool, maybe cold. 但这样做的问题是终有一天，You need fight them all.
+很久之前，我处理情绪的方式是压制。That makes me cool, maybe cold. 但这样做的问题是终有一天，You need to fight them all.
 
 ## Did I win?
 
