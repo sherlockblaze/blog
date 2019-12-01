@@ -9,6 +9,8 @@ date: 2019-11-30
 
 似乎是个惯用的布局，但我不抽烟，所以只倒了杯热水。
 
+![man-look-at-the-sky](https://sherlockblaze.com/resources/img/mysql/man-look-at-the-sky.jpeg)
+
 ## Am I a selfish guy?
 
 是，曾经是，但已经是很多年以前。
