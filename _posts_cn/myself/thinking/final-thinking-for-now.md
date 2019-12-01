@@ -81,7 +81,7 @@ I’m cool, but not cold.
 
 对于如何看待一个人，我选择的方式是看他如何对待他人，而非看他对待自己的方式。
 
-从社会工程学的角度来看，要获得一个人的信任很简单，就是重复对方说的话和行为。But a guy who just repeat myself, it's definitely not a good friend. 我相信好的朋友可以感受到我的情绪，但不会重复我的情绪。
+从社会工程学的角度来看，要获得一个人的信任很简单，就是重复对方说的话和行为。 **But a guy who just repeat myself, it's definitely not a good friend.** 我相信好的朋友可以感受到我的情绪，但不会重复我的情绪。
 
 与人相处时我习惯把他人当镜子，当很容易聚焦到一个人身上的某个特征时，很可能是因为自己有相似的地方，大部分情况他人未必真有。
 
@@ -89,7 +89,7 @@ I’m cool, but not cold.
 
 所以，Did I win? Yeah, I won, but for now, just once.
 
-Maybe I lost a girl, but I won myself. And I trust that girl will be a winner, too.
+Maybe I lost a girl, but I won myself. **And I trust that girl will be a winner, too.**
 
 ## Can I be a better lover?
 
