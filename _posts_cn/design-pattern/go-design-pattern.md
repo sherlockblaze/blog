@@ -1,7 +1,7 @@
 ---
-title: daily-2019-12-06
+title: Design Pattern in Go
 tags:
-  - daily
+  - design-pattern
 date: 2019-12-06
 ---
 
@@ -696,53 +696,115 @@ func GetParentField(p Parent) int {
 
 At this point, you should be really comfortable using the Composite design pattern. It's very idiomatic Go feature. The Composite design pattern makes our structures predictable but also allows us to create most of the design patterns.
 
-## 推送系统
+### Adapter design pattern
 
-- 弹幕实现原理
-- 分布式高并发架构
+**In Go, an adapter will allow us to use something that wasn't built for a specific task at the beginning.**
 
-### 拉模式和推模式
+The Adapter pattern is very useful when, for example, an interface gets outdated and it's not possible to replace it easily or fast. Instead, you create a new interface to deal with the current needs of your application, which, under the hood, uses implementations of the old interface.
 
-**拉模式的问题**
+> Just keep in mind that extensibility in code is only possible through the use of design patterns and interface-oriented programming.
 
-- 数据更新频率低
-- 在线用户数量多，**服务端查询负载高**
-- 定时拉取，**无法满足时效性要求**
+#### Objectives
 
-**推模式的优势**
+The Adapter design pattern will help you fit the needs of two parts of the code that are incompatible at first.
 
-- 仅在数据更新时才推送
-- **维护大量在线长连接**
-- 数据更新后可以**立即推送**
+```golang
+package structural
 
-**基于 WebSocket 推送**
+import "fmt"
 
-- 浏览器支持的 socket 编程，轻松维持服务端的长连接
-- 基于 TCP 可靠传输之上的协议，无需关心通讯细节
-- 提供了高度抽象的编程接口，业务开发成本较低
+type LegacyPrinter interface {
+    Print(s string) string
+}
 
-![websocket-interaction](https://sherlockblaze.com/resources/img/daily/2019-12-06/websocket-interaction.png)
+type MyLegacyPrinter struct {}
 
-#### HTTP 协议的弊端
+func (l *MyLegacyPrinter) Print(s string) (newMsg string) {
+    newMsg = fmt.Sprintf("Legacy Printer: %s\n", s)
+    println(newMsg)
+    return
+}
 
-- HTTP 协议为半双工协议，半双工协议指数据可以在客户端和服务器两个方向上传输，但不能同时传输。它意味着在同一时刻，只有一个方向上的数据传输。
-- HTTP 消息繁琐。HTTP 消息包含消息头、消息体、换行符等，通常情况下采用文本方式传输，相比于其他的二进制通信消息协议，显得繁琐
-- 针对服务器推送的黑客攻击。比如：长时间轮训
+type NewPrinter interface {
+    PrintStored() string
+}
 
-> 很多网站为了实现消息推送，所用的技术都是采用轮询。轮询是在特定的时间间隔(1s)，由浏览器对服务器发出 HTTP REQUEST，然后由服务器返回最新的数据给客户端浏览器。这种传统的模式具有很明显的缺点，即浏览器需要不断地向服务器发出请求，然而 HTTP Request 和 Header 是非常冗长的，里面包含的可用数据比例可能非常低，会占用很多的带宽和服务器资源。
+type PrinterAdapter struct {
+    oldPrinter LegacyPrinter
+    Msg        string
+}
 
-#### WebSocket
+func (p *PrinterAdapter) PrintStored() (newMsg string) {
+    if p.OldPrinter != nil {
+        newMsg = fmt.Sprintf("Adapter: %s", p.Msg)
+        newMsg = p.OldPrinter.Print(newMsg)
+    } else {
+        newMsg = p.Msg
+    }
 
-WebSocket 是 HTML5 开始提供的一种浏览器与服务器进行全双通信的网络技术，WebSocket 通信协议与 2011 年被 IEIF 定位标准 RFC6455，WebSocket API 被 W3C 定为标准。
+    return
+}
+```
 
-在 WebSocket API 中，浏览器和服务器只要做一个握手的动作，然后浏览器和服务器之间形成了一条快速通道，两者就可以互相传输消息了。**WebSocket 基于 TCP 双向全双工进行消息传递，同一时刻，既可以发送消息，也可以接受消息，相比 HTTP 的半双工协议，性能得到很大提升。**
+### Bridge design pattern
 
-**特点**
+The Bridge pattern is a design with a slightly cryptic definition from the original Gang of Four book. **It decouples an abstraction from its implementation so that the two can vary independently.** The cryptic explanation just means that you could even decouple the most basic form of functionality: **decouple an object from what it does.**
 
-1. 单一 TCP 连接，采用全双工模式通信
-2. 对代理、防火墙和路由器透明
-3. 无头部信息、Cookie 和身份验证
-4. 无安全开销
-5. 通过 ping/pong 帧保持链路激活状态
-6. 服务器可以主动传递消息给客户端，不需要客户端轮询
+The Bridge pattern tries to decouple things as usual with design patterns. It decouples abstraction (an object) from its implementation (the thing that the object does). This way, we can change what an object does as much as we want. It also allows us to change the abstracted object while reusing the same implementation.
 
+The objective of the Bride pattern is to bring flexibility to a struct that change often. Knowing the inputs and outputs of a method, it allows us to change code without knowing too much about it and leaving the freedom for both sides to be modified more easily.
+
+```golang
+package structural
+
+import (
+    "errors"
+    "fmt"
+    "io"
+)
+
+type PrinterAPI interface {
+    PrintMessage(string) error
+}
+
+type PrinterAPI1 struct {}
+
+func (d *PrinterAPI1) PrintMessage(msg string) error {
+    fmt.Printf("%s\n", msg)
+    return nil
+}
+
+type PrinterAPI2 struct{}
+
+func (d *PrinterAPI2) PrintMessage(msg string) error {
+    if d.Writer == nil {
+        return errors.New("You need to pass an io.Writer to PrinterAPI2")
+    }
+    fmt.Printf(d.Writer, "%s", msg)
+    return nil
+}
+
+type PrinterAbstraction interface {
+    Print() error
+}
+
+type NormalPrinter struct {
+    Msg     string
+    Printer PrinterAPI
+}
+
+func (c *NormalPrinter) Print() error {
+    c.Printer.PrintMessage(c.Msg)
+    return nil
+}
+
+type PacktPrinter struct {
+    Msg     string
+    Printer PrinterAPI
+}
+
+func (c *PacktPrinter) Print() error {
+    c.Printer.PrintMessage(fmt.Sprintf("Message from Packt: %s", c.Msg))
+    return nil
+}
+```

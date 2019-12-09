@@ -1,7 +1,7 @@
 ---
-title: daily-2019-12-03
+title: docker introduction
 tags:
-  - daily
+  - docker
 date: 2019-12-03
 ---
 
@@ -43,4 +43,3 @@ The biggest advantage of Docker containers is that since it runs natively on Lin
 - **Docker registry**: The Docker registry is responsible for storing and retrieving the Docker images. We can use a public Docker registry or a private one. Docker Hub is used as the default Docker registry.
 - **Docker Container**: The Docker container is different from the Container we have been discussing so far. A Docker container is a runnable instance of a Docker image. A Docker container can be created, started, stopped, and so on.
 - **Docker API**: The Docker client we discussed earlier is a command-line interface to interact with Docker API. This means that the Docker daemon need not be running on the same machine as does the Docker client. The default setup that we will be using throughout the book talks to the Docker daemon on the local system using UNIX sockets or a network interface.
-

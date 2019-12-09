@@ -1,9 +1,29 @@
 ---
-title: daily-2019-12-05
+title: Design Pattern
 tags:
-  - daily
-date: 2019-12-05
+  - design-pattern
+date: 2019-12-04
 ---
+
+## Design Pattern
+
+**The Observer Pattern**
+
+![duck-fly-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/duck-fly-design.png)
+
+> Don't miss out when something interesting happens!
+
+![observer-weather-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/observer-weather-design.png)
+
+![weathcer-station-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/weather-station-design.png)
+
+**The Decorator Pattern**
+
+**The Open-Closed Principle**
+
+> Classes should be open for extension, but closed for modification.
+
+![decorating-coffee-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/decorating-coffee-design.png)
 
 ## The Factory Pattern
 

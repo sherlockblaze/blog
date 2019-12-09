@@ -1,5 +1,5 @@
 ---
-title: daily-2019-12-04
+title: About Goroutines
 tags:
   - daily
 date: 2019-12-04
@@ -29,24 +29,3 @@ We want our programs to be able to do multiple things simultaneously, that is, m
 - **Parallelism**: ***Parallelism is about doing lots of things at once.*** This means that even if we have two tasks, they are continuously working without any breaks in between them.
 
 ![concurrency-and-parallelism](https://sherlockblaze.com/resources/img/daily/2019-12-04/concurrency-and-parallelism.png)
-
-## Design Pattern
-
-**The Observer Pattern**
-
-![duck-fly-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/duck-fly-design.png)
-
-> Don't miss out when something interesting happens!
-
-![observer-weather-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/observer-weather-design.png)
-
-![weathcer-station-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/weather-station-design.png)
-
-**The Decorator Pattern**
-
-**The Open-Closed Principle**
-
-> Classes should be open for extension, but closed for modification.
-
-![decorating-coffee-design](https://sherlockblaze.com/resources/img/daily/2019-12-04/decorating-coffee-design.png)
-
