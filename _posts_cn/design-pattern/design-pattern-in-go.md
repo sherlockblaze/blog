@@ -5,6 +5,8 @@ tags:
 date: 2019-12-06
 ---
 
+![beautiful-house](https://sherlockblaze.com/resources/img/design-pattern/beautiful-house.jpg)
+
 ## Creational Patterns
 
 ### The Singleton Pattern
