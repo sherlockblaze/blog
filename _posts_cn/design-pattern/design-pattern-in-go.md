@@ -1052,3 +1052,22 @@ func main() {
 ```
 
 In the Decorator pattern, we decorate a type dynamically. This means that the decoration may or may not be there, or it may be composed of one or many types. If you remember, the Proxy pattern wraps a type in a similar fashion, but it does so at compile time and it's more like a way to access some type.
+
+At the same time, a decorator might implement the entire interface that the type it decorates also implements or not. So you can have an interface with 10 methods and a decorator that just implements one of them and it will still be valid. This is a very powerful feature but also very prone to undesired behaviors at runtime if you forget to implement any interface method.
+
+In this aspect, you may think that the Proxy pattern is less flexible, and it is. But the Decorator pattern is weaker, as you could have errors at runtime, which you can avoid at compile time by using the Proxy pattern. **Just keep in mind that the Decorator is commonly used when you want to add functionality to an object at runtime, like in our web server.** It's a compromise between what you need and what you want to sacrifice to achieve it.
+
+### Facade Design Pattern
+
+**Proxy pattern was a way to wrap an type to hide some of its features of complexity from the user.**
+
+**Imagine that we group many proxies in a single point such as a file or a library.** This could be Facade patter.
+
+A facade, in architectural terms, is the front wall that hides the rooms and corridors of a building. It protects its inhabitants from code and rain, and provides them privacy. It orders and divides the dwellings.
+
+The Facade design pattern shields the code from unwanted access, orders some calls, and hides the complexity scope from the user.
+
+#### Objectives
+
+You use Facade when you want to hide the complexity of some tasks, especially when most of them share utilities(such as authentication in an API). A library is a form of facade, where someone has to provide some methods for a developer to do certain things in a friendly way. This way, if a developer needs to use your library, he doesn't need to know all the inner tasks to retrieve the result he/she wants.
+
