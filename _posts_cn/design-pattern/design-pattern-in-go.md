@@ -808,3 +808,247 @@ func (c *PacktPrinter) Print() error {
     return nil
 }
 ```
+
+### Proxy Design Pattern
+
+The Proxy Pattern usually wraps an object to hide some of its characteristic. These characteristics could be the fact that it is a remote object(remote proxy), a very heavy object such as a very big image or the dump of a terabyte database(virtual proxy), or a restricted access object(protection proxy).
+
+#### Objectives
+
+The possibilities of the Proxy pattern are many, but in general, they all try to provide the same following functionalities:
+
+- Hide an object behind the proxy so the features can be hidden, restricted, and so on
+- Provide a new abstraction layer that is easy to work with, and can be changed easily
+
+```golang
+package proxy
+
+import "fmt"
+
+type User struct {
+    ID int32
+}
+
+type UserFinder interface {
+    FindUser(id string) (User, error)
+}
+
+type UserList []User
+
+func (t *UserList) FindUser(id int32) (User, error) {
+    for i := 0; i < len(*t); i++ {
+        if (*t)[i].ID) == id {
+            return (*t)[i], nil
+        }
+    }
+
+    return User{}, fmt.Errorf("User %s could not be found\n", id)
+}
+
+func (t *UserList) addUser(newUser User) {
+    *t = append(*t, newUser)
+}
+
+type UserListProxy struct {
+    MockedDatabase      *UserList
+    StackCache          UserList
+    StatckSize          int
+    LastSearchUsedCache bool
+}
+
+func (u *UserListProxy) addUserToStack(user User) {
+    if len(u.StackCache) >= u.StatckSize {
+        u.StackCache = append(u.StackCache[1:], user)
+    } else {
+        u.StackCache.addUser(user)
+    }
+}
+
+func (u *UserListProxy) FindUser(id int32) (User, error) {
+    user, err := u.StackCache.FindUser(id)
+    if err == nil {
+        fmt.Println("Returning user from cache")
+        u.LastSearchUsedCache = true
+        return user, nil
+    }
+
+    user, err = u.MockedDatabase.FindUser(id)
+    if err != nil {
+        return User{}, err
+    }
+
+    u.addUserToStack(user)
+
+    fmt.Println("Returning user from database")
+    u.LastSearchUsedCache = false
+    return user, nil
+}
+```
+
+### Decorator Design Pattern
+
+**The Decorator design pattern allows you to decorate an already existing type with more functional features without actually touching it.** It uses an approach similar to ***matryoshka dolls***, where you have a small doll that you can put inside a doll of the same shape but bigger, and so on and so forth.
+
+The Decorator type implements the same interface of the type it decorates, and stores an instance of that type in its members.
+
+This way, you can stack as many decorators (dolls) as you want by simply storing the old decorator in a field of the new one.
+
+#### Objectives
+
+When you think about extending legacy code without the risk of breaking something, you should think of the Decorator pattern first.
+
+So, precisely when are we going to use the Decorator pattern?
+
+- When you need to add functionality to some code that you don't have access to, or you don't want to modify to avoid a negative effect on the code, and follow the open/colse principle (like legacy code)
+- When you want the functionality of an object to be created or altered dynamically, and the number of features is unknown and could grow fast
+
+- **pizza_decorator.go**
+
+```golang
+package decorator
+
+import (
+    "errors"
+    "fmt"
+)
+
+type IngredientAdder interface {
+    AddIngredient() (string, error)
+}
+
+type PizzaDecorator struct {
+    Ingredient IngredientAdder
+}
+
+func (p *PizzaDecorator) AddIngredient() (string, error) {
+    return "Pizza with the following ingredients:", nil
+}
+
+type Meat struct {
+    Ingredient IngredientAdder
+}
+
+func (m *Meat) AddIngredient() (string, error) {
+    if m.Ingredient == nil {
+        return "", errors.New("An IngredientAdder is needed on the Ingredient field of the Meat")
+    }
+
+    s, err := m.Ingredient.AddIngredient()
+    if err != nil {
+        return "", err
+    }
+    return fmt.Sprintf("%s %s,", s, "meat"), nil
+}
+
+type Onion struct {
+    Ingredient IngredientAdder
+}
+
+func (o *Onion) AddIngredient() (string, error) {
+    if o.Ingredient == nil {
+        return "", errors.New("An ingredientAdder is needed on the Ingredient field of the Onion")
+    }
+    s, err := o.Ingredient.AddIngredient()
+    if err != nil {
+        return "", err
+    }
+    return fmt.Sprintf("%s %s,", s, "onion"), nil
+}
+```
+
+- **server_decorator.go**
+
+```golang
+package main
+
+import (
+    "fmt"
+    "io"
+    "log"
+    "net/http"
+    "os"
+)
+
+type MyServer struct{}
+
+func (m *MyServer) ServeHTTP(w http.ResponseWriter, r *http.request) {
+    fmt.Fprintln(w, "Hello Decorator!")
+}
+
+type LoggerMiddleware struct {
+    Handler   http.Handler
+    LogWriter io.Writer
+}
+
+func (l *LoggerMiddleware) ServeHTTP(w http.ResponseWriter, r *http.request) {
+    fmt.Fprintf(l.LogWriter, "Request URI: %s\n", r.RequestURI)
+    fmt.Fprintf(l.LogWriter, "Host: %s\n", r.Host)
+    fmt.Fprintf(l.LogWirter, "Content Length: %d\n", r.ContentLength)
+    fmt.Fprintf(l.LogWriter, "Method: %s\n", r.Method)
+    fmt.Fprintf(l.LogWriter, "--------------------\n")
+    l.Handler.ServeHttp(w, r)
+}
+
+type SimpleAuthMiddleware struct {
+    Handler  http.Handler
+    User     string
+    Password string
+}
+
+func (s *SimpleAuthMiddleware) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+    user, pass, ok := r.BasicAuth()
+
+    if ok {
+        if user == s.User && pass == s.Password {
+            s.Handler.ServeHTTP(w, r)
+        } else {
+            fmt.Fprintf(w, "User or Password incorrect\n")
+        }
+    } else {
+        fmt.Fprintln(w, "Error trying to retrieve data from Basic auth")
+    }
+}
+
+func main() {
+    fmt.Println("Enter the type number of server you want to launch from the" + " following:")
+    fmt.Println("1.- Plain server")
+    fmt.Println("2.- Server with logging")
+    fmt.Println("3.- Server with logging and authentication")
+
+    var selection int
+    fmt.Fscanf(os.Stdin, "%d", &selection)
+
+    var mySuperServer http.Handler
+
+    switch selection {
+    case 1:
+        mySuperServer = new(MyServer)
+    case 2:
+        mySuperServer = &LoggerMiddleware{
+            Handler:   new(MyServer),
+            LogWriter: os.Stdout,
+        }
+    case 3:
+        var user, password string
+        fmt.Println("Enter user and password separated by a space")
+        fmt.Fscanf(os.Stdin, "%s %s", &user, &password)
+
+        mySuperServer = &LoggerMiddleware{
+            Handler: &SimpleAuthMiddleware{
+                Handler:  new(MyServer),
+                User:     user,
+                Password: password,
+            },
+            LogWriter: os.Stdout,
+        }
+    default:
+        mySuperServer = new(MyServer)
+    }
+
+    http.Handle("/", mySuperServer)
+
+    log.Fatal(http.ListenAndServe(:8080, nil))
+}
+```
+
+In the Decorator pattern, we decorate a type dynamically. This means that the decoration may or may not be there, or it may be composed of one or many types. If you remember, the Proxy pattern wraps a type in a similar fashion, but it does so at compile time and it's more like a way to access some type.
