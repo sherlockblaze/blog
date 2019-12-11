@@ -1071,3 +1071,280 @@ The Facade design pattern shields the code from unwanted access, orders some cal
 
 You use Facade when you want to hide the complexity of some tasks, especially when most of them share utilities(such as authentication in an API). A library is a form of facade, where someone has to provide some methods for a developer to do certain things in a friendly way. This way, if a developer needs to use your library, he doesn't need to know all the inner tasks to retrieve the result he/she wants.
 
+- When you want to decrease the complexity of some parts of our code. You hide that complexity behind the facade by providing a more easy-to-use method.
+- When you want to group actions that are cross-related in a single place.
+- When you want to build a library so that others can use your products without worrying about how it all works.
+
+```golang
+package openWeatherMap
+
+import (
+    "encoding/json"
+    "fmt"
+    "io"
+    "io/ioutil"
+    "net/http"
+)
+
+type CurrentWeatherDataRetriever interface {
+    GetByGeoCoordinates(lat, lon float32) (*Weather, error)
+    GetByCityAndCountryCode(city, countryCode string) (*Weather, error)
+}
+
+type CurrentWeatherData struct {
+    APIkey string
+}
+
+type Weather struct {
+    Coord struct {
+        Lon float32 `json:"lon"`
+        Lat float32 `json:"lat"`
+    } `json:"coord"`
+    Weather []struct {
+        Id          int    `json:"id"`
+        Main        string `json:"main"`
+        Description string `json:"description"`
+        Icon        string `json:"icon"`
+    } `json:"weather"`
+    Base string `json:"base"`
+    Main struct {
+        Temp     float32 `json:"temp"`
+        Pressure float32 `json:"pressure"`
+        Humidity float32 `json:"humidity"`
+        TempMin  float32 `json:"temp_min"`
+        TempMax  float32 `json:"temp_max"`
+    } `json:"main"`
+    Wind struct {
+        Speed float32 `json:"speed"`
+        Deg   float32 `json:"deg"`
+    } `json:"wind"`
+    Clouds struct {
+        All int `json:"all"`
+    } `json:"clouds"`
+    Rain struct {
+        ThreeHours float32 `json:"3h"`
+    } `json:"rain"`
+    Dt  uint32 `json:"dt"`
+    Sys struct {
+        Type    int     `json:"type"`
+        ID      int     `json:"id"`
+        Message float32 `json:"message"`
+        Country string  `json:"country"`
+        Sunrise int     `json:"sunrise"`
+        Sunset  int     `json:"sunset"`
+    } `json:"sys"`
+    ID   int    `json:"id"`
+    Name string `json:"name"`
+    Cod  int    `json:"cod"`
+}
+
+const (
+    commonRequestPrefix = "http://api.openweathermap.org/data/2.5/"
+    weatherByCityName = commonRequestPrefix + "weather?q=%s,%s&APPID=%s"
+    weatherByGeographicalCoordinates = commonRequestPrefix + "weather?lat=%f&lon=%f&APPID=%s"
+)
+
+func (c *CurrentWeatherData) GetByGeoCoordinates(lat, lon float32) (weather *Weather, err error) {
+    return c.doRequest(fmt.Sprintf(weatherByGeographicalCoordinates, lat, lon, c.APIkey))
+}
+
+func (c *CurrentWeatherData) GetByCityAndCountryCode(city, countryCode string) (weather *Weather, err error) {
+    return c.doRequest(fmt.Sprintf(weatherByCityName, city, countryCode, c.APIkey))
+}
+
+func (c *CurrentWeatherData) responseParser(body io.Reader) (*Weather, error) {
+    w := new(Weather)
+    err := json.NewDecoder(body).Decode(w)
+    if err != nil {
+        return nil, err
+    }
+
+    return w, nil
+}
+
+func (o *CurrentWeatherData) doRequest(uri string) (weather *Weather, err error) {
+    client := &http.Client{}
+    req, err := http.NewRequest("GET", uri, nil)
+    if err != nil {
+        return
+    }
+    req.Header.Set("Content-Type", "application/json")
+
+    resp, err := client.Do(req)
+    if err != nil {
+        return
+    }
+
+    if resp.StatusCode != 200 {
+        byt, errMsg := ioutil.ReadAll(resp.Body)
+        defer resp.Body.Close()
+        if errMsg == nil {
+            errMsg = fmt.Errorf("%s", string(byt))
+        }
+        err = fmt.Errorf("Status code was %d, aborting. Error message was:\n%s\n", resp.StatusCode, errMsg)
+
+        return
+    }
+
+    weather, err = o.responseParser(resp.Body)
+    resp.Body.Close()
+
+    return
+}
+```
+
+### Flyweight Design Pattern
+
+Flyweight design pattern is very commonly used in computer graphics and the video game industry, but not so much in enterprise applications.
+
+**Flyweight is a pattern which allows sharing the state of a heavy object between many instance of some type.**
+
+Imagine that you have to create and store too many objects of some heavy type that are fundamentally equal. You'll run out of memory pretty quickly.
+
+This problem can be easily solved with the Flyweight pattern, **with additional help of the Factory pattern.**
+
+#### Objectives
+
+Thanks to the Flyweight pattern, we can share all possible states of objects in a single common object, and thus minimize object creation by using pointers to already created objects.
+
+> To give an example, we are going to simulate something that you find on betting webpages. Imagine the final match of the European championship, which is viewed by millions of people across the continent.
+Now imagine that we own a betting webpage, where we provide historical information about every team in Europe. This is plenty of information, which is usually stored in some distributed database, and each team has, literally, megabytes of information about their players, matches, championships, and so on.
+If a million users access information about a team and a new instance of the information is created for each user querying for historical data, we will run out of memory in the blink of an eye. With the Proxy solution, we could make a cache of the ***n*** most recent searches to speed up queries, but if we return a clone for every team, we will still get short on memory(but faster thanks to our cache).
+Instead, we will store each team's information just once, and we will deliver references to them to the users. So, if we face a million users trying to access information about a match, we will actually just have two teams in memory with a million pointers to the same memory direction.
+
+- **flyweight.go**
+
+```golang
+package flyweight
+
+import "time"
+
+const (
+    TEAM_A = iota
+    TEAM_B
+)
+
+type Player struct {
+    Name         string
+    Surname      string
+    PreviousTeam uint64
+    Photo        []byte
+}
+
+type HistoricalData struct {
+    Year          uint8
+    LeagueResults []Match
+}
+
+type Team struct {
+    ID             uint64
+    Name           string
+    Shield         []byte
+    Players        []Player
+    HistoricalData []HistoricalData
+}
+
+type Match struct {
+    Date          time.Time
+    VisitorID     uint64
+    LocalID       uint64
+    LocalScore    byte
+    VisitorScore  byte
+    LocalShoots   uint16
+    VisitorShoots uint16
+}
+
+func getTeamFactory(team int) Team {
+    switch team {
+    case TEAM_B:
+        return TEAM{
+            ID:   2,
+            Name: "TEAM_B",
+        }
+    default:
+        return Team{
+            ID:   1,
+            Name: "TEAM_A",
+        }
+    }
+}
+
+func NewTeamFactory() teamFlyweightFactory {
+    return teamFlyweightFactory{
+        createdTeams: make(map[int]*Team, 0),
+    }
+}
+
+type teamFlyweightFactory struct {
+    createdTeams map[int]*Team
+}
+
+func (t *teamFlyweightFactory) GetTeam(teamName int) *Team {
+    if t.createdTeams[teamName] != nil {
+        return t.createdTeams[teamName]
+    }
+
+    team := getTeamFactory(teamName)
+    t.createdTeams[teamName] = &team
+
+    return t.createdTeams[teamName]
+}
+
+func (t *teamFlyweightFactory) GetNumberOfObjects() int {
+    return len(t.createdTeams)
+}
+```
+
+- **flyweight_test.go**
+
+```golang
+package flyweight
+
+import (
+    "fmt"
+    "testing"
+)
+
+func TestTeamFlyweightFactory_GetTeam(t *testing.T) {
+    factory := NewTeamFactory()
+
+    teamA1 := factory.GetTeam(TEAM_A)
+    if teamA1 == nil {
+        t.Error("The pointer to the TEAM_A was nil")
+    }
+
+    teamA2 := factory.GetTeam(TEAM_A)
+    if teamA2 == nil {
+        t.Error("The pointer to the TEAM_A was nil")
+    }
+
+    if teamA1 != teamA2 {
+        t.Error("TEAM_A objects weren't the same")
+    }
+
+    if factory.GetNumberOfObjects() != 1 {
+        t.Errorf("The number of objects created was not 1: %d\n", factory.GetNumberOfObjects())
+    }
+}
+
+func Test_HighVolume(t *testing.T) {
+    factory := NewTeamFactory()
+
+    teams := make([]*Team, 500000*2)
+    for i := 0; i < 500000; i++ {
+        teams[i] = factory.GetTeam(TEAM_A)
+    }
+
+    for i := 500000; i < 2*500000; i++ {
+        teams[i] = factory.GetTeam(TEAM_B)
+    }
+
+    if factory.GetNumberOfObjects() != 2 {
+        t.Errorf("The number of objects created was not 2: %d\n", factory.GetNumberOfObjects())
+    }
+
+    for i := 0; i < 3; i++ {
+        fmt.Printf("Pointer %d points to %p and is located in %p\n", i, teams[i], &teams[i])
+    }
+}
+```
