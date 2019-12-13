@@ -30,7 +30,7 @@ date: 2019-05-08
 
 ### init 函数
 
-如你在[Golang 初探](https://sherlockblaze.com/2019/05/07/code/golang/golang-start/)所看到的，在 `matcher` 中，你会看到 `init` 函数，如果你以这种方式 `import _ "beauty"` 导入包，那么会在程序开始运行时，执行这个包下面的 `init` 函数。
+如你在[Golang 初探](https://sherlockblaze.com/2019/05/07/golang/golang-start/)所看到的，在 `matcher` 中，你会看到 `init` 函数，如果你以这种方式 `import _ "beauty"` 导入包，那么会在程序开始运行时，执行这个包下面的 `init` 函数。
 
 ## 数组
 
