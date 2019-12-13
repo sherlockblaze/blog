@@ -1,7 +1,7 @@
 ---
 title: Design Pattern in Go
 tags:
-  - design-pattern
+  - 设计模式
 date: 2019-12-06
 ---
 

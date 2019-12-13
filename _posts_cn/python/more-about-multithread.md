@@ -1,9 +1,7 @@
 ---
 title: Python3 多线程深入一些
 tags:
-  - Python
-  - 编程语言
-  - 编程
+  - python
 date: 2018-08-16
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Rust 编程初体验
 tags:
-  - Rust
-  - 编程语言
-  - 编程
+  - rust
 date: 2019-03-21
 ---
 

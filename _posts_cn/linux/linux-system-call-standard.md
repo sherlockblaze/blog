@@ -1,10 +1,7 @@
 ---
 title: Linux 系统调用规范
 tags: 
-  - Linux
-  - Linux 系统下编程
-  - Linux 内核
-  - Unix
+  - linux
 date: 2019-02-26
 ---
 

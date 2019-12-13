@@ -1,9 +1,7 @@
 ---
 title: Python3 简单文件操作
 tags:
-  - Python
-  - 编程语言
-  - 编程
+  - python
 date: 2017-06-17 11:40:49
 ---
 

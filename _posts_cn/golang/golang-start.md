@@ -1,9 +1,7 @@
 ---
 title: Golang 初探
 tags:
-  - Golang
-  - 编程语言
-  - 编程
+  - golang
 date: 2019-05-07
 ---
 

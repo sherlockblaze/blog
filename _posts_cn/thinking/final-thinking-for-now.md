@@ -1,7 +1,7 @@
 ---
 title: 新的认知
 tags:
-  - 意志力
+  - myself
 date: 2019-11-30
 ---
 

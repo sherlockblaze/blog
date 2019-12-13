@@ -1,9 +1,7 @@
 ---
 title: Golang 高并发初步
 tags:
-  - Golang
-  - 编程语言
-  - 编程
+  - golang
 date: 2019-05-14
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: Linux是如何工作的--Linux系统总览
 tags:
-  - Linux是如何工作的
-  - Linux
-  - Linux 内核
+  - linux
 date: 2019-02-26
 ---
 

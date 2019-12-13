@@ -1,7 +1,7 @@
 ---
-title: About Goroutines
+title: Goroutines
 tags:
-  - daily
+  - golang
 date: 2019-12-04
 ---
 

@@ -1,5 +1,7 @@
 ---
 title: BAETYL
+tags:
+  - 架构
 date: 2019-04-12
 ---
 

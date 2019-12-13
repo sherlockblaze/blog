@@ -1,7 +1,7 @@
 ---
 title: Golang GC
 tags:
-  - Golang
+  - golang
 date: 2019-12-13
 ---
 
@@ -104,12 +104,44 @@ Therefore, at this point, the elements of the white set are said to be garbage c
 
 During this process, the running application is called the **mutator**.
 
-![gc-cycle-mastering-go](https://sherlockblaze.com/resources/img/golang/gc-cycle-mastering-go.png)
-
 The mutator runs a small function named **write barrier** that is executed each time a pointer in the heap is modified.
 
 **If the pointer of an object in the heap is modified, which means that this object is now reachable, the write barrier colors it grey and puts it in the grey set.**
 
 > The mutator is responsible for the invariant that no element of the black set has a pointer to an element of the white set. This is accomplished with the help of the write barrier function. Failing to accomplish this invariant will ruin the garbage collection process, and it will most likely crash your program in an ugly and undesired way.
+
+![gc-cycle-mastering-go](https://sherlockblaze.com/resources/img/golang/gc-cycle-mastering-go.png)
+
+The Go garbage collection can also be applied to variables such as **channel**. When the garbage collector finds out that a channel is unreachable and that the channel variable can no longer be accessed, it will free its resources even if the channel has not closed.
+
+> Go allows you to initiate a garbage collection manually by putting a `runtime.GC()` statement in your Go code.
+Keep in mind that `runtime.GC()` will block the caller, and it might block the entire program, especially if you are running a very busy Go program with many objects. This happens mainly because you cannot perform garbage collections while everything else is rapidly changing, as this will not give the garbage collector the opportunity to identify clearly the members of the white, black, and grey sets!
+This garbage collection status is also called the **garbage collection safe-point.**
+
+## More
+
+The main concern of the Go garbage collector is **low latency**, which basically means short pauses in its operation in order to have real-time operation.
+
+What a program does all the time is to create new objects and manipulate existing objects with pointers. This process can end up creating objects that cannot be accessed any longer because no pointers exist that point to these objects.
+
+**Such objects are now garbage waiting for the garbage collector to clean them up and free their memory space.**
+
+The way that the **mark-and-sweep algorithm** works is pretty simple:
+
+- The algorithm stops the program execution(**stop-the-world garbage collector**) in order to visit all of the accessible objects of the heap of a program and marks them.
+- It sweeps the inaccessible objects. During the mark phase of the algorithm, each object is marked as white, grey or black.
+- The children of a grey object are colored grey, whereas the original grey object is now colored black.
+
+The sweep phase begins when there are no more grey objects to examine. This technique works because **there are no pointers from the black set to the white set, which is a fundamental invariant of the algorithm.**
+
+Go tries to lower that particular latency by running the garbage collector as a concurrent process and using the tricolor algorithm.
+
+Other processes can move pointers or create new objects while the garbage collector runs concurrently. As a result, **the principal point that allows the tricolor algorithm to run concurrently is to be able to maintain the fundamental invariant of the mark-and-sweep algorithm-no object of the black set can point to an object of the white set.**
+
+**But new objects must go to grey set,** because this way the fundamental invariant of the mark-and-sweep algorithm cannot be altered.
+
+Additionally, when a pointer of the program is moved, color the object to which the pointer points as grey. Last, each time a pointer is moved, some Go code gets automatically executed, which is the **write barrier** that does some recoloring.
+
+**The latency introduced by the execution of the write barrier code is the price we have to pay for being able to run the garbage collector concurrently.**
 
 [On-the-fly Garbage Collection: An Exercise in Cooperation](https://sherlockblaze.com/resources/file/golang/on-the-fly-gc.pdf)

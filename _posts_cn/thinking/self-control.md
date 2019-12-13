@@ -1,7 +1,7 @@
 ---
 title: 自控力总结
 tags:
-  - 意志力
+  - myself
 date: 2019-09-16
 ---
 

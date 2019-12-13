@@ -1,9 +1,7 @@
 ---
 title: Python3 文件操作（一年后新版）
 tags:
-  - Python
-  - 编程语言
-  - 编程
+  - python
 date: 2018-08-16
 ---
 
