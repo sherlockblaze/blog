@@ -5,8 +5,6 @@ tags:
 date: 2019-12-06
 ---
 
-![beautiful-house](https://sherlockblaze.com/resources/img/design-pattern/beautiful-house.jpg)
-
 ## The Singleton Pattern
 
 It will provide you with a single instance of an object, and guarantee that there are no duplicates.
