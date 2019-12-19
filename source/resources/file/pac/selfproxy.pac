@@ -5509,33 +5509,3 @@ if (!String.prototype.endsWith) {
         return lastIndex !== -1 && lastIndex === position;
   };
 }
-
-
-{
-      "protocol": "freedom",
-      "settings": {},
-      "tag": "direct"
-    }
-  ],
-  "routing": {
-    "domainStrategy": "IPIfNonMatch",
-      "rules": [
-      {
-          "type": "field",
-          "outboundTag": "direct",
-          "domain": [
-          "geosite:cn",
-          "translate.google.cn",
-          "sherlockblaze.com"
-        ]
-        },
-        {
-          "type": "field",
-          "outboundTag": "direct",
-          "ip": [
-            "geoip:cn",
-            "geoip:private"
-          ]
-        }
-      ]
-  }
