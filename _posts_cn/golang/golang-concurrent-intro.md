@@ -176,11 +176,74 @@ walk := func(walking *sync.WaitGroup, name string) {
         }
     }
     fmt.Fprintf(&out, "\n%v tosses her hands up in exasperation!", name)
-
-    var peopleInHallway sync.WaitGroup
-    peopleInHallway.Add(2)
-    go walk(&peopleInHallway, "Alice")
-    go walk(&peopleInHallway, "Barbara")
-    peopleInHallway.Wait()
 }
+
+var peopleInHallway sync.WaitGroup
+peopleInHallway.Add(2)
+go walk(&peopleInHallway, "Alice")
+go walk(&peopleInHallway, "Barbara")
+peopleInHallway.Wait()
 ```
+
+This example demonstrates a very common reason livelocks are written: two or more concurrent processes attempting to prevent a deadlock without coordination.
+
+### Starvation
+
+**Starvation is any situation where a concurrent process cannot get all the resources it needs to perform work.**
+
+In a livelock, all the concurrent processes are starved equally, and **no work** is accomplished. More broadly, starvation usually implies that there are one or more greedy concurrent process that are unfairly preventing one or more concurrent processes from accomplishing work as efficiently as possible, or maybe at all.
+
+```golang
+var wg sync.WaitGroup
+var sharedLock sync.Mutex
+const runtime = 1 * time.Second
+
+greedyWorker := func() {
+    defer wg.Done()
+
+    var count int
+    for begin := time.Now(); time.Since(begin) <= runtime {
+        sharedLock.Lock()
+        time.Sleep(3 * time.Nanosecond)
+        sharedLock.Unlock()
+        count++
+    }
+
+    fmt.Printf("Greedy worker was able to execute %v work loops\n", count)
+}
+
+politeWorker := func() {
+    defer wg.Done()
+
+    var count int
+    for begin := time.Now(); time.Since(begin) <= runtime; {
+        sharedLock.Lock()
+        time.Sleep(1 * time.Nanosecond)
+        sharedLock.Unlock()
+
+        sharedLock.Lock()
+        time.Sleep(1 * time.Nanosecond)
+        sharedLock.Unlock()
+
+        sharedLock.Lock()
+        time.Sleep(1 * time.Nanosecond)
+        sharedLock.Unlock()
+
+        count++
+    }
+
+    fmt.Printf("Polite worker was able to execute %v work loops.\n", count)
+}
+
+wg.Add(2)
+go greedyWorker()
+go politeWorker()
+
+wg.Wait()
+```
+
+Note our technique here for identifying the starvation: a metric. Starvation makes for good argument for recording and sampling metrics. One of the ways you can detect and solve starvation is by logging when work is accomplished, and then determining if your rate of work is as high as you expect it.
+
+If you utilize memory access synchronization, you'll have to find a balance between preferring coarse-grained synchronization for performance, and fine-grained synchronization for fairness.
+
+**When it comes time to performance tune your application, to start with, I highly recommend you constrain memory access synchronization only to critical sections; if the synchronization becomes a performance problem, you can always broaden the scope.**
