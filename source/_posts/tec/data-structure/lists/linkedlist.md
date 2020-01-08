@@ -1,6 +1,8 @@
 ---
 title: LinkedList
-tags: Data Structures
+tags:
+  - data structures
+  - tec
 date: 2019-01-21
 ---
 

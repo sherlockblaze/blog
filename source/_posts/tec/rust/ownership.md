@@ -1,8 +1,8 @@
 ---
 title: Ownership
 tags:
-  - Rust
-  - Programming Language
+  - rust
+  - tec
 date: 2019-03-25
 ---
 

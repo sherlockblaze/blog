@@ -1,7 +1,8 @@
 ---
 title: Design Pattern
 tags:
-  - 设计模式
+  - design pattern
+  - tec
 date: 2019-12-04
 ---
 

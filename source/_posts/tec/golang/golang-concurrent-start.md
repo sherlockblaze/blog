@@ -2,6 +2,7 @@
 title: Golang 高并发初步
 tags:
   - golang
+  - tec
 date: 2019-05-14
 ---
 

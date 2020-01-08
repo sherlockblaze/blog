@@ -1,9 +1,8 @@
 ---
 title: Coding Under Unix -- Process Control
 tags:
-  - Unix
-  - Processes
-  - Coding Under Unix
+  - unix
+  - tec
 date: 2019-03-05
 ---
 

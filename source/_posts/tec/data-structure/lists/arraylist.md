@@ -1,6 +1,8 @@
 ---
 title: ArrayList
-tags: Data Structures
+tags:
+  - data structures
+  - tec
 date: 2019-01-21
 catalog: true
 ---

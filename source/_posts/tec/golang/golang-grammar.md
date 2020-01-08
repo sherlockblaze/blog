@@ -2,6 +2,7 @@
 title: Golang 基本语法
 tags:
   - golang
+  - tec
 date: 2019-05-08
 ---
 

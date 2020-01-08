@@ -1,7 +1,8 @@
 ---
 title: BAETYL
 tags:
-  - 架构
+  - architecture
+  - tec
 date: 2019-04-12
 ---
 

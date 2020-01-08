@@ -1,7 +1,8 @@
 ---
-title: K8S 编程 -- 开端
+title: k8s 编程 -- 开端
 tags: 
-  - K8S
+  - k8s
+  - tec
 date: 2019-08-19
 ---
 

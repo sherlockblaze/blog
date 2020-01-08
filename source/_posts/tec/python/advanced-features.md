@@ -2,6 +2,7 @@
 title: Python3 高级特性
 tags:
   - python
+  - tec
 date: 2018-08-16
 ---
 

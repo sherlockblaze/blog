@@ -2,6 +2,7 @@
 title: Goroutines
 tags:
   - golang
+  - tec
 date: 2019-12-04
 ---
 

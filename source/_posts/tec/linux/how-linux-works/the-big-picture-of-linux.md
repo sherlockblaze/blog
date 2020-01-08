@@ -1,9 +1,8 @@
 ---
 title: How Linux Works(Chapter One)--The Big Picture of Linux
 tags:
-  - How Linux Works
-  - Linux
-  - Linux kernel
+  - linux
+  - tec
 date: 2019-02-26
 ---
 

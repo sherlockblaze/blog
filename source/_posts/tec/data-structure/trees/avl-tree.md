@@ -1,8 +1,8 @@
 ---
 title: Avl Tree
 tags:
-    - Data Structures
-    - Trees
+  - data structures
+  - tec
 date: 2019-05-05
 catalog: true
 ---

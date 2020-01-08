@@ -2,6 +2,7 @@
 title: Golang GC
 tags:
   - golang
+  - tec
 date: 2019-12-13
 ---
 

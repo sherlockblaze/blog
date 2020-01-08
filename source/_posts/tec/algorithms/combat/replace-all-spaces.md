@@ -1,9 +1,8 @@
 ---
 title: Replace All Spaces
 tags:
-  - Algorithms
-  - Algorithms Combat
-  - Combat
+  - algorithms
+  - tec
 date: 2019-01-24
 ---
 

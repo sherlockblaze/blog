@@ -2,6 +2,7 @@
 title: Python3 基础语法
 tags:
   - python
+  - tec
 date: 2018-08-16
 ---
 

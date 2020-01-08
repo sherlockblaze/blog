@@ -1,9 +1,8 @@
 ---
 title: Search In Two Dimensional Array
 tags:
-  - Algorithms
-  - Algorithms Combat
-  - Combat
+  - algorithms
+  - tec
 date: 2019-01-24
 ---
 

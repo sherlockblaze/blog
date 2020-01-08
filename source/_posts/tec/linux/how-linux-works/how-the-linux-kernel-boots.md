@@ -1,9 +1,8 @@
 ---
 title: How Linux Works(Chapter Five)--How the Linux Kernel Boots
 tags:
-  - How Linux Works
-  - Linux
-  - Linux kernel
+  - linux
+  - tec
 date: 2019-03-12
 ---
 

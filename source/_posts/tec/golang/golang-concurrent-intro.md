@@ -2,6 +2,7 @@
 title: Golang Concurrent
 tags:
   - golang
+  - tec
 date: 2019-12-19
 ---
 

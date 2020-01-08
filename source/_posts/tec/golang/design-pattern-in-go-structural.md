@@ -2,6 +2,7 @@
 title: Design Pattern in Go (Structural Pattern)
 tags:
   - golang
+  - tec
 date: 2019-12-06
 ---
 

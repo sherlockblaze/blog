@@ -1,7 +1,8 @@
 ---
 title: 应用架构演进
 tags:
-  - 架构
+  - architecture
+  - tec
 date: 2019-04-23
 ---
 

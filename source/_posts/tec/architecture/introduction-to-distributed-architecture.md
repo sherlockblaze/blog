@@ -1,7 +1,8 @@
 ---
 title: 分布式架构入门
 tags:
-  - 架构
+  - architecture
+  - tec
 date: 2019-04-24
 ---
 

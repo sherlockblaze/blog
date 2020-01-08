@@ -2,6 +2,7 @@
 title: Python3 简单文件操作
 tags:
   - python
+  - tec
 date: 2017-06-17 11:40:49
 ---
 

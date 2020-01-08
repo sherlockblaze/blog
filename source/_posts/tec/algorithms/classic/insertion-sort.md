@@ -1,9 +1,8 @@
 ---
 title: Insertion-Sort
 tags:
-  - Algorithms
-  - Algorithms Classic
-  - Classic
+  - algorithms
+  - tec
 date: 2019-01-24
 ---
 

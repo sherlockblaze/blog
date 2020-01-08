@@ -2,6 +2,7 @@
 title: 深入剖析 Kubernetes
 tags:
   - 极客时间笔记
+  - tec
 date: 2019-09-19
 ---
 

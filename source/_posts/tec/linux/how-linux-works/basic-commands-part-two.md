@@ -1,9 +1,8 @@
 ---
 title: How Linux Works(Chapter Two)--Basic Commands(Part Two)
 tags:
-  - How Linux Works
-  - Linux
-  - Linux kernel
+  - linux
+  - tec
 date: 2019-03-02
 ---
 

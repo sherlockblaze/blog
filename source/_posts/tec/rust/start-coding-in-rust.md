@@ -2,6 +2,7 @@
 title: Rust 编程初体验
 tags:
   - rust
+  - tec
 date: 2019-03-21
 ---
 

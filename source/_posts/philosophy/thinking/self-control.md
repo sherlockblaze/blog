@@ -1,7 +1,8 @@
 ---
 title: 自控力总结
 tags:
-  - myself
+  - thinking
+  - philosophy
 date: 2019-09-16
 ---
 

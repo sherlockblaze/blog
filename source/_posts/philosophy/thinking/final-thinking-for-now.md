@@ -1,7 +1,8 @@
 ---
 title: 新的认知
 tags:
-  - myself
+  - thinking
+  - philosophy
 date: 2019-11-30
 ---
 

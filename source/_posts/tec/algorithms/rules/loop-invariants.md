@@ -1,9 +1,8 @@
 ---
 title: Loop Invariants
 tags:
-  - Algorithms
-  - Algorithms Rules
-  - Rules
+  - algorithms
+  - tec
 date: 2019-01-24
 ---
 

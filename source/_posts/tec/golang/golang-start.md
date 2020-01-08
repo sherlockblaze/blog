@@ -2,6 +2,7 @@
 title: Golang 初探
 tags:
   - golang
+  - tec
 date: 2019-05-07
 ---
 

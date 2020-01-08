@@ -2,6 +2,7 @@
 title: docker introduction
 tags:
   - docker
+  - tec
 date: 2019-12-03
 ---
 

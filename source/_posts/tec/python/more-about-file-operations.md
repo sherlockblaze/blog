@@ -2,6 +2,7 @@
 title: Python3 文件操作（一年后新版）
 tags:
   - python
+  - tec
 date: 2018-08-16
 ---
 

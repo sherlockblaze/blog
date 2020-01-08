@@ -1,8 +1,8 @@
 ---
 title: Red-Black Trees
 tags:
-    - Data Structures
-    - Trees
+  - data structures
+  - trees
 date: 2019-05-05
 catalog: true
 ---

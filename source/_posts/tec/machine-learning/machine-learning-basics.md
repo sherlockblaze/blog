@@ -1,7 +1,8 @@
 ---
 title: 机器学习基础
 tags:
-  - 机器学习
+  - machine learning
+  - tec
 date: 2019-12-12
 ---
 
