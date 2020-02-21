@@ -17,8 +17,8 @@ notifications:
 before_script:
 - git config --global user.name "sherlockblaze"
 - git config --global user.email "sherlockblaze@gmail.com"
-- sed -i "s/__VISITORS_APPID__/${__VALINE_APPID_EN__}/" _config.yml
-- sed -i "s/__VISITORS_APPKEY__/${__VALINE_APPKEY_EN__}/" _config.yml
+- sed -i "s/__VISITORS_APPID__/${__VISITORS_APPID__}/" _config.yml
+- sed -i "s/__VISITORS_APPKEY__/${__VISITORS_APPKEY__}/" _config.yml
 
 script:
   npm run build
