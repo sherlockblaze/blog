@@ -16,7 +16,7 @@ References:
 
 All of Suzie's early words were **[ambiguous](#ambiguous)** in one way or another. If she said ***gone***, Ii had to note the situation where she used the word in order to work out what she was talking about. It might be something dropped on the floor, or someone leaving the room, or the TV being turned off. ***Down*** could mean that something had fallen down or she wanted to get down (from her high chair). More sometimes meant 'I do want some more (food)' as well as 'I don't want any more'. Even when she named things - and over half her early **[vocabulary](#vocabulary)** consisted of names of people or objects -- there was **ambiguity**. A dog was dog, but so were a cat and a bird, for a while.
 
-And yet, **[despite](#despite)** this lack of grammatical **[sophistication](#sophistication)**, these **[utterances](#utterances)** were **[nonetheless](#nonetheless)** sentences, not just **[isolated](#isolated)** words. Suzie was saying them with a definite rhythm and **[melody](#melody -ies)**, and everyone responded to them as if they were real sentences.
+And yet, **[despite](#despite)** this lack of grammatical **[sophistication](#sophistication)**, these **[utterances](#utterances)** were **[nonetheless](#nonetheless)** sentences, not just **[isolated](#isolated)** words. Suzie was saying them with a definite rhythm and **[melody](#melody)**, and everyone responded to them as if they were real sentences.
 
 Dada, said with a rising **[pitch](#pitch)**, meant 'Is that Daddy?' Said with a falling pitch it meant 'There's Daddy'. Said with a level pitch (and arms **[outstretched](#outstretched)**) it meant 'Pick me up, Daddy'. The different pitch patterns made them sound like a question, a statement, and a command -- even though there was no sign of the grammar we **[associate](#associate)** with there three types of sentence. This was a clear **[contrast](#contrast)** with the rather random **[vocalizations](#vocalization)** Suzie had been making a few months before, when she was **[babbling](#babble) away**, and nobody could work out what she was saying. Old grammars used to say that 'a sentence expresses a complete thought'. Suzie certainly sounded as if she was expressing her first complete thoughts.
 
@@ -116,7 +116,7 @@ despite this fact. The problems are not serious. Nonetheless, we shall need to t
 2. without much contact with other people or other countries
 3. single; happening once
 
-#### melody -ies
+#### melody
 
 > noun.
 
