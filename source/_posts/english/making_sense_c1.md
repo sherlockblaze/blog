@@ -106,7 +106,7 @@ despite this fact. The problems are not serious. Nonetheless, we shall need to t
    1. ***~sb/yourself/sth***
    2. ***~ sb/yourself/sth from sb/sth***
 2. ***~ sth(from sth)*** (formal) to separate a part of a situation, problem, idea, etc. so that you can see what it is and deal with it separately.
-3. ***~sth (from sth) (specialist) to separate a single substance, cell, ethc. from others so that you can study it.
+3. ***~sth (from sth) (specialist)*** to separate a single substance, cell, ethc. from others so that you can study it.
 
 #### isolated
 
