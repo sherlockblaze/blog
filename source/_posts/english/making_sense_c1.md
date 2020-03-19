@@ -24,6 +24,56 @@ Dada, said with a rising **[pitch](#pitch)**, meant 'Is that Daddy?' Said with a
 
 **[Linguists](#linguists)** have **[devised](#devised)** a technical term for these **[primitive](#primitive)** one-word sentences. They call them ***holophrases*** (the first element is from a Greek work meaning 'whole'). They are a **[universal](#universal)** feature of language **[acquisition](#acquisition)** this age. Regardless of the language children are learning, between twelve and eighteen months they will all go through a **[holophrastic](#holophrastic)** stage. And, of course, if they're hearing more than one language **[routinely](#routine)** at home, they will do the same sort of thing with whatever words they pick up. At this age, children don't know that the words belong th different languages.
 
+***Keywords: sentence***
+
+What Suzie did between twelve and eighteen months is what we all have to do when we begin to explore English grammar - or the grammar of any language. Grammar is the study of the way we bring words together in order to make sense. These combinations of words make up larger constructions that we call **[phrases](#phrase)**, **[clauses](#clause)**, sentences, **[paragraphs](#paragraph)**... and grammar studies all of this: how they are constructed, and the meanings and effects that the various constructions **[convey](#convey)**.
+
+Suzie needed grammar to make sense of her words. And so do we all. Isolated words don't usually make sense. If I suddenly come out with 'Thursday' or '**Indefatiagable**' or '**Sausages**', my listeners will have no idea what I'm talking about. They will look around for some context that might help to explain what's in my mind, and if they don't find any they will conclude that there's something wrong with me -- for **[indeed](#indeed)**, speaking in isolated words can be a sign of mental **[disturbance](#disturbance)**.
+
+Of all the constructions that we can make, the one that **[dominates](#dominate)** the history of grammar is the sentence. Sentences make sense. That is their job. When we hear or see a sentence, the way it is constructed should convey a meaning that makes sense without having to asking for help. Sentences stand on their own two feet. They have a certain independence. This is the basis of the **[notion](#notion)** that a sentence needs to feel complete. It led to the old definition I mentioned above: 'a sentence expresses a complete thought'. That was never a good definition because who could ever say what a 'complete thought' was?
+
+> Take the sentence I wrote in the last paragraph:
+>
+> It led to the old definition I mentioned above: 'a sentence expresses a complete thought'.
+
+How many thoughts are there in that? The **[colon](colon)** brings together two thoughts, in fact, one on each side. But as the word 'It' refers back to the previous sentence, maybe that should be included as well, making three. And as 'above' refers back to the beginning of this chapter, maybe that should be allowed in too, making four. Or maybe the thought is incomplete, as I need the other sentences in that paragraph to explain what I'm trying to say. Perhaps it's a paragraph that is a complete thought, then? Or a chapter? Or a book?
+
+There is a feeling of completeness when we reach the end of a sentence, but it is a completeness that comes from the way the sentence is constructed, not from the thoughts that are in it. The sentences are said to be 'grammatically complete'. Most of the sentences on this page are. The following aren't:
+
+> a very large tree
+>
+> walking down the road
+>
+> I saw a car and
+
+To make them grammatical, we need to add some structure, such as:
+
+> A very large tree was blocking the road.
+>
+> Walking down the road, we sang songs.
+>
+> I saw a car and a bus.
+
+We show this completeness in writing by using a mark of final punctuation, such as a full stop. We show it in speech using patterns of definite **[intonation](#intonation)**. Say one of those complete sentences aloud, and you will say it with a pitch pattern that tells your listener your sentence has come to an end. This was the very first feature of English that Suzie learned: how to make a sentence sound finished, so that  a listener will response to it.
+
+It's actually quite difficult to give a definition of a sentence that handles all the ways in which sentences are constructed. If you've been brought up to believe that 'A sentence begins with a capital letter and ends with a full stop', then you have to think again when you encounter sentences that begin with a lower-case letter (as in millions of emails and social media posts, and quite a lot of poetry) and end with something other than a full stop, such as a question mark or exclamation mark ... or no punctuation mark at all, as in much public **[signage](#signage)**.
+
+Or three dots, to express **[dramatic](#dramatic)** **[anticipation](#anticipation)**. It was a favorite stylistic trick of Agatha Christie, who **[frequently](#frequently)** ends a chapter with '**ellipsis** dots'. Here's the last paragraph of Chapter 17 of a Hercules Poirot novel, Mrs McGinty's dead:
+
+> 'Don't go in there -- don't go in. Your mother -- she -- she's dead -- I think -- she's been killed ...'
+
+And Chapter 18 takes up the cue in its opening line:
+
+> 'Quite a neat bit of work,' said Superintendent Spence.
+
+And note that the Superintendent's sentence actually ends with a comma - normal practice when writing direct speech.
+
+We also have to allow for sentences that look or sound finished, yet their sense depends on other sentences around them. If you ask me 'Where is John going?' and I answer 'To the station' or 'He's going to town', I've replied using sentences, but they're of a rather special kind. My sentences follow the rules of English grammar, but **they need your sentence in order to make complete sense.** I used a couple earlier in this chapter: 'Or a chapter? Or a book?'
+
+Grammarians use the term **elliptical** (from a Greek word meaning 'coming short') to describe sentences like 'To the station'. A pronoun such as _he_ is said to be _anaphoric_ (from a Greek work meaning 'carrying back'), as it refers back to the previous sentence. Why so many Greek-derived terms? See the following **[Interlude](#interlude).**
+
+Despite these complications, the notion of a sentence has survived as a major concept in the study of grammar. We can approach it 'bottom up', starting with words and showing how words combine to make sentences. Or wen can **[approach](#approach)** it 'top down', starting with some general definition of a sentence, and seeing how the words work within it. Either way, it's clear that there are a large number of ways in which sentences are constructed so that they make sense and are grammatically complete. We string words together according to rules we learned as children and **[refined](#refined)** as adults. The technical terms start to come when we try to describe all the options **[precisely](#precisely)**. The good news is that there are only so many ways of doing this. The bad news is that these ways aren't all **[straightforward](straightforward)** -- as Suzie was about to find out.
+
 ### Words
 
 #### ambiguous
