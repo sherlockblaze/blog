@@ -16,7 +16,7 @@ References:
 
 All of Suzie's early words were **[ambiguous](#ambiguous)** in one way or another. If she said ***gone***, Ii had to note the situation where she used the word in order to work out what she was talking about. It might be something dropped on the floor, or someone leaving the room, or the TV being turned off. ***Down*** could mean that something had fallen down or she wanted to get down (from her high chair). More sometimes meant 'I do want some more (food)' as well as 'I don't want any more'. Even when she named things - and over half her early **[vocabulary](#vocabulary)** consisted of names of people or objects -- there was **ambiguity**. A dog was dog, but so were a cat and a bird, for a while.
 
-And yet, **[despite](#despite)** this lack of grammatical **[sophistication](#sophistication)**, these **[utterances](#utterances)** were **[nonetheless](#nonetheless)** sentences, not just **[isolated](#isolated)** words. Suzie was saying them with a definite rhythm and **[melody](#melody)**, and everyone responded to them as if they were real sentences.
+And yet, **[despite](#despite)** this lack of grammatical **[sophistication](#sophistication)**, these **[utterances](#utterances)** were **[nonetheless](#nonetheless)** sentences, not just **[isolated](#isolated)** words. Suzie was saying them with a [definite](#definite) rhythm and **[melody](#melody)**, and everyone responded to them as if they were real sentences.
 
 Dada, said with a rising **[pitch](#pitch)**, meant 'Is that Daddy?' Said with a falling pitch it meant 'There's Daddy'. Said with a level pitch (and arms **[outstretched](#outstretched)**) it meant 'Pick me up, Daddy'. The different pitch patterns made them sound like a question, a statement, and a command -- even though there was no sign of the grammar we **[associate](#associate)** with there three types of sentence. This was a clear **[contrast](#contrast)** with the rather random **[vocalizations](#vocalization)** Suzie had been making a few months before, when she was **[babbling](#babble) away**, and nobody could work out what she was saying. Old grammars used to say that 'a sentence expresses a complete thought'. Suzie certainly sounded as if she was expressing her first complete thoughts.
 
@@ -28,7 +28,7 @@ Dada, said with a rising **[pitch](#pitch)**, meant 'Is that Daddy?' Said with a
 
 What Suzie did between twelve and eighteen months is what we all have to do when we begin to explore English grammar - or the grammar of any language. Grammar is the study of the way we bring words together in order to make sense. These combinations of words make up larger constructions that we call **[phrases](#phrase)**, **[clauses](#clause)**, sentences, **[paragraphs](#paragraph)**... and grammar studies all of this: how they are constructed, and the meanings and effects that the various constructions **[convey](#convey)**.
 
-Suzie needed grammar to make sense of her words. And so do we all. Isolated words don't usually make sense. If I suddenly come out with 'Thursday' or '**Indefatiagable**' or '**Sausages**', my listeners will have no idea what I'm talking about. They will look around for some context that might help to explain what's in my mind, and if they don't find any they will conclude that there's something wrong with me -- for **[indeed](#indeed)**, speaking in isolated words can be a sign of mental **[disturbance](#disturbance)**.
+Suzie needed grammar to make sense of her words. And so do we all. Isolated words don't usually make sense. If I suddenly come out with 'Thursday' or '**Indefatiagable**' or '**[Sausages](#sausage)**', my listeners will have no idea what I'm talking about. They will look around for some context that might help to explain what's in my mind, and if they don't find any they will conclude that there's something wrong with me -- for **[indeed](#indeed)**, speaking in isolated words can be a sign of mental **[disturbance](#disturbance)**.
 
 Of all the constructions that we can make, the one that **[dominates](#dominate)** the history of grammar is the sentence. Sentences make sense. That is their job. When we hear or see a sentence, the way it is constructed should convey a meaning that makes sense without having to asking for help. Sentences stand on their own two feet. They have a certain independence. This is the basis of the **[notion](#notion)** that a sentence needs to feel complete. It led to the old definition I mentioned above: 'a sentence expresses a complete thought'. That was never a good definition because who could ever say what a 'complete thought' was?
 
@@ -54,7 +54,7 @@ To make them grammatical, we need to add some structure, such as:
 >
 > I saw a car and a bus.
 
-We show this completeness in writing by using a mark of final punctuation, such as a full stop. We show it in speech using patterns of definite **[intonation](#intonation)**. Say one of those complete sentences aloud, and you will say it with a pitch pattern that tells your listener your sentence has come to an end. This was the very first feature of English that Suzie learned: how to make a sentence sound finished, so that  a listener will response to it.
+We show this completeness in writing by using a mark of final punctuation, such as a full stop. We show it in speech using patterns of [definite](#definite) **[intonation](#intonation)**. Say one of those complete sentences aloud, and you will say it with a pitch pattern that tells your listener your sentence has come to an end. This was the very first feature of English that Suzie learned: how to make a sentence sound finished, so that  a listener will response to it.
 
 It's actually quite difficult to give a definition of a sentence that handles all the ways in which sentences are constructed. If you've been brought up to believe that 'A sentence begins with a capital letter and ends with a full stop', then you have to think again when you encounter sentences that begin with a lower-case letter (as in millions of emails and social media posts, and quite a lot of poetry) and end with something other than a full stop, such as a question mark or exclamation mark ... or no punctuation mark at all, as in much public **[signage](#signage)**.
 
@@ -72,7 +72,7 @@ We also have to allow for sentences that look or sound finished, yet their sense
 
 Grammarians use the term **elliptical** (from a Greek word meaning 'coming short') to describe sentences like 'To the station'. A pronoun such as _he_ is said to be _anaphoric_ (from a Greek work meaning 'carrying back'), as it refers back to the previous sentence. Why so many Greek-derived terms? See the following **[Interlude](#interlude).**
 
-Despite these complications, the notion of a sentence has survived as a major concept in the study of grammar. We can approach it 'bottom up', starting with words and showing how words combine to make sentences. Or wen can **[approach](#approach)** it 'top down', starting with some general definition of a sentence, and seeing how the words work within it. Either way, it's clear that there are a large number of ways in which sentences are constructed so that they make sense and are grammatically complete. We string words together according to rules we learned as children and **[refined](#refined)** as adults. The technical terms start to come when we try to describe all the options **[precisely](#precisely)**. The good news is that there are only so many ways of doing this. The bad news is that these ways aren't all **[straightforward](straightforward)** -- as Suzie was about to find out.
+Despite these complications, the notion of a sentence has survived as a major concept in the study of grammar. We can [approach](#approach) it 'bottom up', starting with words and showing how words combine to make sentences. Or wen can **[approach](#approach)** it 'top down', starting with some general definition of a sentence, and seeing how the words work within it. Either way, it's clear that there are a large number of ways in which sentences are constructed so that they make sense and are grammatically complete. We string words together according to rules we learned as children and **[refined](#refined)** as adults. The technical terms start to come when we try to describe all the options **[precisely](#precisely)**. The good news is that there are only so many ways of doing this. The bad news is that these ways aren't all **[straightforward](straightforward)** -- as Suzie was about to find out.
 
 ### Words
 
@@ -320,7 +320,7 @@ Despite these complications, the notion of a sentence has survived as a major co
 
 > adv.
 
-- used at the end of a sentence to emphasize that there is nothing more to say about a subject: The answer is no, period !
+- used at the end of a sentence to [emphasize](#emphasize) that there is nothing more to say about a subject: The answer is no, period !
 
 > adj.
 
@@ -380,40 +380,40 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 > adj.
 
-- having a definite limit or fixed size: a finite number of possibilities. ***OPP***: infinite.
+- having a [definite](#definite) limit or fixed size: a finite number of possibilities. ***OPP***: infinite.
   - The world's resources are finite.
-- (grammar) a finite verb form or clause shows a particular tense, PERSON and NUMBER: 'Am', 'is', 'are', 'was', and 'were' are the finite forms of 'be'; 'being' and 'been' are the non-finite forms ***OPP***: non-finite.
+- (grammar) a finite verb form or [clause](#clause) shows a particular tense, PERSON and NUMBER: 'Am', 'is', 'are', 'was', and 'were' are the finite forms of 'be'; 'being' and 'been' are the non-finite forms ***OPP***: non-finite.
 
 #### clause
 
 > noun.
 
-- (grammar) a group of words that includes a subject and a verb, and forms a sentence of part of a sentence: In the sentence 'They often go to Italy because they love the food', 'They often go to Italy' is the main clause and 'because they love the food' is a subordinate clause.
+- (grammar) a group of words that includes a subject and a verb, and forms a sentence of part of a sentence: In the sentence 'They often go to Italy because they love the food', 'They often go to Italy' is the main clause and 'because they love the food' is a [subordinate](#subordinate) clause.
 - an item in a legal document that says that a particular thing must or must not be done
 
 #### subordinate
 
 > adj.
 
-- ***~(to sb)*** having less power of authority than sb else in a group or an organization
+- ***~(to sb)*** having less power of [authority](#authority) than sb else in a group or an organization
   - In many societies women are subordinate to men.
 - ***~(to sth)*** less important than sth else
   - All other issues are subordinate to this one.
 
 > noun.
 
-- a person who has a position with less authority and power than sb else in an organization
+- a person who has a position with less [authority](#authority) and power than sb else in an organization
 
 > verb.
 
 - ***~ sb/sth (to sb/sth)*** (formal) to treat sb/sth as less important than sb/sth else
-  - Safety considerations were subordinated to commercial interests.
+  - Safety considerations were subordinated to [commercial](#commercial) interests.
 
 #### commercial
 
 > adj.
 
-- [usually before noun] connected with the buying and selling of goods and services:
+- [usually before noun] connected with the buying and selling of goods and services
 - [usually before noun] making or intended to make a profit
   - The movie was not a commercial success.
 - (disapproving) more concerned with profit and being popular than with quality
@@ -431,14 +431,14 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 - ***Power***
   - the power to give orders to people
   - ***~(to do sth)*** the power or right to do sth
-    - Only the Board has the authority to approve the budget.
+    - Only the Board has the authority to approve the [budget](#budget).
 - ***Permission***
   - official permission to do sth: It was done without the principal's authority.
 - ***Organization***
   - the people or an organization who have the power to make decisions or who have a particular area of responsibility in a country or region.
     - The health authorities are investigating the problem
 - ***Knowledge***
-  - the power to influence people because they respect your knowledge or official position
+  - the power to [influence](#influence) people because they respect your knowledge or official position
     - He spoke with authority on the topic.
 - ***Expert***
   - ***~(on sth)*** a person with special knowledge
@@ -471,7 +471,7 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 - to carefully examine the facts of a situation, an event, a crime, etc. to find out the truth about it or how it happened.
   - ***~ sth*** Police are investigating possible links between the murders
   - ***~what, how, etc...*** Police are investigating what happened.
-- ***~sb (for sth)*** to try to find out information about sb's character, activities, etc: ***This is not the first time he has been investigated by the police for fraud.
+- ***~sb (for sth)*** to try to find out information about sb's character, activities, etc:  _This is not the first time he has been investigated by the police for fraud._
 - to find out information and facts about a subject or problem by study or research:
   - ***~sth*** Scientists are investigating the effects of diet on fighting cancer.
   - ***~how, what, etc...*** The research investigates how foreign speakers gain fluency.
@@ -498,10 +498,10 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 > adj.
 
-- [only before noun] used to emphasize that you are referring to one individual person, thing or type of thing and not others
+- [only before noun] used to [emphasize](#emphasize) that you are referring to one [individual](#individual) person, thing or type of thing and not others
 - [only before noun] greater than usual; special
   - we must pay particular attention to this point.
-- ***~(about/over sth)*** very definite about what you like and careful about what you choose.
+- ***~(about/over sth)*** very [definite](#definite) about what you like and careful about what you choose.
   - She's very particular about her clothes.
 
 > noun.
@@ -514,7 +514,7 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 ***in particular***
 
 - especially or particularly
-  - He loves science fiction in particular
+  - He loves science [fiction](#fiction) in particular
 - special or specific
   - Peter was lying on the sofa doing nothing in particular.
   - Is anything particular you'd like for dinner?
@@ -537,7 +537,7 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 > noun.
 
-- a type of literature that describes imaginary people and events, not real ones
+- a type of [literature](#literature) that describes imaginary people and events, not real ones
 - a thing that is invented or imagined and is not true.
   - For years he managed to keep up the fiction that he was not married.
 
@@ -589,21 +589,21 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
   - ***~sth to sb*** (formal) Please convey my apologies to your wife.
   - ***~how, what, etc...*** He tried desperately to convey how urgent the situation was
   - ***~that...*** She did not wish to convey that they were all at fault.
-- ***~sb/sth (from...) (to...)***  (formal) to take, carry  or transport sb/sth from one place to another: Pipes convey hot water from the boiler to the radiators.
+- ***~sb/sth (from...) (to...)***  (formal) to take, carry  or [transport](#transport) sb/sth from one place to another: Pipes convey hot water from the boiler to the [radiators](#radiator).
 
 #### transport
 
 > noun.
 
-- a system for carrying people or goods from one place to another using vehicles, roads, etc: air/freight/road transport
-- a vehicle or method of travel
+- a system for carrying people or goods from one place to another using [vehicles](#vehicle), roads, etc: air/freight/road transport
+- a [vehicle](#vehicle) or method of travel
 - the activity or business of carrying goods from one place to another using lorries/trucks, etc
 - a ship, plane or lorry/truck used for carrying soldiers, supplies, etcl. from one place to another
 - ***~ of sth*** (literary) strong feelings and emotions: to be in transports of delight.
 
 > verb.
 
-- ***~ sth/sb (+adv./prep.)*** to take sth/sb from one place to another i a vehicle: to transport goods/passengers
+- ***~ sth/sb (+adv./prep.)*** to take sth/sb from one place to another in a [vehicle](#vehicle): to transport goods/passengers
 - ***~sth (+adv./prep.)*** to move sth somewhere by means of a natural process
 - ***~sb (+adv./prep.)*** to make sb feel that they are in a different place, time or situation
 - ***~sb(+adv./prep.)*** (in the past) to send sb to a far away place as a punishment: 
@@ -612,8 +612,8 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 > noun.
 
-- a hollow metal device for heating rooms. Radiators are usually connected by pipes through which hot water is sent: a central heating system with a radiator in each room
-- a device cooling the engine of a vehicle or an aircraft
+- a [hollow](#hollow) metal device for heating rooms. Radiators are usually connected by pipes through which hot water is sent: a central heating system with a radiator in each room
+- a device cooling the engine of a [vehicle](#vehicle) or an aircraft
 
 #### hollow
 
@@ -636,13 +636,13 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 > noun.
 
 - (rather formal) a thing that is used for transporting people or goods from one place to another, such as a car or lorry/truck: motor vehicles.
-- ***~(for sth)*** something that can be used to express your ideas or feelings or as a way of achieving sth: Art may be used as a vehicle for propaganda.
+- ***~(for sth)*** something that can be used to express your ideas or feelings or as a way of achieving sth: Art may be used as a vehicle for [propaganda](#propaganda).
 
 #### propaganda
 
 > noun.
 
-- (usually disapproving) ideas or statements that may be false or exaggerated and that are used in order to gain support for a political leader, party, etc: enemy propaganda
+- (usually disapproving) ideas or statements that may be false or [exaggerated](#exaggerated) and that are used in order to gain support for a [political](#political) leader, party, etc: _enemy propaganda_
 
 #### exaggerated
 
@@ -655,7 +655,7 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 > adj.
 
-- connected with the state, government or public affairs: _a monarch without political power._
+- connected with the state, government or public [affairs](#affair): _a [monarch](#monarch) without political power._
 - connected with the different groups working in politics, especially their policies and the competition between them: _a political debate/party/leader_
 - (of people) interested in or active in politics: _She  became very political at university._
 - concerned with power, status, etc. within an organization, rather that with matters of principle: _I suspect that he was dismissed for political reasons._
@@ -694,14 +694,14 @@ the expression of a whole idea in a single word, for example babe saying 'up' fo
 
 _[usually before noun]_
 
-- connected with money and finance: financial services: _Tokyo and New York are major financial centres._
+- connected with money and [finance](#finance): financial services: _Tokyo and New York are major financial centres._
 - having money
 
 #### monarch
 
 > noun.
 
-- a person who rules a country, for example a king or a queen.f
+- a person who rules a country, for example a king or a queen.
 
 #### sausage
 
@@ -713,8 +713,8 @@ _[usually before noun]_
 
 > adv.
 
-- used to emphasize a positive statement or answer
-- used after very and an adjective or adverb to emphasize a statement, description, etc: Thank you very much indeed!
+- used to [emphasize](#emphasize) a positive statement or answer
+- used after very and an adjective or adverb to [emphasize](#emphasize) a statement, description, etc: Thank you very much indeed!
 - used to add information to a statement: I don't mind at all. Indeed, I would be delighted to help.
 - used to show that you are surprised at sth or that you find sth ridiculous: A ghost indeed! I've never head anything so silly.
 - (informal) used when you are repeating a question that sb has just asked and showing that you do not know the answer: 'Why did he do it?' 'Why indeed?'
@@ -724,10 +724,24 @@ _[usually before noun]_
 > noun.
 
 - [usually sing.] actions that make you stop what you are doing, or that upset the normal state that sth is in; the act of disturbing sb/sth or the fact of being disturbed: The building work is creating constant noise, dust and disturbance.
-- a situation in which people behave violently in a public place
+- a situation in which people behave [violently](#violently) in a public place
 - a state in which sb's mind or a function of the body is upset and not working normally: emotional disturbance
 
 #### violently
+
+> adv.
+
+- with great energy or strong movement, especially caused by a strong emotion such as fear or hatred: _she shook her head violently._
+- very strongly or severely: _He was violently sick._
+- in a way that involves physical violence: _The crowd reacted violently._
+
+#### violence
+
+> noun.
+
+- violent behaviour that is intended to hurt or kill sb: ***crimes/acts/threats of violence***
+  - ***~(against sb)*** _He condemned the protesters' use of violence against the police.
+- physical or emotional force and energy: _The violence of her feelings surprised him._
 
 #### dominate
 
@@ -817,20 +831,20 @@ _[usually before noun]_
 
 > adj.
 
-- clear and accurate
-- [only before noun] used to emphasize that sth happens at a particular time or in a particular way: We were just talking about her when, at that precise moment, she walked in.
-- taking care to be exact and accurate, especially about small details
+- clear and [accurate](#accurate)
+- [only before noun] used to [emphasize](#emphasize) that sth happens at a particular time or in a particular way: We were just talking about her when, at that precise moment, she walked in.
+- taking care to be exact and [accurate](#accurate), especially about small details
 
-***to be (more) precise*** used to show that you are giving more detailed and accurate information about sth you have just mentioned: _The shelf is about a metre long -- well, 98cm, to be precise._
+***to be (more) precise*** used to show that you are giving more detailed and [accurate](#accurate) information about sth you have just mentioned: _The shelf is about a metre long -- well, 98cm, to be precise._
 
 #### precisely
 
 > adv.
 
 - exactly: _They look precisely the same to me._
-- accurately; carefully: to describe sth precisely. _She pronounced the word very slowly and precisely._
-- used to emphasize that sth is very true or obvious: _It's precisely because I care about you that I don't like you staying out late._
-- used to emphasize that you agree with a statement, especially because you think it is obvious or is similar to what you have just said: _'It's not that easy, is it' 'No, precisely.'?_
+- [accurately](accurate); carefully: to describe sth precisely. _She pronounced the word very slowly and precisely._
+- used to [emphasize](#emphasize) that sth is very true or obvious: _It's precisely because I care about you that I don't like you staying out late._
+- used to [emphasize](#emphasize) that you agree with a statement, especially because you think it is obvious or is similar to what you have just said: _'It's not that easy, is it' 'No, precisely.'?_
 
 ***more precisely*** used to show that you are giving more detailed and accurate information about sth you have just mentioned: _The problem is due to discipline, or, more precisely, the lack of discipline, in schools._
 
