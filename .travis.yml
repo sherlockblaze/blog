@@ -26,4 +26,9 @@ script:
 after_script:
 - sed -i "s|__GIT_KIND__|github|" _config.yml
 - sed -i "s|__GIT_REPO__|${__GITHUB_REPO__}|" _config.yml
+- rm source/resources/blog/index.txt
+- mv source/2017/ source/resources/blog/
+- mv source/2018/ source/resources/blog/
+- mv source/2019/ source/resources/blog/
+- mv source/2020/ source/resources/blog/
 - hexo deploy
