@@ -24,11 +24,18 @@ script:
   npm run build
 
 after_script:
+- mkdir temp
+- mv public/2017/ temp/
+- mv public/2018/ temp/
+- mv public/2019/ temp/
+- mv public/2020/ temp/
+- npm run build
 - rm public/resources/blog/index.txt
-- mv public/2017/ public/resources/blog/
-- mv public/2018/ public/resources/blog/
-- mv public/2019/ public/resources/blog/
-- mv public/2020/ public/resources/blog/
+- mv temp/2017 public/resources/blog
+- mv temp/2018 public/resources/blog
+- mv temp/2019 public/resources/blog
+- mv temp/2020 public/resources/blog
+- rm -rf temp
 - sed -i "s|__GIT_KIND__|github|" _config.yml
 - sed -i "s|__GIT_REPO__|${__GITHUB_REPO__}|" _config.yml
 - hexo deploy
