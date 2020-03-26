@@ -12,3 +12,7 @@ References:
 
 ## Second steps: the big picture
 
+### Content
+
+### Words
+
