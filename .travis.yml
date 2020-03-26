@@ -29,6 +29,7 @@ after_script:
 - mv public/2018/ temp/
 - mv public/2019/ temp/
 - mv public/2020/ temp/
+- rm -rf _posts/*
 - npm run build
 - rm public/resources/blog/index.txt
 - mv temp/2017 public/resources/blog
