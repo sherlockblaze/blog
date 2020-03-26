@@ -16,3 +16,141 @@ References:
 
 ### Words
 
+#### tentative
+
+#### engage
+
+#### adopt
+
+#### amplify
+
+#### toddler
+
+#### expand
+
+#### instinctively
+
+#### articulating
+
+#### characterize
+
+#### attempts
+
+#### mature
+
+#### interpret
+
+#### interpretation
+
+#### grips
+
+#### sketch
+
+#### narrative
+
+#### broadest
+
+#### aware
+
+#### satisfactory
+
+#### unsatisfactory
+
+#### grasped
+
+#### far-off
+
+#### traditionally
+
+#### rudimentary
+
+#### restricted
+
+#### bother
+
+#### pronouns
+
+#### predicate
+
+#### insight
+
+#### performing
+
+#### plato
+
+#### sophist
+
+#### investigate
+
+#### dialogue
+
+#### vocal
+
+#### indication
+
+#### hence
+
+#### anticipating
+
+#### anticipated
+
+#### slap
+
+#### wrist
+
+#### evidently
+
+#### assented
+
+#### discourse
+
+#### denote
+
+ #### utter
+
+#### mingled
+
+#### distinction
+
+#### terminology
+
+#### eventually
+
+#### copulate
+
+#### copula
+
+#### tense
+
+#### omitted
+
+#### adjuncts
+
+#### essential
+
+#### evaluating
+
+#### aesthetic
+
+#### elegant
+
+#### biologist
+
+#### philosophical
+
+#### soluble
+
+#### ministries
+
+#### expectation
+
+#### society
+
+#### comprise
+
+#### diverse
+
+#### diversity
+
+
+

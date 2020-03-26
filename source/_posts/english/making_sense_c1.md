@@ -326,6 +326,31 @@ Despite these complications, the notion of a sentence has survived as a major co
 
 - [only before noun] having a style typical of a particular time in history: period costumes/furniture
 
+#### division
+
+- **Into Separate Parts**
+  - the process or result of dividing into separate parts
+  - the process or result of dividing sth or sharing it out
+    - **~of sth**: _a fair division of time and resources._
+    - **~of sth between A and B** : _the division of labour between the sex._
+    - **~(of sth) into sth**: _the division of the population into age groups._
+- **Mathematics**
+  - the process of dividing one number by another: _the division sign_
+- **Disagreement/Difference**
+  - a disagreement or difference in opinion, way of life, etc., especially between members of a society or an organization
+    - **~(in/within sth)** _There are deep divisions in the party over the war._
+    - **~(between A and B)** _divisions between rich and poor._
+- **Part of Organization**
+  - a large and import unit or section of an organization: _the company's sales division._
+- **In Sport**
+  - (in Britain) one of the group of teams that a sport competition is divided into, especially in football: _the first division/division one_
+- **Part of Army**
+  - a unit of an army, consisting of several BRIGADES or REGIMENTS: _the Guards Armoured Division._
+- **Border**
+  - a line that divides sth: _A hedge forms the division between their land and ours._
+- **In Parliament**
+  - the separation of members of the British parliament into groups to vote for or against sth: _The Bill was read without a division._
+
 #### universal
 
 > adj.
