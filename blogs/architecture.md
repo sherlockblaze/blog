@@ -4,12 +4,6 @@ tags:
   - Architecture
 ---
 
----
-title: architecture
-tags: 
-  - architecture
----
-
 ### Example
 
 #### Baetyl
