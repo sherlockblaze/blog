@@ -1,5 +1,5 @@
 ---
-title: books
+title: Books
 tags: 
   - books
 ---

@@ -1,5 +1,5 @@
 ---
-title: golang
+title: Golang
 tags: 
   - golang
 ---
