@@ -1,5 +1,5 @@
 ---
-title: How to Concentrate like Einstein
+title: How to Concentrate like Einstein -- WELCOME ON BOARD!
 tags:
   - English
 date: 2020-04-02
@@ -10,11 +10,50 @@ date: 2020-04-02
 
 ## Content
 
+Dear reader, dear friend,
+
+Welcome to what could well be the most exciting book you will ever read!
+
+A **[paradise](#paradise)** for the lazy student to instantly improve his memory and grades, and an incredible opportunity for all the readers to find happiness by managing to achieve the goals that really count for them.
+
+We are all gathered around the same topic: concentration.
+
+In the first part of this book, you will discover that concentration is by far the most efficient way to reach success. Anyone who succeed carries within himself a great power of concentration.
+
+You will the that concentration depends **[expensively](#expensively)** on two levers:
+
+- The first lever is your knowledge of the best practices. In other words, the good 'technical rules' that enhance concentration (like good organization, good preparation, good stress management, etc.)
+- The second lever is your _natural ability to concentrate._
+
+So the second part of the book is **[dedicated](#dedicated)** to the first lever: the best practices. You will discover the most efficient practices and rules to improve **[drastically](#drastic)** your concentration.
+
+All of these best practices have been developed by the world top Doctors and Experts in personal **[efficiency](#efficiency)**, to ensure you the highest quality of information.
+
+Because good information is in general difficult to find, everything you have to know about the best practices lies here:
+
+A **[treasure](#treasure)** made of precious and well **[guarded](#guarded)** **[gems](#gems)** to **[acquire](#acquire)** a power of concentration that will give you an advantage almost unfair over others, especially if you are a little bit lazy or really lazy student.
+
+The third part of the book is **[dedicated ](#dedicated)** to the second lever: your natural ability to concentrate. This is far the most important of two levers, but this is also the most ignored/
+
+And yet, **the real secret of concentration lies here.**
+
+Indeed, the world most successful people ALL had an incredible natural ability to concentrate.
+
+But what less 1% of people know is that this ability is not necessarily **[innate](#innate)**.
+
+More than that, it can be widely improved by using some **[jealously](#jealous)** kept techniques or disclosed only to a few **[privileged](#privileged)** people.
+
+The Doctor Vittoz secret concentration technique is one of them, and was widely used by one of the most important contributor to humanity: Albert Einstein.
+
+This technique will improve your memory in all fields, and the results you will get may change your life.
+
+Like Einstein himself said he saw the results: "The Vittoz will **[revolutionize](#revolutionize)** the World."
+
 
 
 ## Words
 
-### Paradise
+### paradise
 
 > noun.
 
