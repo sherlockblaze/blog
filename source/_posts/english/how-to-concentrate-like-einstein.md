@@ -49,7 +49,18 @@ This technique will improve your memory in all fields, and the results you will 
 
 Like Einstein himself said he saw the results: "The Vittoz will **[revolutionize](#revolutionize)** the World."
 
+**HOW TO USE THIS BOOK**
 
+Here is how to use this book in 2 steps:
+
+1. Read the book in the order in which it was written for best efficiency.
+2. Put into practice what you are about to discover.
+
+_The respect of these 2 rules is **[crucial](#crucial)** for your success._
+
+Now, let's start immediately, and...
+
+... May the power of concentration transform your life for the best!
 
 ## Words
 
