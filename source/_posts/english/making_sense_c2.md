@@ -1,7 +1,7 @@
 ---
 title: Making Sense -- The Glamorous Story of English Grammar (Chapter One)
 tags:
-  - English
+  - Grammar
 date: 2020-03-19
 ---
 
