@@ -1,7 +1,7 @@
 ---
 title: Python3 高级特性
 tags:
-  - python
+  - Python
 date: 2018-08-16
 ---
 

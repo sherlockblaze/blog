@@ -1,7 +1,7 @@
 ---
 title: Add Two Numbers
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 

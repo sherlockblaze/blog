@@ -1,7 +1,7 @@
 ---
 title: Python3 面向对象
 tags:
-  - python
+  - Python
 date: 2018-08-16
 ---
 

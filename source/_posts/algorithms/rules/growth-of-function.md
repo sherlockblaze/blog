@@ -1,7 +1,7 @@
 ---
 title: Growth Of Function
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 

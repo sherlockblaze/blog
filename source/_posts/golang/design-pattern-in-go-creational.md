@@ -1,7 +1,7 @@
 ---
 title: Design Pattern in Go (Creational Pattern)
 tags:
-  - golang
+  - Golang
 date: 2019-12-06
 ---
 

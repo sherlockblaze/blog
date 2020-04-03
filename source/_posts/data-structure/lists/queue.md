@@ -1,7 +1,7 @@
 ---
 title: Queue
 tags:
-  - data structures
+  - Data Structures
 date: 2019-01-21
 ---
 

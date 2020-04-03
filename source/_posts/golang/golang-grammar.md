@@ -1,7 +1,7 @@
 ---
 title: Golang 基本语法
 tags:
-  - golang
+  - Golang
 date: 2019-05-08
 ---
 

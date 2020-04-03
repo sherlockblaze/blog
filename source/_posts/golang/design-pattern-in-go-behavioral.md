@@ -1,7 +1,7 @@
 ---
 title: Design Pattern in Go (Behavioral Pattern)
 tags:
-  - golang
+  - Golang
 date: 2019-12-06
 ---
 

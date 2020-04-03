@@ -1,7 +1,7 @@
 ---
 title: Golang 初探
 tags:
-  - golang
+  - Golang
 date: 2019-05-07
 ---
 

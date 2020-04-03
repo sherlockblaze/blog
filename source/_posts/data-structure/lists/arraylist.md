@@ -1,7 +1,7 @@
 ---
 title: ArrayList
 tags:
-  - data structures
+  - Data Structures
 date: 2019-01-21
 catalog: true
 ---

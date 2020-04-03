@@ -1,7 +1,7 @@
 ---
 title: Python3 函数式编程(一)
 tags:
-  - python
+  - Python
 date: 2018-08-16
 ---
 

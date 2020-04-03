@@ -1,7 +1,7 @@
 ---
 title: Insertion-Sort
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 

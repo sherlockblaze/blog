@@ -1,7 +1,7 @@
 ---
 title: Reverse Print List
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 

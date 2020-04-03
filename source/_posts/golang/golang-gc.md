@@ -1,7 +1,7 @@
 ---
 title: Golang GC
 tags:
-  - golang
+  - Golang
 date: 2019-12-13
 ---
 

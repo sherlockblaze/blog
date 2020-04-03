@@ -1,7 +1,7 @@
 ---
 title: How Linux Works(Chapter Two)--Directory Hierarchy Essentials
 tags:
-  - linux
+  - Linux
 date: 2019-03-04
 ---
 

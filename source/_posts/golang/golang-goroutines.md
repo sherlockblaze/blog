@@ -1,7 +1,7 @@
 ---
 title: Goroutines
 tags:
-  - golang
+  - Golang
 date: 2019-12-04
 ---
 

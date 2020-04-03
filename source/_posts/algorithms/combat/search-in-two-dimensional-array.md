@@ -1,7 +1,7 @@
 ---
 title: Search In Two Dimensional Array
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 

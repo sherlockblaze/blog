@@ -1,7 +1,7 @@
 ---
 title: How Linux Works(Chapter Two)--Basic Commands(Part One)
 tags:
-  - linux
+  - Linux
 date: 2019-02-28
 ---
 

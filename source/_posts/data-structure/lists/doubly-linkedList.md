@@ -1,7 +1,7 @@
 ---
 title: Doubly LinkedList
 tags:
-  - data structures
+  - Data Structures
 date: 2019-01-21
 ---
 

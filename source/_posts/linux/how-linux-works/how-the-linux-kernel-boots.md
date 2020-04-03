@@ -1,7 +1,7 @@
 ---
 title: How Linux Works(Chapter Five)--How the Linux Kernel Boots
 tags:
-  - linux
+  - Linux
 date: 2019-03-12
 ---
 

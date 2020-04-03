@@ -1,7 +1,7 @@
 ---
 title: How Linux Works(Chapter Three)--Devices
 tags:
-  - linux
+  - Linux
 date: 2019-03-11
 ---
 

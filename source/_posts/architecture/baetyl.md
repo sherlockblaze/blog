@@ -1,7 +1,7 @@
 ---
 title: BAETYL
 tags:
-  - architecture
+  - Architecture
 date: 2019-04-12
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Python3 多线程基础
 tags:
-  - python
+  - Python
 date: 2018-08-16
 ---
 

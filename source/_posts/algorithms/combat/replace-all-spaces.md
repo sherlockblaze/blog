@@ -1,7 +1,7 @@
 ---
 title: Replace All Spaces
 tags:
-  - algorithms
+  - Algorithms
 date: 2019-01-24
 ---
 
