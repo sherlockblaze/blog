@@ -1,5 +1,5 @@
 ---
-title: Making Sense -- The Glamorous Story of English Grammar (Chapter One)
+title: Making Sense -- The Glamorous Story of English Grammar (Chapter Two)
 tags:
   - Grammar
 date: 2020-03-19
