@@ -20,7 +20,7 @@ Concentration is the great secret of power and success. Studies have **[revealed
 
 But let's have a close look on what concentration really means.
 
-The Merriam-Webster defines the action of concentrating as ***"a directing of the attention or of the mental [faculties](#faculties) toward a single object"***.
+The Merriam-Webster defines the action of concentrating as ***"a directing of the attention or of the mental [faculties](#faculty) toward a single object"***.
 
 So, concentration gives you the power to both:
 
@@ -127,19 +127,132 @@ So, just let the Best Practices of this book guide you and the Doctor Vittoz sec
 
 #### wealthy
 
+> adj.
+
+- having a lot of money, **[possessions](#possession)**, etc. **SYN** rich: _a wealthy nation_
+- **the wealthy**, noun, people who are rich.
+
 #### reveal
+
+> verb.
+
+- to make sth known to sb, **SYN** disclose:
+  - **~sth(to sb)**
+    - _to reveal a secret._
+    - _details of the murder we revealed by the local paper._
+  - **~(that)...**
+    - _The report reveals (that) the company made a loss of $20 million last year._
+  - **it is revealed that...**
+    - It was revealed that important evidence had been suppressed.
+  - **~how, what, etc...**
+    - Officers could not reveal how he died.
+  - **~sb/sth to be/have sth**
+    - Salted **[peanuts](#peanuts)** were recently revealed to be the nation's favourite snack.
+- to show sth that previously could not be see, **SYN** display:
+  - **~sth**
+    - He laughed, revealing a line of white teeth.
+    - The door opened to reveal a **[cosy](#cosy)** little room.
+  - **~herself**
+    - She **[crouched](#crouched)** in the dark, too frightened to reveal herself.
 
 #### ace
 
+> noun.
+
+- a PLAYING CARD with a large single symbol on it, which has either the highest or the lowest value in a particular card game: _the ace of spades/hearts/diamonds/clubs._
+- (informal) a person who is very good at doing sth: _a soccer/flying ace._
+- (in TENNIS) a SERVE (= the first hit) that is so good that your opponent cannot reach the ball: _He served 20 aces in the match._
+
+**an ace up your [sleeve](#sleeve)**: (***an ace in the hole***) (informal) a secret advantage, for example a piece of information or a skill, that you are ready to use if you need to.
+
+**hold all the aces**: to have all the advantages in a situation.
+
+**play your ace**: to use your best argument, etc. in order to get an advantage in a situation.
+
+**within an ace of sth/of doing sth**: very close to sth
+
+- We came within an ace of victory.
+
+> adj.
+
+- (informal) very good: _We had an ace time._
+
+> verb.
+
+- **~sth** (informal, especially NAmE) to be successful in sth: _He aced all hist tests._
+
 #### ambient
+
+> adj.
+
+- [only before noun] (specialist) relating to the surrounding area; on all sides: _ambient temperature/light/conditions._
+- (especially of music) creating a relaxed **[atmosphere](#atmosphere)**: _a compilation of ambient electronic music._
 
 #### furniture
 
-#### faculties
+> noun.
+
+- objects that can be moved, such as tables, chairs and beds, that are put into a house or an office to make it suitable for living or working in: _a piece of furniture._
+
+#### faculty
+
+> noun.
+
+- [C, usually pl.] any of the physical or mental abilities that a person is born with: _the faculty of sight._
+- [sing.] **~of/for (doing) sth** (formal) a particular ability for doing sth: _the faculty of understanding complex issues._
+- a department or group of related departments in a college or university: _the faculty of Law_.
+- [C+sing./pl. v.] all the teachers in a faculty of a college or university: _the Law School faculty._
+- [C, U] (often _the faculty_) all the teachers of a particular university or college: _faculty members._
 
 #### remain
 
+> verb. (rather formal) (not usually used in the **[progressive](#progressive)** tenses)
+
+- _linking verb_ to continue to be sth; to be still in the same state or condition:
+  - **+ adj.** _to remain silent/standing/seated/motionless._
+  - **It remains** true that sport is about competing well, not winning.
+  - **+noun.** In spite of their **[quarrel](#quarrel)**, they remain the best of friends
+- to still be present after the other parts have been removed, used, etc.; to continue to exist: _Very little of the house remained after the fire._
+- **~(to do sth)** to still need to be done, said, or dealt with: Much remains to be done.
+  - **It remains to be seen (= it will only be known later)** whether you are right.
+  - **There remained** one significant problem.
+- **+ adv./prep.** to stay in the same place; to not leave: _They remained in Mexico until june.
+
 #### drift
+
+> noun.
+
+- **SLOW MOVEMENT**
+  - a slow steady movement from one place to another; a **[gradual](#gradual)** change or development from one situation to another, especially to sth bad: _a population drift away from **[rural](#rural)** areas._
+- **OF SHIP**
+  - the movement of a ship or plane away from its direction because of **[currents](#currents)** or wind
+- **OF SEA/AIR**
+  - the movement of the sea or air. **SYN** current: _the general direction of drift on the eat coast._
+- **OF SNOW**
+  - a large **[pile](#pile)** of sth, especially snow, made by the wind: _The road was blocked by deep drifts of snow._
+- **OF FLOWERS**
+  - a large mass of sth, especially flowers: _Plant **[daffodils](#daffodils)** in informal drifts._
+- **MEANING**
+  - the general meaning of what sb says or writes, **SYN** gist: _Do you catch my drift?_
+
+> verb.
+
+- **MOVE SLOWLY**
+  - **(+ adv./prep.)** to move along smoothly and slowly in water or air: _Clouds drifted across the sky._
+  - **(+ adv./prep.)** to move or go somewhere slowly: _The **[crowd](#crowd)** drifted away from the scene of accident._
+- **WITHOUT PURPOSE**
+  - **(+ adv./prep.)** to happen or change, or to do sth without a particular plan or purpose: _I didn't intend to be a teacher _ I just drifted into it._
+- **INTO STATE/SITUATION**
+  - **~(in/into sth)** to go from one situation or state to another without realizing it: _Finally she drifted into sleep._
+- **OF SNOW/SAND**
+  - to be **[blown](#blown)** into large piles by the wind: _drifting sand._
+- **FLOAT**
+  - **~(+adv./prep.)** to make sth float somewhere: _The logs are drifted **[downstream](#downstream)** to the mill._
+
+**drift apart** to become less friendly or close to sb: _A children we were very close, but as we grew up we just drifted apart._
+
+**drift off (to sleep)** to fall asleep: _I didn't hear the storm. I must have drifted off by then._
+
 
 #### adopt
 
@@ -204,3 +317,35 @@ So, just let the Best Practices of this book guide you and the Doctor Vittoz sec
 #### untapped
 
 #### miracle
+
+#### possession
+
+#### peanuts
+
+#### cosy
+
+#### crouched
+
+#### sleeve
+
+#### atmosphere
+
+#### progressive
+
+#### quarrel
+
+#### gradual
+
+#### rural
+
+#### currents
+
+#### pile
+
+#### daffodils
+
+#### crowd
+
+#### blown
+
+#### downstream
