@@ -217,7 +217,7 @@ However be careful, there are some notions to know concerning the **[symbolism](
 
 **RED**
 
-Symbol of fire, blood and **[conquest](#conquest)**. It strongly **[stimulates](#stimulates)** the nervous system.
+Symbol of fire, blood and **[conquest](#conquest)**. It strongly **[stimulates](#stimulate)** the nervous system.
 
 **ORANGE**
 
@@ -239,7 +239,151 @@ It is a cold and **[calming](#calm)** color. It is associated with night, sleep 
 
 With a **[predominance](#predominance)** of blue, purple is the symbol of the union between the man and the sacred. A **[predominance](#predominance)** of red symbolizes the power of the **[earthly](#earthly) [reign](#reign)** (purple of kings, judicial robe).
 
+You have to take into account the temperature of colors.
+
+Cold colors like green, blue and purple are calming.
+
+Warm colors like red, orange and yellow **[stimulate](#stimulate)** more the eyes and can be seen from farther away.
+
+For instance, it will be hard for you to concentrate on a book put on a red surface. Your eyes will be **[permanently](#permanently)** attracted by this red color and your nervous system will be more and more excited.
+
+It is very important that you have only cold or **[neutral](#neutral)** colors in your field of vision while studying: blue, green, white, **[beige](#beige)**, very **[pale](#pale)** yellow  (**[mat](mat)** and not **[glossy](#glossy)**), brown.
+
+Naturally, you can use all the range of these colors, from the lightest to the darkest.
+
 ##### Step 2
+
+**How To Keep Your Desk Tidy**
+
+Being tidy will make you save your energy as well as your time. You will avoid a lot of mistakes by being tidy.
+
+Working roughly will make you lose time, because you will have to start your work again, to come back to the previous chapter, to search something for a second time.
+
+Follow this famous rule **[widely](#widely)** used in business management strategy: "A place for everything, and everything in its place."
+
+Give to each object of your working material a determined place. Don't think it is a kind of **[fussiness](#fussiness)**, it is just efficiency.
+
+For example, imagine you are studying and you are learning. Your attention is at its highest level.
+
+Suppose that at a precise moment, you need to take a ruler and a pencil to draw a line.
+
+If you know exactly their place, you just hold out your hand, take them and continue your work. You keep your concentration **[intact](#intact)** and unchanged.
+
+Imagine now the same scenario: you hold out your hand to take the ruler and ... no ruler!
+
+So, you have to stop your work and try to remember where could be the famous ruler...
+
+After several wasted minutes, you start to become angry and above all, you have lost for good your concentration state.
+
+That is why you have to know the exact place of each object of your working material.
+
+When you need something, you should be able to have it instantly so that you keep your concentration at its highest level.
+
+When you do not need the object any more, put it at the same place you took it.
+
+You can for example place together objects of the same nature to remember more easily their location.
+
+#### Best Practice 4
+
+**How To Avoid Getting Distracted By People, TV And Other Spare-Time Activities And Remain Focused**
+
+The moment when you study should be exclusively yours.
+
+This moment belongs to you, to the success of your exam and you will want to be exclusively focused on your study without **[permitting](#permitting)** anything and anyone to distract you.
+
+That is why refuse to be disturbed.
+
+If possible, the best is to be alone during the time of your study. So, during this moment, everyone has to consider that you are not at home and not available.
+
+Tell people who live with you that during X time you are not here and that they have to act as if you were missing.
+
+Switch off your mobile phone, deactivate online chats, social networks and anything that could disturb you during your study.
+
+Television and radio should be naturally also switched off. It is wrong to think that a background noise can help to concentrate. It is only a habit some people took and they are no longer aware of it. It can only reduce their ability to concentrate.
+
+![](https://sherlockblaze.com/resources/img/english/self-ioslated.png)
+
+#### Best Practice 5
+
+**How To Instantly Stop Your Mind From Wandering When You Need To Concentrate**
+
+During a lecture or while you are studying, your mind may drift off and you may start thinking about something totally different (for example a movie, an upcoming event, your lunch etc...).
+
+If you tend being distracted like this, it is **[essential](#essential)** to solve this problem as soon as possible.
+
+Indeed, a lot people complain about their bad memory.
+
+In reality, the problem is not their memory but their lack of attention.
+
+If you have difficulties to memorize, this often means that you haven't paid enough attention at what you read, heard or studied.
+
+For instance, imagine yourself starting a bus city tour in a city you have never been before.
+
+During the tour, your cell phone rings and you start a deep conversation in order to organize the birthday party of your best friend.
+
+You are totally absorbed by the conversation and you don't pay attention to any detail during the tour.
+
+Result: When the tour ends, you are practically unable to remember what you saw: the different monuments, places, streets names, shops, squares...
+
+Your attention was not focused on the tour: your mind was somewhere else.
+
+So, for not getting distracted any instantly stop you mind from wandering, follow this golden rule:
+
+**[ELIMINATE](#eliminate) IMMEDIATELY AND INTRUSIVE THOUGHT**
+
+![](https://sherlockblaze.com/resources/img/english/eliminate-immediately-any-intrusvie-though.png)
+
+As soon as a thought with no link with your study comes to your mind, **[eliminate](#eliminate)** it immediately.
+
+Even if this thought is pleasant.
+
+To manage to **[eliminate](#eliminate)** it, return immediately on the topic of your study.
+
+**This will create an excellent habit.**
+
+Little by little, you will see that the **[frequency](#frequency)** of **[intrusive](#intrusive)** thoughts will be close to zero, even if they were very frequent at the beginning.
+
+#### Best Practice 6
+
+**How To Keep A Full Concentration During A Three Hours Lecture.**
+
+Here is how to proceed:
+
+**Before The Lecture**
+
+A few seconds before the beginning of a lecture, you should prepare yourself to have a 100% locked-in concentration. Here is how to proceed, just let the 5 simple steps below guide you:
+
+- Naturally, you will want to avoid talking unnecessarily during the lecture. So, try to avoid sitting next to talkative people, in particular some talkative friends.
+- **[Mentally](#mentally)**, take **[stock](#stock)** of your knowledge on the subject of the lecture. This will allow you to find one or several **[comparison](#comparison)** points that will help you to memorize new information.
+- Relax and do a few deep breathings (using the special breathing technique described in the Best Practice 1 is perfect here). Try to sit comfortably.
+- Just before the beginning, as soon as the lecturer appears, close your eyes. Cut yourself off from your environment and concentrate.
+- As soon as the lecturer starts to talk, open your eyes and keep your eyes focused on him, only on him, until the end.
+
+**Act As If You Were Alone With The Lecture And The Nothingness All Around.**
+
+**During The Lecture**
+
+The secret is to have an **attitude as active as possible** during a lecture. If the teacher asks a question, try to answer it. It will increase your interest and thus your attention.
+
+**Look Instead of Just Seeing.**
+
+During the lecture, pay a particular attention to every drawing, graphic or **[scheme](#scheme)** that the teacher can make.
+
+Pictures are memorized better than words are excellent 'hooks' for the memory: they are perfect aids fro memorizing easily any concept that refers to them.
+
+So, every time you see a picture, a scheme or graphic, pay attention to it. Copy it and write down some brief explanations next to it.
+
+Have a general look on each picture, **[scheme](#scheme)** or graphic. What kind of concept or situation does it refers to? Then, have a closer look on its details.
+
+**Listen Instead Of Just Hearing**
+
+At the same time, **listen carefully** to the explanations of the teacher. So, take only brief notes to avoid getting distracted too long and to keep your attention focused on the teacher's explanations.
+
+If you don't understand something, try to understand it as soon as possible. Indeed, you can't focus your attention for a long time on something you don't understand.
+
+So, try to have an explanation from your teacher immediately.
+
+If it is difficult (if there are too many students), write a fast note or a symbol (for example the symbol '?') next to the point you don't understand and ask your teacher an explanation at the end of the lecture.
 
 ### Words
 
@@ -311,7 +455,7 @@ With a **[predominance](#predominance)** of blue, purple is the symbol of the un
 
 #### conquest
 
-#### stimulates
+#### stimulate
 
 #### cozy
 
@@ -336,3 +480,37 @@ With a **[predominance](#predominance)** of blue, purple is the symbol of the un
 #### earthly
 
 #### reign
+
+#### permanently
+
+#### neutral
+
+#### beige
+
+#### pale
+
+#### mat
+
+#### glossy
+
+#### widely
+
+#### fussiness
+
+#### intact
+
+#### permitting
+
+#### eliminate
+
+#### frequency
+
+#### intrusive
+
+#### mentally
+
+#### stock
+
+#### comparison
+
+#### scheme
