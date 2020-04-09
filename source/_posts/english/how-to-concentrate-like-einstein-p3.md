@@ -301,7 +301,7 @@ Switch off your mobile phone, deactivate online chats, social networks and anyth
 
 Television and radio should be naturally also switched off. It is wrong to think that a background noise can help to concentrate. It is only a habit some people took and they are no longer aware of it. It can only reduce their ability to concentrate.
 
-![](https://sherlockblaze.com/resources/img/english/self-ioslated.png)
+![](https://sherlockblaze.com/resources/img/english/self-isolated.png)
 
 #### Best Practice 5
 
@@ -331,7 +331,7 @@ So, for not getting distracted any instantly stop you mind from wandering, follo
 
 **[ELIMINATE](#eliminate) IMMEDIATELY AND INTRUSIVE THOUGHT**
 
-![](https://sherlockblaze.com/resources/img/english/eliminate-immediately-any-intrusvie-though.png)
+![](https://sherlockblaze.com/resources/img/english/eliminate-immediately-any-intrusive-though.png)
 
 As soon as a thought with no link with your study comes to your mind, **[eliminate](#eliminate)** it immediately.
 
