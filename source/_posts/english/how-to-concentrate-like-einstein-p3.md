@@ -195,7 +195,7 @@ A break that lasts 4 or 5 minutes is enough.
 
 The general rule is that one hour and half of **[intellectual](#intellectual)** work should be a maximum to not **[overpass](#overpass)** without taking a break.
 
-![BUT THE BEST IS TO TAKE A SHORT BREAK EVERY 45 MINUTES.](https://sherlockblaze/resources/img/english/break-time.png)
+![BUT THE BEST IS TO TAKE A SHORT BREAK EVERY 45 MINUTES.](https://sherlockblaze.com/resources/img/english/break-time.png)
 
 #### Best Practice 3
 
