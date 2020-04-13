@@ -142,7 +142,7 @@ Now, let's start immediately, and...
 > verb.
 
 - **~sth** to gain sth by your own effects, ability or behaviour: _She has acquired a good knowledge of English._
-- **~sth** to obtain sth by buying or being given it. _The company has just acquired new [premisses](#possenssion)._
+- **~sth** to obtain sth by buying or being given it. _The company has just acquired new [premisses](#premisses)._
 
 #### crucial
 
@@ -194,7 +194,7 @@ _He believes that humans are innately violent._
 
 #### satellite
 
-#### possenssion
+#### possession
 
 #### premisses
 
