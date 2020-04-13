@@ -16,7 +16,7 @@ References:
 
 Children take their next **[tentative](#tentative)** steps along the grammar road at around eighteen months. They are becoming more active and curious. There is a whole new world to discover. Adults are beginning to talk to them about it. And they want to talk back.
 
-During the first year of life most of the interaction between adult and child is playful. **[Engaging](#Engaging)** in a game of peep-bo or round-and-round-the garden is great fun, but it's hardly a conversation. During the second year, however, the language becomes more serious, with explanations ('That's not a teddy, it's an elephants'), descriptions ('I can see a big red bus'), and warnings (Don't touch that tap - it's hot). To **[adopt](#adopt)** an Internet expression: the speech directed to the child now has more content. Adults also start to **[amplify](#amplify)** what **[toddlers](#toddler)** are saying by **[expanding](#expand)** their holophrases - in effect, showing them how to say more complex thing. 'Dog,' says the child. 'Yes, he's a nice dog,' says the adult.And sooner or later, the child will have a go at the more advanced sentence: 'Big dog.'
+During the first year of life most of the interaction between adult and child is playful. **[Engaging](#engage)** in a game of peep-bo or round-and-round-the garden is great fun, but it's hardly a conversation. During the second year, however, the language becomes more serious, with explanations ('That's not a teddy, it's an elephants'), descriptions ('I can see a big red bus'), and warnings (Don't touch that tap - it's hot). To **[adopt](#adopt)** an Internet expression: the speech directed to the child now has more content. Adults also start to **[amplify](#amplify)** what **[toddlers](#toddler)** are saying by **[expanding](#expand)** their holophrases - in effect, showing them how to say more complex thing. 'Dog,' says the child. 'Yes, he's a nice dog,' says the adult.And sooner or later, the child will have a go at the more advanced sentence: 'Big dog.'
 
 What all this interaction does is present the child with example after example of everyday sentences. The utterances are short and to the point. Adults seem to know **[instinctively](#instinctively)** just how long to make them. Nobody ever responds to 'Dog' by saying, 'Yes, he's a lovely big dog who barks a lot and who likes to run round the garden chasing a ball.' The result is that children at this age repeatedly hear a set of basic sentence patterns, spoken with a similar rhythm and melody. So it's no surprise that, once they are capable of listening, remembering, and **[articulating](#articulate)** longer sequences of words, these patterns are going to be the ones that **[characterize](#characterize)** their first **[attempts](#attempt)** at more **[mature](#mature)** sentences.
 
@@ -134,7 +134,7 @@ It's this insight that is often forgotten by those in **[ministries](#ministry)*
 
 #### tentative
 
-#### Engage
+#### engage
 
 #### adopt
 
