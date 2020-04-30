@@ -216,7 +216,7 @@ So, just let the Best Practices of this book guide you and the Doctor Vittoz sec
 - **~(to do sth)** to still need to be done, said, or dealt with: Much remains to be done.
   - **It remains to be seen (= it will only be known later)** whether you are right.
   - **There remained** one significant problem.
-- **+ adv./prep.** to stay in the same place; to not leave: _They remained in Mexico until june.
+- **+ adv./prep.** to stay in the same place; to not leave: _They remained in Mexico until june._
 
 #### drift
 

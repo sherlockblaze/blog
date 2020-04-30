@@ -134,27 +134,364 @@ It's this insight that is often forgotten by those in **[ministries](#ministry)*
 
 #### tentative
 
+> adj.
+
+- (of an arrangement, agreement, etc.) not definite or certain because you may want to change it later: _We made a tentative arrangement to meet on Friday._
+- not behaving or done with confidence. **SYN hesitant**: _I'm talking the first tentative steps towards fitness._
+
 #### engage
+
+> verb.
+
+- **~sth** (formal) to succeed in attracting and keeping sb's attention and interest: _It is a movie that engages both the mind and the eye._
+- **~sb(as sth)|~sth|~sb to do sth** (formal) to employ sb to do a particular job: _He is currently engaged as a [consultant](#consultant)._
+- **~(with sth/sb)** to become involved with and try to understand sth/sb: _She has the ability to engage with young minds._
+- **~sb** (formal) to begin fighting with sb: _to engage the enemy._
+- when a part of a machine engages, or when you engage it, it fits together with another part of the machine and the machine begins to work: _The cogwheels are not engaging._
+  - **~with sth** _One cogwheel engages with the next._
+  - **~sth** _Engage the clutch before selecting a gear._
+
+**engage in sth | engage sb in sth** (formal) to take part in sth; to make sb take part in sth: _Even in prison, he continued to engage in criminal activities._
+
+#### engaged
+
+> adj.
+
+- (formal) busy doing sth
+  - **~(in sth)**: _They are engaged in talks with the Irish government._
+  - **~(on sth)**: _He is now engaged on his second novel._
+- having agreed to marry sb: _When did you get engaged?_
+  - **~to (sb)**: She's engaged to Peter._
+- (of a telephone line) being used: _I couldn't get through - the line's engaged._
+- (of a public toilet/bathroom) being used, **OPP** vacant
+
+#### engagement
+
+> noun.
+
+- **BEFORE MARRIAGE**
+  - an agreement to marry sb; the period during which two people are engaged: _Their engagement was announced in the local paper._
+    - **~(to sb)** _She has broken off her engagement to Charles._
+- **ARRANGEMENT TO DO STH**
+  - an arrangement to do sth at a particular time, especially sth official or sth connected with your job: _an engagement book/diary_
+- **FIGHTING**
+  - (specialist) fighting between two armies, etc: _The general tried avoid an engagement with the enemy._
+- **BEING INVOLVED**
+  - **~(with sb/sth)** (formal) being involved with sb/sth in an attempt to understand them/it: _Her views are based on year of engagement with the problems of inner city._
+- **EMPLOYMENT**
+  - an arrangement to employ sb; the process of employing sb: _The terms of engagement are to be agreed in writing._
+
+#### engagementring
+
+> noun.
+
+- a ring that a man gives to a woman when they agree to get married
+
+#### engaging
+
+> adj.
+
+- interesting or pleasant in a way that attracts your attention: _an engaging smile_
+
+**engagingly** adv.
 
 #### adopt
 
+> verb.
+
+- **CHILD**
+  - to take sb else's child into your family and become its legal parent(s): _a campaign to encourage childless couples to adopt._
+  - **~sb** to adopt a child: _She was forced to have her baby adopted._
+- **METHOD**
+  - **~sth** to start to use a particular method or show a particular attitude towards sb/sth: _All three teams adopted different approaches to the problem._
+- **SUGGESTION**
+  - **~sth** to formally accept a suggestion or policy by voting: _The council is expected to adopt the new policy at its next meeting._
+- **NEW NAME/COUNTRY**
+  - **~sth** to choose a new name, a country, a custom, etc. and begin to use it as your own: _Early Christians in Europe adopted many of the practices of the older, pagan religions._
+- **WAY OF BEHAVING**
+  - **~sth** (formal) to use a particular manner, way of speaking, expression, etc: _He adopted an air of indifference._
+- **CANDIDATE**
+  - **~sb(as sth)** (politics) to choose sb as a candidate in an election or as a representative: _She was adopted as parliamentary candidate for Wood Green._
+
+#### adopted
+
+> adj.
+
+- an adopted child has legally become part of a family which is not the one in which he or she was born: _Danny is their adopted son._
+- an adopted country is one in which sb chooses to live although it is not the one they wre born in
+
+#### adopter
+
+> noun.
+
+- a person who adopts a child
+- a person who starts using a new technology: _early/late adopters of social media._
+
+#### adoption
+
+> noun.
+
+- the act of adopting a child: _She put the baby up for adoption._
+- the decision to start using sth such as an idea, a plan or a name: _the adoption of new technology._
+- the act of choosing sb as a candidate for an election: _his adoption as the Labour candidate._
+
+#### adoptive
+
+> adj.
+
+- [usually before noun.] an adoptive parent or family is one that has legally adopted a child.
+
 #### amplify
+
+> verb.
+
+- **~sth** to increase sth in strength, especially sound: _to amplify a guitar/an electric current/a signal._
+- (formal) to add details to a story, statement, etc: _She refused to amplify further._
+  **~sth** _You may need to amplify this point._
+
+**amplification** noun. electronic amplification: _That comment needs some amplification._
+
+#### amplifier
+
+> noun.
+
+- an electrical device or piece of equipment that makes sounds or radio signals louder: _a 25 watt amplifier._
+
+#### amplitude
+
+> noun.
+
+- the greatest distance that a wave, especially a sound or radio wave, VIBRATES(=moves up and down)
 
 #### toddler
 
+> noun.
+
+- a child who has only recently learnt to walk.
+
+### toddle
+
+> verb.
+
+- when a young child who has just learnt to walk toddles, he/she walks with short, unsteady steps
+- **(+ adv./prep.)** (informal) to walk or go somewhere: _She toddles down to the park most afternoons._
+
+#### toddy
+
+> noun.
+
+- a drink made with strong alcohol, sugar, hot water and sometimes spices.
+
 #### expand
 
-#### instinctively
+> verb.
+
+- to become greater in size, number or importance; to make sth greater in size, number or importance: _Metals expand when they are heated._ **OPP contract**
+  - **~sth** _In breathing the chest muscles expand the rib cage and allow air to be sucked into the lungs._
+- if a business expands or is expanded, new branches are opened, it makes more money, etc: _an expanding economy(=with more businesses starting and growing)_
+  - **~sth** _We've expanded the business by opening two more stores._
+- to talk more; to add details to what you are saying: _I repeated the question and waited for her to expand._
+
+**expand on/upon sth** to say more about sth and add some details: _Could you expand on that point, please?_
+
+#### expandable
+
+> adj. (specialist)
+
+- that can be expanded: _an expandable briefcase._
+  **~to sth** _The system has 1GB RAM, expandable to 4GB._
+
+#### instinct
+
+> noun.
+
+- **~(for sth/for doing sth)|~(to do sth)** a natural tendency for people and animals to behave in a particular way using the knowledge and abilities that they were born with rather than thought or training: _Children do not know by instinct the difference between right and wrong._
+- **~(that...)** a feeling that makes you do sth or believe that sth is true, even though it is not based on facts or reason **SYN intuition**: _Her instincts had been right._
+
+#### instinctive
+
+> adj.
+
+- based on instinct, not though or training: _instinctive knowledge/She's an instinctive player._
+
+**instinctively**, adv. : _He knew instinctively that something was wrong._
+
+#### instinctual
+
+> adj.
+
+- (psychology) based on natural instinct; not learned
 
 #### articulate
 
+> verb.
+
+- **~sth(to sb)** (formal) to express or explain your thoughts or feelings clearly in words: _She struggled to articulate her thoughts._
+- to speak, pronounce or play sth in a clear way: _He was too drunk to articulate properly._
+- **~(with sth)** (formal)to be related to sth so that together the two parts form a whole: _These courses are designed to articulate with university degrees._
+- (specialist) to be joined to sth else by a joint, so that movement is possible; to join sth in this way
+  - **~(with sth)**: _bones that articulate with others._
+  - **~sth**: _a robot with articulated limbs._
+
+> adj.
+
+- (of a person) good at expressing ideas or feelings clearly in words
+- (of speech) clearly expressed or pronounced: _All we could hear were loud sobs, but no articulate words._ **OPP inarticulate**
+
+**articulately** adv.
+
+#### articulated
+
+> adj.
+
+- (of a vehicle) with two or more sections joined together in a way that makes it easier to turn corners: _an articulated lorry/truck_
+
+#### articulation
+
+> noun.
+
+- (formal) the expression of an idea or a feeling in words: _The articulation of his theory._
+- (formal) the act of making sounds in speech or music: _The singer worked hard on the clear articulation of every note._
+- (specialist) a joint or connection that allows movement.
+
+#### characteristic
+
+> adj.
+
+- **~(of sth/sb)** very typical of sth or of sb's character" _She spoke with characteristic enthusiasm._ **OPP uncharacteristic**
+**characteristically**, adv.: _Characteristically, Helen paid for every one._
+
+
 #### characterize
+
+> verb. (formal)
+
+- **~sb/sth** to be typical of a person, place, or thing: _the rolling hills that characterize this part of England._
+- **~sb/sth** [often passive] to give sb/sth its typical or most noticeable qualities or features: _The city is characterized by tall modern buildings in steel and glass._
+- **~sb/sth(as sth)** to describe or show the qualities of sb/sth in a particular way: _activities that are characterized as 'male' or 'female' work._
+
+#### characterization
+
+> noun.
+
+- the way that a writer makes characters in a book or play seem real
+- (formal) the way in which sb/sth is described or defined **SYN portrayal**: _This is an unfair characterization of the Prime Minister._
+
+#### characterless
+
+> adj.
+
+- having no interesting qualities
+
+#### character recognition
+
+> noun.
+
+- the ability of a computer to read numbers or letters that are printed or written by hand.
 
 #### attempt
 
+> noun.
+
+- an act of trying to do sth, especially sth difficult, often with no success: _I passed my driving test at the first attempt._
+  - **~to do sth**: _Two factories were closed in an attempt to cut costs._
+  - **~at sth/at doing sth**: _The couple made an unsuccessful attempt at a compromise._
+- **~(on sb/sb's life)** an act of trying to kill sb: _Someone has made an attempt on the President's life._
+- **~(on sth)** an effort to do better than sth, such as a very good performance in sport: _his attempt on the world land speed record._
+
+> verb.
+
+- to make an effort or try to do sth, especially sth difficult:
+  - **~to do sth**: _I will attempt to answer all your questions._
+  - **~sth**: _The prisoners attempted an escape, but failed._
+
+#### attempted
+
+> adj.
+
+- [only before noun.] (of a crime, etc.) that sb has tried to do but without success: _attempted rape/murder/robbery_
+
 #### mature
 
+> adj. **maturer** is [occasionally](#occasionally) used instead of more mature
+
+- **SENSIBLE**
+  - (of a child or young person) behaving in a sensible way, like an adult: _Jane is very mature for her age._ **OPP immature**
+- **FULLY GROWN**
+  - (of a person, a tree, a bird or an animal) fully grown and developed: _sexually mature._ **OPP immature** **SYN at old**
+- **WINE/CHEESE**
+  - developed over a period of time to produce a strong, rich flavour
+- **NO LONGER YOUNG**
+  - used as a polite or humorous way of saying that sb is no longer young: _clothes for the mature woman._
+- **WORK OF ART**
+  - created late in an artist's life and showing great understanding and skill
+- **INSURANCE POLICY**
+  - (business) ready to be paid
+
+**maturely** adv.
+
+**on mature reflection/consideration**: (formal) after thinking about sth carefully and for a long time
+
+> verb
+
+- **BECOME FULLY GROWN**
+  - to become fully grown or developed: _This particular breed of cattle matures early._
+- **BECOME SNESIBLE**
+  - to develop emotionally and start to behave like a sensible adult: _He has matured a great deal over the past year._
+- **DEVELOP SKILL**
+  - **~(into sth)** to fully develop a particular skill or quality: _She has matured into one of the country's finest actresses._
+- **WINE/CHEESE**
+  - **~(sth)** if wine, cheese, etc. matures or is matured, it develops over a period of time to produce a strong, rich flavour.
+- **INSURANCE POLICY**
+  - (business) to reach the date when it must be paid
+
+#### mature student
+
+> noun.
+
+- an adult student who goes to college or university some years after leaving school.
+
+#### maturity
+
+> noun.
+
+- the quality of thinking and behaving in a sensible, adult manner: _He has maturity beyond his years._
+- (of a person, an animal, or a plant) the state of being fully grown or developed: _The forest will take 100 years to reach maturity._
+- (business) (of an insurance policy, etc.) the time when money you have invested is ready to be paid.
+
 #### interpret
+
+> verb.
+
+- **~sth** to explain the meaning of sth: _The students were asked to interpret the poem._
+- to decide that sth has a particular meaning and to understand it in this way:
+  - **~sth as sth** _I didn't know whether to interpret her silence as acceptance or refusal._
+  - **~sth** _The data can be interpreted in many different ways._
+- **~(for sb)** to translate one language into another as you hear it: _She couldn't speak much English so her children had to interpret for her._
+- **~sth** to perform a piece of music, a role in a play, etc. in a way that shows your feelings about its meaning: _He interpreted the role with a lot of humour._
+
+**interpretable**, adj: interpretable data
+
+#### interpretation
+
+> noun.
+
+- the particular way in which sth is understood or explained: _Her evidence suggests a different interpretation of the events._
+- the particular way in which sb chooses to perform a piece of music, a role in a play, etc: _a modern interpretation of 'King Lear'_
+
+#### interpretative
+
+> adj.
+
+- [usually before noun] (formal) connected with the particular way in which sth is understood, explained or performed; providing an interpretation: _an interpretative problem._
+
+#### interpreter
+
+> noun.
+
+- a person whose job is to translate what sb is saying into another language: _Speaking throught an interpreter, the President said that the talks were going well._
+- a person who performs a piece of music or a role in a play in a way that clearly shows their ideas about its meaning: _She is one of the finest interpreters of Debussy's music._
+- (computing) a computer program that changes the instructions of another program into a form that the computer can understand and use.
 
 #### grip
 
@@ -245,3 +582,15 @@ It's this insight that is often forgotten by those in **[ministries](#ministry)*
 #### diverse
 
 #### diversity
+
+#### consultant
+
+#### clutch
+
+#### gear
+
+#### campaign
+
+#### enthusiasm
+
+#### occasionally
