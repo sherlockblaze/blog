@@ -46,7 +46,7 @@ or if with a value smaller that value of all the nodes, it's just exactly the op
 
 But if we do like this, it broke the hope of binary tree -- the average of depth of a binary search tree is O(logN). We absolutely don't want this, this denies the meaning of the tree. So, what we should do when we facing the situation?
 
-We'll talk more about this when we learn about [AVL Tree](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/Avl-Tree/)
+We'll talk more about this when we learn about [AVL Tree](https://sherlockblaze.com/2019/05/05/basic/data-structure/trees/avl-tree/)
 
 ### Delete
 
